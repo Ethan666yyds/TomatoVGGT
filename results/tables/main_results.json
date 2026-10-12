@@ -1,0 +1,154 @@
+{
+  "schema_version": "tomatovggt-main-results-v1",
+  "dataset": "TomatoWUR",
+  "split": "test",
+  "n_plants": 10,
+  "plant_ids": [
+    "Harvest_01_PotNr_179",
+    "Harvest_01_PotNr_256",
+    "Harvest_01_PotNr_373",
+    "Harvest_01_PotNr_521",
+    "Harvest_02_PotNr_206",
+    "Harvest_02_PotNr_237",
+    "Harvest_02_PotNr_308",
+    "Harvest_02_PotNr_61",
+    "Harvest_02_PotNr_64",
+    "Harvest_03_PotNr_407"
+  ],
+  "aggregation": "equal_plant_arithmetic_mean",
+  "reference_kind": "published_reconstruction_reference",
+  "protocol": "e0-reference-pose-global-plant-median-depth",
+  "historical_exposure": "All 44 have historical reported metrics; 14 holdout plants have been used for development evaluation. This is a retrospective test split, not an unseen final test.",
+  "checkpoint_selection": {
+    "selected_update": 1000,
+    "validation_plants": 6,
+    "validation_cd_mm": 6.8225894164033045,
+    "rule": "lowest validation CD; earlier update breaks ties",
+    "checkpoint_sha256": "9a437b710f3bd334b9ad1fe739ce1ec6ff3addb0977e04143d9f962820c69581"
+  },
+  "units": {
+    "distance": "millimetre",
+    "f_score_5mm": "fraction_0_to_1",
+    "abs_rel": "unitless"
+  },
+  "inputs": {
+    "per_plant_sha256": "921bd94bd64552cedd02b38e6665b20187b7305686125a66f0cd24ac16d61fa5",
+    "split_sha256": "a13c1cec3a65f7e4b9a808687e9fa24a864b418a87972cdf2fe59d6f20475a29"
+  },
+  "models": {
+    "vggt": {
+      "display_name": "VGGT",
+      "n_plants": 10,
+      "whole_plant": {
+        "chamfer_mm": 21.93039891268696,
+        "accuracy_mm": 39.892833760663095,
+        "completeness_mm": 3.9679640647108227,
+        "f_score_5mm": 0.2591314053563448
+      },
+      "stem": {
+        "chamfer_mm": 30.41766499182898,
+        "accuracy_mm": 57.09825707249554,
+        "completeness_mm": 3.737072911162417,
+        "f_score_5mm": 0.2241588666994916
+      },
+      "depth": {
+        "abs_rel": 0.10306653121176594
+      }
+    },
+    "pi3x": {
+      "display_name": "Pi3X",
+      "n_plants": 10,
+      "whole_plant": {
+        "chamfer_mm": 21.882183861652916,
+        "accuracy_mm": 39.1497476414665,
+        "completeness_mm": 4.614620081839334,
+        "f_score_5mm": 0.23123565298160945
+      },
+      "stem": {
+        "chamfer_mm": 29.710642394245745,
+        "accuracy_mm": 54.569854182529504,
+        "completeness_mm": 4.851430605961996,
+        "f_score_5mm": 0.16497755740826334
+      },
+      "depth": {
+        "abs_rel": 0.10237807887077069
+      }
+    },
+    "da3": {
+      "display_name": "DA3",
+      "n_plants": 10,
+      "whole_plant": {
+        "chamfer_mm": 29.262011999824885,
+        "accuracy_mm": 54.39012212564127,
+        "completeness_mm": 4.133901874008513,
+        "f_score_5mm": 0.19059695989418818
+      },
+      "stem": {
+        "chamfer_mm": 39.274249539084174,
+        "accuracy_mm": 74.63932395363216,
+        "completeness_mm": 3.909175124536189,
+        "f_score_5mm": 0.14341701532857426
+      },
+      "depth": {
+        "abs_rel": 0.12119444617668347
+      }
+    },
+    "fast3r": {
+      "display_name": "Fast3R",
+      "n_plants": 10,
+      "whole_plant": {
+        "chamfer_mm": 36.41612666180242,
+        "accuracy_mm": 59.66456181863716,
+        "completeness_mm": 13.167691504967687,
+        "f_score_5mm": 0.13743358664969113
+      },
+      "stem": {
+        "chamfer_mm": 48.54987090502037,
+        "accuracy_mm": 80.73139862448662,
+        "completeness_mm": 16.368343185554135,
+        "f_score_5mm": 0.07331885713661637
+      },
+      "depth": {
+        "abs_rel": 0.14345210092219993
+      }
+    },
+    "mast3r": {
+      "display_name": "MASt3R",
+      "n_plants": 10,
+      "whole_plant": {
+        "chamfer_mm": 74.08491083359466,
+        "accuracy_mm": 143.04785578526247,
+        "completeness_mm": 5.121965881926846,
+        "f_score_5mm": 0.12945216657133446
+      },
+      "stem": {
+        "chamfer_mm": 80.14633769667927,
+        "accuracy_mm": 153.7922137998078,
+        "completeness_mm": 6.500461593550732,
+        "f_score_5mm": 0.07519667755094753
+      },
+      "depth": {
+        "abs_rel": 0.22370963899951612
+      }
+    },
+    "tomatovggt": {
+      "display_name": "TomatoVGGT",
+      "n_plants": 10,
+      "whole_plant": {
+        "chamfer_mm": 6.510337313656852,
+        "accuracy_mm": 10.809391888859114,
+        "completeness_mm": 2.2112827384545897,
+        "f_score_5mm": 0.5853765055636856
+      },
+      "stem": {
+        "chamfer_mm": 7.9375383164363615,
+        "accuracy_mm": 13.782892529644903,
+        "completeness_mm": 2.0921841032278206,
+        "f_score_5mm": 0.5139495993428735
+      },
+      "depth": {
+        "abs_rel": 0.030063319022002894
+      }
+    }
+  }
+}

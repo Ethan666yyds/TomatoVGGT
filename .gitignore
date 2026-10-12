@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.env
+.venv/
+weights/
+datasets/tomato_synth_200/
+datasets/tomatowur/
+results/predictions/
+results/point_clouds/
+*.zip
+*.pt
+*.pth
+*.safetensors
+*.npz
+*.ply
