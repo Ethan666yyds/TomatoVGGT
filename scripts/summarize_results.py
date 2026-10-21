@@ -134,6 +134,39 @@ def summarize(records_path: Path, split_path: Path, dataset: str = "tomatowur") 
     }
 
 
+def summarize_combined(records_root: Path, split_path: Path) -> dict:
+    """Reproduce the paper's 32-plant subset, retaining both domain protocols."""
+    domains = {}
+    records = []
+    for dataset in ("tomatowur", "tomato_synth_validation"):
+        path = records_root / dataset / "per_plant.json"
+        domains[dataset] = summarize(path, split_path, dataset)
+        records.extend(_read_json(path)["records"])
+    models = {}
+    for model, display_name in METHODS.items():
+        rows = [record for record in records if record["model"] == model]
+        models[model] = {"display_name": display_name, "n_plants": len(rows)}
+        for group, metrics in GROUPS.items():
+            models[model][group] = {
+                metric: math.fsum(row[group][metric] for row in rows) / len(rows)
+                for metric in metrics
+            }
+    return {
+        "schema_version": "tomatovggt-main-results-v1",
+        "dataset": "Tomato3D",
+        "split": "paper_evaluation_subset",
+        "n_plants": 32,
+        "aggregation": "equal_plant_arithmetic_mean",
+        "domain_counts": {name: value["n_plants"] for name, value in domains.items()},
+        "reference_kind": "mixed_real_reference_and_synthetic_ground_truth",
+        "historical_exposure": domains["tomatowur"]["historical_exposure"],
+        "checkpoint_selection": domains["tomatowur"]["checkpoint_selection"],
+        "units": domains["tomatowur"]["units"],
+        "domains": domains,
+        "models": models,
+    }
+
+
 def render_markdown(summary: dict) -> str:
     models = summary["models"]
     best = {
@@ -158,9 +191,24 @@ def render_markdown(summary: dict) -> str:
                 cell = f"**{cell}**"
             cells.append(cell)
         lines.append("| " + " | ".join(cells) + " |")
+    combined = summary["split"] == "paper_evaluation_subset"
+    reference = (
+        "real reconstruction references and synthetic ground truth"
+        if combined else "synthetic ground truth"
+        if summary["reference_kind"] == "synthetic_ground_truth"
+        else "the published reconstruction reference"
+    )
+    if combined:
+        lines += [
+            "",
+            "Paper Table 2: 10 real + 22 synthetic plants, with each plant weighted 1/32. "
+            "The six real plants used for checkpoint selection are excluded. "
+            "The 38-plant non-training cohort shown as the test set in the paper includes those six plants. "
+            "Separate domain summaries and source hashes are retained in the JSON.",
+        ]
     lines += [
         "",
-        "Distances are measured against " + ("synthetic ground truth" if summary["reference_kind"] == "synthetic_ground_truth" else "the published reconstruction reference")
+        "Distances are measured against " + reference
         + ", using known cameras and one plant-wide median depth scale across all views. No ICP or Sim(3) is applied.",
         "",
         "CD = (Accuracy + Completeness) / 2. F-score uses a 5 mm threshold. "
@@ -176,21 +224,32 @@ def render_markdown(summary: dict) -> str:
 
 def main(argv=None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--dataset", choices=("tomatowur", "tomato_synth_validation"), default="tomatowur")
-    parser.add_argument("--records", type=Path)
+    parser.add_argument("--dataset", choices=("tomatowur", "tomato_synth_validation", "tomato3d"), default="tomatowur")
+    parser.add_argument("--records", type=Path, help="Override the per-plant JSON for a single domain")
+    parser.add_argument("--records-root", type=Path, default=ROOT / "results/metrics",
+                        help="Directory containing the tomatowur and tomato_synth_validation records")
     parser.add_argument("--split", type=Path, default=ROOT / "datasets/splits/main_benchmark.json")
     parser.add_argument("--output-dir", type=Path)
     args = parser.parse_args(argv)
+    if args.dataset == "tomato3d" and args.records is not None:
+        parser.error("--records is for a single domain; use --records-root with --dataset tomato3d")
     if args.records is None:
-        args.records = ROOT / "results/metrics" / args.dataset / "per_plant.json"
+        args.records = args.records_root / args.dataset / "per_plant.json"
     try:
-        summary = summarize(args.records, args.split, args.dataset)
+        if args.dataset == "tomato3d":
+            summary = summarize_combined(args.records_root, args.split)
+            inputs = {args.split.resolve()} | {
+                (args.records_root / domain / "per_plant.json").resolve()
+                for domain in ("tomatowur", "tomato_synth_validation")
+            }
+        else:
+            summary = summarize(args.records, args.split, args.dataset)
+            inputs = {args.records.resolve(), args.split.resolve()}
         markdown = render_markdown(summary)
         if args.output_dir is None:
             print(markdown, end="")
         else:
             targets = (args.output_dir / "main_results.json", args.output_dir / "main_results.md")
-            inputs = {args.records.resolve(), args.split.resolve()}
             if any(target.resolve() in inputs for target in targets):
                 raise ValueError("output files must not overwrite input records or split")
             args.output_dir.mkdir(parents=True, exist_ok=True)

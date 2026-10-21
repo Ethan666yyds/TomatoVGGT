@@ -9,6 +9,12 @@ Tomato3D contains 44 real plants from TomatoWUR and 222 synthetic plants, with 1
 
 All views of a plant share its role in the [project split](splits/main_benchmark.json). The original synthetic source metadata retains historical 160/20/20 labels; this project used all original 200 plants for training. The additional 22 plants were generated and evaluated after model freezing, without training or model selection. They are not the six real validation plants used to choose the checkpoint.
 
+## Relation to the paper
+
+The paper and pipeline call the 38 non-training plants (16 real + 22 synthetic) the **test set**. Of these, six real plants are used for checkpoint selection. The reported geometric evaluation uses the remaining **32 plants: 10 real + 22 synthetic**. Training covers 228 plants (28 real + 200 synthetic).
+
+The fixed split records actual roles: `real.val` contains the six selection plants, `real.test` contains the ten retrospective evaluation plants, and `synthetic.eval` contains the 22 frozen-model evaluation plants. The paper's 38-plant cohort is their union; its 32-plant evaluation subset excludes `real.val`. No plant IDs or selection roles are reassigned.
+
 ## Downloads and layout
 
 The real archive is `tomato3d_real.zip`; the single synthetic archive is `tomato3d_synthetic.zip`. Extract each at the repository root:

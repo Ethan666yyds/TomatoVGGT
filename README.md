@@ -2,7 +2,7 @@
 
 <p align="center">
   <strong>Feed-forward 3D reconstruction of tomato plants</strong><br>
-  Adapting VGGT to fine plant structures with RGB guidance and synthetic–real training.
+  Parameter-efficient adaptation of VGGT for fine plant structures.
 </p>
 
 <p align="center">
@@ -17,7 +17,7 @@
 
 ## Overview
 
-TomatoVGGT combines three components for fine-structure reconstruction:
+TomatoVGGT jointly updates attention Q/V LoRA parameters and the full depth head while keeping the original backbone weights frozen, training approximately 2.98% of the parameters in the enabled model components. It combines three components for fine-structure reconstruction:
 
 - **RGFU · RGB-Guided Feature Upsampling** — uses RGB guidance during feature upsampling.
 - **TSGL · Thin-Structure Geometric Loss** — combines thin-structure depth weighting with local normal consistency.
@@ -41,6 +41,8 @@ Tomato3D brings together real observations from TomatoWUR and synthetic tomato p
 | :--- | ---: | ---: | :--- |
 | **TomatoWUR** · real | 44 | 660 | 28 train / 6 validation / 10 retrospective test |
 | **Synthetic** | 222 | 3,330 | 200 train / 22 frozen-model evaluation |
+
+The paper calls the **38 non-training plants** (16 real + 22 synthetic) its test set. Six real plants are used for checkpoint selection; the reported evaluation covers the remaining **32 plants** (10 real + 22 synthetic).
 
 All views of a plant share one split. Real geometry is a **reconstruction reference**; synthetic geometry is **ground truth**.
 
@@ -67,6 +69,9 @@ Reproduce the main result tables with **Python 3.10+**. Only the standard librar
 git clone https://github.com/Ethan666yyds/TomatoVGGT.git
 cd TomatoVGGT
 
+# Paper Table 2 · 10 real + 22 synthetic plants
+python scripts/summarize_results.py --dataset tomato3d
+
 # Real plants · 10 retrospective test plants
 python scripts/summarize_results.py --dataset tomatowur
 
@@ -80,6 +85,7 @@ python scripts/summarize_results.py --dataset tomato_synth_validation
 Pass an output directory to save both formats:
 
 ```bash
+python scripts/summarize_results.py --dataset tomato3d --output-dir results/tables/tomato3d
 python scripts/summarize_results.py --dataset tomatowur --output-dir results/tables/tomatowur
 python scripts/summarize_results.py --dataset tomato_synth_validation --output-dir results/tables/tomato_synth_validation
 ```
