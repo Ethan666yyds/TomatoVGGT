@@ -26,7 +26,7 @@ All views of a plant belong to the same split. Real geometry is a reconstruction
 | Model weights | `tomatovggt_weights.zip` | Upload pending |
 | Main experiment predictions and point clouds | `tomatovggt_results.zip` | Upload pending |
 
-The 200 training and 22 evaluation synthetic plants share one archive. Their roles are recorded in the data split. Download archives are currently being prepared for restricted Google Drive access. [Archive checksums](checksums.sha256) are available; a checksum entry alone does not indicate upload completion.
+The 200 training and 22 evaluation synthetic plants share one archive. Their roles are recorded in the data split. Download archives are being uploaded to the restricted [Tomato3D folder on Google Drive](https://zenodo.org/records/24221170). [Archive checksums](checksums.sha256) are available; a checksum entry alone does not indicate upload completion.
 
 ## Installation and Usage
 
