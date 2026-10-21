@@ -50,16 +50,16 @@ All views of a plant share one split. Real geometry is a **reconstruction refere
 
 ## Downloads
 
+The initial release includes the fixed data split, plant-level metrics, result tables, and the summary script. Data, model weights, and prediction downloads are coming soon; links will be added here once ready.
+
 | Resource | Availability |
 | :--- | :--- |
-| [Real and synthetic data](docs/downloads.md#data) | Real data in preparation; synthetic upload pending |
-| [Model weights](docs/downloads.md#model-weights) | Upload pending |
-| [Predictions and point clouds](docs/downloads.md#predictions-and-point-clouds) | Upload pending |
+| [Real and synthetic data](docs/downloads.md#data) | Coming soon |
+| [Model weights](docs/downloads.md#model-weights) | Coming soon |
+| [Predictions and point clouds](docs/downloads.md#predictions-and-point-clouds) | Coming soon |
 | [Metrics and result tables](results/README.md) | Included in this repository |
 
-[Package guide](docs/downloads.md) &nbsp;·&nbsp; [Tomato3D on Google Drive](https://zenodo.org/records/24221170) &nbsp;·&nbsp; [SHA256 checksums](checksums.sha256)
-
-The Drive folder currently has restricted access. Download availability will be updated after upload verification.
+[Package guide](docs/downloads.md) &nbsp;·&nbsp; [SHA256 checksums](checksums.sha256)
 
 ## Quick start
 

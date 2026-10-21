@@ -17,7 +17,7 @@ The fixed split records actual roles: `real.val` contains the six selection plan
 
 ## Downloads and layout
 
-The real archive is `tomato3d_real.zip`; the single synthetic archive is `tomato3d_synthetic.zip`. Extract each at the repository root:
+Data downloads are coming soon. Links will be added to the [download guide](../docs/downloads.md#data) once ready. The planned real archive is `tomato3d_real.zip`; the single synthetic archive is `tomato3d_synthetic.zip`. Extract each at the repository root:
 
 ```text
 datasets/
@@ -29,6 +29,6 @@ datasets/
 └── splits/main_benchmark.json
 ```
 
-The real package is being prepared from the original experiment inputs. It contains RGB, cameras, semantic annotations, reference clouds and point labels. Synthetic assets include RGB, cameras, depth and semantic supervision, Blender scenes, meshes, visible and full surfaces, skeletons and traits. Package manifests verify distributed files; historical source manifests in provenance may describe larger source deliveries.
+The real package is being prepared from the original experiment inputs. The planned contents are RGB, cameras, semantic annotations, reference clouds and point labels. Synthetic assets include RGB, cameras, depth and semantic supervision, Blender scenes, meshes, visible and full surfaces, skeletons and traits. Package manifests verify distributed files; historical source manifests in provenance may describe larger source deliveries.
 
-TomatoWUR retains original sample identities, attribution and its [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) data license. See the [source repository](https://github.com/WUR-ABE/TomatoWUR) and [dataset DOI](https://doi.org/10.4121/e2c59841-4653-45de-a75e-4994b2766a2f). Calibration in the synthetic data also retains its upstream source. Original synthetic-data licensing will be finalized before public release.
+TomatoWUR retains original sample identities, attribution and its [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) data license. See the [source repository](https://github.com/WUR-ABE/TomatoWUR) and [dataset DOI](https://doi.org/10.4121/e2c59841-4653-45de-a75e-4994b2766a2f). Calibration in the synthetic data also retains its upstream source. Original synthetic-data licensing will be finalized before the data download is released.

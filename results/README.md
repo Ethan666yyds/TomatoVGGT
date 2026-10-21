@@ -18,6 +18,6 @@ python scripts/summarize_results.py --dataset tomatowur --output-dir results/tab
 python scripts/summarize_results.py --dataset tomato_synth_validation --output-dir results/tables/tomato_synth_validation
 ```
 
-`tomatovggt_results.zip` contains all 192 original predictions, the 10 existing TomatoVGGT real-plant PLY files, and all 132 synthetic point clouds. Archive predictions and clouds retain original bytes. Synthetic metric record copies replace the original machine-specific prediction path with the package-relative path; numeric values stay unchanged. Results from ablations, external evaluation and 3DGS are excluded.
+The prediction and point-cloud download is coming soon; its link will be added to the [download guide](../docs/downloads.md#predictions-and-point-clouds). The prepared `tomatovggt_results.zip` contains all 192 original predictions, the 10 existing TomatoVGGT real-plant PLY files, and all 132 synthetic point clouds. Archive predictions and clouds retain original bytes. Synthetic metric record copies replace the original machine-specific prediction path with the package-relative path; numeric values stay unchanged. Results from ablations, external evaluation and 3DGS are excluded.
 
 See the [evaluation protocol](../docs/evaluation.md) for the known-camera and scale-assisted conditions and the retrospective real split.
