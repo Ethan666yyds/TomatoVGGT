@@ -14,3 +14,5 @@ results/point_clouds/
 *.safetensors
 *.npz
 *.ply
+datasets/tomato3d_synthetic/
+datasets/tomato3d_real/

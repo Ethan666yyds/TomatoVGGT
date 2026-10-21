@@ -59,25 +59,30 @@ def _number(value, context: str, *, fraction: bool = False) -> float:
     return float(value)
 
 
-def summarize(records_path: Path, split_path: Path) -> dict:
+def summarize(records_path: Path, split_path: Path, dataset: str = "tomatowur") -> dict:
     payload, split = _read_json(records_path), _read_json(split_path)
-    plants = split["real"]["test"]
-    if (not isinstance(plants, list) or len(plants) != 10
+    synthetic = dataset == "tomato_synth_validation"
+    count = 22 if synthetic else 10
+    plants = split["synthetic"]["eval"] if synthetic else split["real"]["test"]
+    if (not isinstance(plants, list) or len(plants) != count
             or any(not isinstance(p, str) or not p for p in plants)
-            or len(set(plants)) != 10):
-        raise ValueError("the main benchmark must contain 10 unique test plant IDs")
-    other_plants = set(split["real"]["train"]) | set(split["real"]["val"])
+            or len(set(plants)) != count):
+        raise ValueError(f"the selected benchmark must contain {count} unique plant IDs")
+    other_plants = set(split["synthetic"]["train"]) if synthetic else set(split["real"]["train"]) | set(split["real"]["val"])
     if set(plants) & other_plants:
         raise ValueError("test plant IDs overlap training or validation")
     exposure = split.get("historical_exposure")
     if not isinstance(exposure, str) or not exposure:
         raise ValueError("the retrospective test interpretation must be retained")
-    if payload.get("dataset") != "TomatoWUR" or payload.get("split") != "test":
-        raise ValueError("records must describe the TomatoWUR test split")
+    expected_dataset = "Tomato3D synthetic" if synthetic else "TomatoWUR"
+    expected_split = "frozen_evaluation" if synthetic else "test"
+    if payload.get("dataset") != expected_dataset or payload.get("split") != expected_split:
+        raise ValueError("records must describe the selected dataset and evaluation split")
     if payload.get("aggregation") != "equal_plant_arithmetic_mean":
         raise ValueError("records must specify equal plant weights")
-    if payload.get("reference_kind") != "published_reconstruction_reference":
-        raise ValueError("records must identify the reconstruction reference")
+    expected_reference = "synthetic_ground_truth" if synthetic else "published_reconstruction_reference"
+    if payload.get("reference_kind") != expected_reference:
+        raise ValueError("records must identify the appropriate geometry reference")
     records = payload["records"]
     if not isinstance(records, list):
         raise ValueError("records must be an array")
@@ -114,15 +119,15 @@ def summarize(records_path: Path, split_path: Path) -> dict:
             }
     return {
         "schema_version": "tomatovggt-main-results-v1",
-        "dataset": "TomatoWUR",
-        "split": "test",
+        "dataset": expected_dataset,
+        "split": expected_split,
         "n_plants": len(plants),
         "plant_ids": plants,
         "aggregation": "equal_plant_arithmetic_mean",
         "reference_kind": payload["reference_kind"],
         "protocol": payload["protocol"],
-        "historical_exposure": exposure,
-        "checkpoint_selection": payload["checkpoint_selection"],
+        "historical_exposure": "Not used for training or model selection; model frozen before evaluation." if synthetic else exposure,
+        "checkpoint_selection": payload.get("checkpoint_selection", {"selected_update": 1000}),
         "units": {"distance": "millimetre", "f_score_5mm": "fraction_0_to_1", "abs_rel": "unitless"},
         "inputs": {"per_plant_sha256": _sha256(records_path), "split_sha256": _sha256(split_path)},
         "models": models,
@@ -139,7 +144,7 @@ def render_markdown(summary: dict) -> str:
     lines = [
         "# TomatoVGGT main results",
         "",
-        "Ten TomatoWUR plants; equal arithmetic mean across plants. Best values are bold.",
+        f"{summary['n_plants']} {summary['dataset']} plants; equal arithmetic mean across plants. Best values are bold.",
         "",
         "| Method | " + " | ".join(column[2] for column in COLUMNS) + " |",
         "|---|" + "---:|" * len(COLUMNS),
@@ -153,22 +158,16 @@ def render_markdown(summary: dict) -> str:
                 cell = f"**{cell}**"
             cells.append(cell)
         lines.append("| " + " | ".join(cells) + " |")
-    selection = summary["checkpoint_selection"]
     lines += [
         "",
-        "Distances use the published reconstruction reference, reference camera intrinsics and poses, "
-        "and one median depth scale per plant across all views; no ICP or Sim(3) is applied. "
-        "These metrics do not evaluate independently estimated cameras or native absolute scale.",
+        "Distances are measured against " + ("synthetic ground truth" if summary["reference_kind"] == "synthetic_ground_truth" else "the published reconstruction reference")
+        + ", using known cameras and one plant-wide median depth scale across all views. No ICP or Sim(3) is applied.",
         "",
         "CD = (Accuracy + Completeness) / 2. F-score uses a 5 mm threshold. "
-        "AbsRel is calculated after scale alignment over valid overlapping plant pixels. "
-        "JSON retains unrounded values and stores F-scores as fractions; this table displays percentages.",
+        "AbsRel is measured over valid overlapping plant pixels after scale alignment. "
+        "JSON retains full precision; F-scores are fractions in JSON and percentages in this table.",
         "",
-        f"TomatoVGGT uses update {selection['selected_update']}, selected by the lowest whole-plant "
-        "validation CD on six validation plants (earlier update breaks ties), with all 15 views per test plant. "
-        "The five baseline results retain their recorded input resolutions and valid-point support.",
-        "",
-        "This is a retrospective test split with historical development exposure. "
+        "TomatoVGGT uses update 1000 selected by validation CD on six real validation plants. "
         + summary["historical_exposure"],
         "",
     ]
@@ -177,12 +176,15 @@ def render_markdown(summary: dict) -> str:
 
 def main(argv=None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--records", type=Path, default=ROOT / "results/metrics/per_plant.json")
+    parser.add_argument("--dataset", choices=("tomatowur", "tomato_synth_validation"), default="tomatowur")
+    parser.add_argument("--records", type=Path)
     parser.add_argument("--split", type=Path, default=ROOT / "datasets/splits/main_benchmark.json")
     parser.add_argument("--output-dir", type=Path)
     args = parser.parse_args(argv)
+    if args.records is None:
+        args.records = ROOT / "results/metrics" / args.dataset / "per_plant.json"
     try:
-        summary = summarize(args.records, args.split)
+        summary = summarize(args.records, args.split, args.dataset)
         markdown = render_markdown(summary)
         if args.output_dir is None:
             print(markdown, end="")

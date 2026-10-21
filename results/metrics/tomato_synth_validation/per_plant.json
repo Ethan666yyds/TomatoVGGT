@@ -1,0 +1,3309 @@
+{
+  "dataset": "Tomato3D synthetic",
+  "split": "frozen_evaluation",
+  "reference_kind": "synthetic_ground_truth",
+  "aggregation": "equal_plant_arithmetic_mean",
+  "protocol": "synthetic-known-camera-global-plant-median-depth",
+  "records": [
+    {
+      "whole_plant": {
+        "chamfer_mm": 46.97802061078213,
+        "accuracy_mm": 90.85497458967512,
+        "completeness_mm": 3.1010666318891325,
+        "f_score_5mm": 0.18773653273139781
+      },
+      "stem": {
+        "chamfer_mm": 104.4774395055387,
+        "accuracy_mm": 205.50917869681308,
+        "completeness_mm": 3.445700314264327,
+        "f_score_5mm": 0.15732811067000663
+      },
+      "depth": {
+        "abs_rel": 0.1370006049590997
+      },
+      "model": "da3",
+      "plant_id": "SYN_TOMATO_0201",
+      "source": {
+        "artifact": "da3/SYN_TOMATO_0201.json",
+        "sha256": "6bbe17754cf2f9a741d5a0b67ff58822a8065ed5770dd817bd10727c8d4b7bd0"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/da3/SYN_TOMATO_0201.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/da3/SYN_TOMATO_0201.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 57.23265382406673,
+        "accuracy_mm": 111.28797466997545,
+        "completeness_mm": 3.177332978158005,
+        "f_score_5mm": 0.15713032173904004
+      },
+      "stem": {
+        "chamfer_mm": 136.8598132212304,
+        "accuracy_mm": 270.2995603114423,
+        "completeness_mm": 3.4200661310185456,
+        "f_score_5mm": 0.12832619386843616
+      },
+      "depth": {
+        "abs_rel": 0.15823774088826867
+      },
+      "model": "da3",
+      "plant_id": "SYN_TOMATO_0202",
+      "source": {
+        "artifact": "da3/SYN_TOMATO_0202.json",
+        "sha256": "68551f8856cb85657c4580b769bff94238f8be4ca4c4d54a1e44ef128e4a0bd1"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/da3/SYN_TOMATO_0202.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/da3/SYN_TOMATO_0202.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 33.19812025502937,
+        "accuracy_mm": 63.722024710622094,
+        "completeness_mm": 2.6742157994366464,
+        "f_score_5mm": 0.2534025973602732
+      },
+      "stem": {
+        "chamfer_mm": 68.57431048375507,
+        "accuracy_mm": 134.24556612637383,
+        "completeness_mm": 2.903054841136308,
+        "f_score_5mm": 0.19780701474279969
+      },
+      "depth": {
+        "abs_rel": 0.10927444533284993
+      },
+      "model": "da3",
+      "plant_id": "SYN_TOMATO_0203",
+      "source": {
+        "artifact": "da3/SYN_TOMATO_0203.json",
+        "sha256": "6f74bd718450df732bc506923b62181e2951ee71e67a972cfe2ea59a85bf1022"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/da3/SYN_TOMATO_0203.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/da3/SYN_TOMATO_0203.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 54.50749408664454,
+        "accuracy_mm": 106.16609468767987,
+        "completeness_mm": 2.848893485609208,
+        "f_score_5mm": 0.19146864572326316
+      },
+      "stem": {
+        "chamfer_mm": 103.17276246345932,
+        "accuracy_mm": 203.13603179289575,
+        "completeness_mm": 3.2094931340229222,
+        "f_score_5mm": 0.145441095718432
+      },
+      "depth": {
+        "abs_rel": 0.14789621094560626
+      },
+      "model": "da3",
+      "plant_id": "SYN_TOMATO_0204",
+      "source": {
+        "artifact": "da3/SYN_TOMATO_0204.json",
+        "sha256": "af647ae4f3121a384c395d841f01f56cb9a36925670a2d34f7dda82de0794a69"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/da3/SYN_TOMATO_0204.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/da3/SYN_TOMATO_0204.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 38.24328144254098,
+        "accuracy_mm": 73.69842633024159,
+        "completeness_mm": 2.7881365548403765,
+        "f_score_5mm": 0.20882127364246206
+      },
+      "stem": {
+        "chamfer_mm": 73.27770682854481,
+        "accuracy_mm": 143.82690253184785,
+        "completeness_mm": 2.7285111252417797,
+        "f_score_5mm": 0.17304508547787545
+      },
+      "depth": {
+        "abs_rel": 0.11585097608862029
+      },
+      "model": "da3",
+      "plant_id": "SYN_TOMATO_0205",
+      "source": {
+        "artifact": "da3/SYN_TOMATO_0205.json",
+        "sha256": "a57bdc569720d24f786fb4a550efc064655cc75feb022c889ea52ae0181c581f"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/da3/SYN_TOMATO_0205.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/da3/SYN_TOMATO_0205.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 55.246203315895826,
+        "accuracy_mm": 107.30695897753063,
+        "completeness_mm": 3.185447654261012,
+        "f_score_5mm": 0.1534706577036373
+      },
+      "stem": {
+        "chamfer_mm": 113.9027684329087,
+        "accuracy_mm": 224.5843677712847,
+        "completeness_mm": 3.2211690945326983,
+        "f_score_5mm": 0.16491500884464397
+      },
+      "depth": {
+        "abs_rel": 0.1563777682894519
+      },
+      "model": "da3",
+      "plant_id": "SYN_TOMATO_0206",
+      "source": {
+        "artifact": "da3/SYN_TOMATO_0206.json",
+        "sha256": "8b93b749c1f6c100a04bd89c126033011c2a195abf34f24b4f8184d8fe78e716"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/da3/SYN_TOMATO_0206.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/da3/SYN_TOMATO_0206.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 20.80751619173165,
+        "accuracy_mm": 38.644312568082846,
+        "completeness_mm": 2.970719815380453,
+        "f_score_5mm": 0.24627695056815602
+      },
+      "stem": {
+        "chamfer_mm": 34.6579204498213,
+        "accuracy_mm": 66.75365277068063,
+        "completeness_mm": 2.5621881289619712,
+        "f_score_5mm": 0.24512761583988207
+      },
+      "depth": {
+        "abs_rel": 0.08318858713680781
+      },
+      "model": "da3",
+      "plant_id": "SYN_TOMATO_0207",
+      "source": {
+        "artifact": "da3/SYN_TOMATO_0207.json",
+        "sha256": "e4f3950e2a98bcb07bd14d466b6c3077a52f65a8e9aa977bf747b8ab1f2f3dc0"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/da3/SYN_TOMATO_0207.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/da3/SYN_TOMATO_0207.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 51.39259861688716,
+        "accuracy_mm": 99.9055932649065,
+        "completeness_mm": 2.8796039688678334,
+        "f_score_5mm": 0.18731382570605326
+      },
+      "stem": {
+        "chamfer_mm": 130.8118735556638,
+        "accuracy_mm": 258.1613035169655,
+        "completeness_mm": 3.4624435943620164,
+        "f_score_5mm": 0.11582633271084301
+      },
+      "depth": {
+        "abs_rel": 0.14845348472736802
+      },
+      "model": "da3",
+      "plant_id": "SYN_TOMATO_0208",
+      "source": {
+        "artifact": "da3/SYN_TOMATO_0208.json",
+        "sha256": "5e9d2c01db012ecacfc7155c089c1b0db4d7e282a3349e262298baad95f3fea4"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/da3/SYN_TOMATO_0208.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/da3/SYN_TOMATO_0208.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 42.87297582447197,
+        "accuracy_mm": 83.09451962481936,
+        "completeness_mm": 2.65143202412459,
+        "f_score_5mm": 0.21230104388021112
+      },
+      "stem": {
+        "chamfer_mm": 100.07593218214855,
+        "accuracy_mm": 196.83230759615222,
+        "completeness_mm": 3.319556768144869,
+        "f_score_5mm": 0.1462314587732978
+      },
+      "depth": {
+        "abs_rel": 0.1290540508827779
+      },
+      "model": "da3",
+      "plant_id": "SYN_TOMATO_0209",
+      "source": {
+        "artifact": "da3/SYN_TOMATO_0209.json",
+        "sha256": "cf438b3f936e8ab0b48597580a622e95af75e148b991bff77d2f4ab72f685193"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/da3/SYN_TOMATO_0209.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/da3/SYN_TOMATO_0209.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 61.19651937676237,
+        "accuracy_mm": 119.31034194693098,
+        "completeness_mm": 3.0826968065937597,
+        "f_score_5mm": 0.16893631900188902
+      },
+      "stem": {
+        "chamfer_mm": 150.3097839703402,
+        "accuracy_mm": 297.1128510434327,
+        "completeness_mm": 3.5067168972476797,
+        "f_score_5mm": 0.11390687581276378
+      },
+      "depth": {
+        "abs_rel": 0.1686944583442817
+      },
+      "model": "da3",
+      "plant_id": "SYN_TOMATO_0210",
+      "source": {
+        "artifact": "da3/SYN_TOMATO_0210.json",
+        "sha256": "40b5d18141ac2b83c83244e3756bc3e85d189903b29b52fef2c6b8aa03152613"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/da3/SYN_TOMATO_0210.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/da3/SYN_TOMATO_0210.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 43.98323787045467,
+        "accuracy_mm": 84.94114273663682,
+        "completeness_mm": 3.0253330042725306,
+        "f_score_5mm": 0.18052443351531827
+      },
+      "stem": {
+        "chamfer_mm": 88.47601764544244,
+        "accuracy_mm": 173.52236043595627,
+        "completeness_mm": 3.4296748549285883,
+        "f_score_5mm": 0.1431382601301358
+      },
+      "depth": {
+        "abs_rel": 0.13548423371960092
+      },
+      "model": "da3",
+      "plant_id": "SYN_TOMATO_0211",
+      "source": {
+        "artifact": "da3/SYN_TOMATO_0211.json",
+        "sha256": "ccacdecb17111b7fb7d443b34255ce5f0cb8975dbb24c42aadfb69a256946c88"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/da3/SYN_TOMATO_0211.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/da3/SYN_TOMATO_0211.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 62.74207995432543,
+        "accuracy_mm": 122.97735468552794,
+        "completeness_mm": 2.5068052231229374,
+        "f_score_5mm": 0.201316669495459
+      },
+      "stem": {
+        "chamfer_mm": 153.2348166048274,
+        "accuracy_mm": 303.2559081297718,
+        "completeness_mm": 3.2137250798829236,
+        "f_score_5mm": 0.13551012010120306
+      },
+      "depth": {
+        "abs_rel": 0.1631147230510945
+      },
+      "model": "da3",
+      "plant_id": "SYN_TOMATO_0212",
+      "source": {
+        "artifact": "da3/SYN_TOMATO_0212.json",
+        "sha256": "f9f35ead27bc75644129b704f4916ecf2caad7d4082976388536ecb6cd66f3cf"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/da3/SYN_TOMATO_0212.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/da3/SYN_TOMATO_0212.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 64.28597776832065,
+        "accuracy_mm": 124.79430502573757,
+        "completeness_mm": 3.7776505109037273,
+        "f_score_5mm": 0.10712357143829129
+      },
+      "stem": {
+        "chamfer_mm": 126.6218379801253,
+        "accuracy_mm": 249.99660449508318,
+        "completeness_mm": 3.2470714651674233,
+        "f_score_5mm": 0.10000105805328223
+      },
+      "depth": {
+        "abs_rel": 0.16685418288988796
+      },
+      "model": "da3",
+      "plant_id": "SYN_TOMATO_0213",
+      "source": {
+        "artifact": "da3/SYN_TOMATO_0213.json",
+        "sha256": "54b346f14e6b1e3e15b65076645e03247fc9ead39f34b78497ea60d9b0caaa92"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/da3/SYN_TOMATO_0213.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/da3/SYN_TOMATO_0213.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 56.224553935405375,
+        "accuracy_mm": 109.35078322145505,
+        "completeness_mm": 3.098324649355711,
+        "f_score_5mm": 0.1590839750427904
+      },
+      "stem": {
+        "chamfer_mm": 113.35312755474247,
+        "accuracy_mm": 223.56411062010605,
+        "completeness_mm": 3.1421444893788912,
+        "f_score_5mm": 0.13981352577848186
+      },
+      "depth": {
+        "abs_rel": 0.15395740185098047
+      },
+      "model": "da3",
+      "plant_id": "SYN_TOMATO_0214",
+      "source": {
+        "artifact": "da3/SYN_TOMATO_0214.json",
+        "sha256": "c8ae53d8fd3b99bc7a79fd481c0da2dc99aa654e2e2ad890649a0bcab05a9837"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/da3/SYN_TOMATO_0214.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/da3/SYN_TOMATO_0214.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 55.20745258841711,
+        "accuracy_mm": 107.42441954395493,
+        "completeness_mm": 2.9904856328792966,
+        "f_score_5mm": 0.1713385854108295
+      },
+      "stem": {
+        "chamfer_mm": 110.7364884062673,
+        "accuracy_mm": 218.50224361542593,
+        "completeness_mm": 2.9707331971086566,
+        "f_score_5mm": 0.15270411442669307
+      },
+      "depth": {
+        "abs_rel": 0.15261080009426467
+      },
+      "model": "da3",
+      "plant_id": "SYN_TOMATO_0215",
+      "source": {
+        "artifact": "da3/SYN_TOMATO_0215.json",
+        "sha256": "72674f727fa513833436245885fb1e05d3c6413d3696f3649b88ef3299014697"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/da3/SYN_TOMATO_0215.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/da3/SYN_TOMATO_0215.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 55.823008290027666,
+        "accuracy_mm": 109.09632360429768,
+        "completeness_mm": 2.5496929757576674,
+        "f_score_5mm": 0.1917026331017856
+      },
+      "stem": {
+        "chamfer_mm": 106.10210169483479,
+        "accuracy_mm": 209.52758595966628,
+        "completeness_mm": 2.676617430003303,
+        "f_score_5mm": 0.16772643986895297
+      },
+      "depth": {
+        "abs_rel": 0.14795348199047567
+      },
+      "model": "da3",
+      "plant_id": "SYN_TOMATO_0216",
+      "source": {
+        "artifact": "da3/SYN_TOMATO_0216.json",
+        "sha256": "30d603e0f6a99c31402f156532d69997b37fd0c72991149fb851fea201c38e3f"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/da3/SYN_TOMATO_0216.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/da3/SYN_TOMATO_0216.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 18.917928655159944,
+        "accuracy_mm": 34.65385680555085,
+        "completeness_mm": 3.182000504769034,
+        "f_score_5mm": 0.2368708461889179
+      },
+      "stem": {
+        "chamfer_mm": 35.047708078850754,
+        "accuracy_mm": 67.23995593634181,
+        "completeness_mm": 2.855460221359694,
+        "f_score_5mm": 0.16628804688986581
+      },
+      "depth": {
+        "abs_rel": 0.07677605920367618
+      },
+      "model": "da3",
+      "plant_id": "SYN_TOMATO_0217",
+      "source": {
+        "artifact": "da3/SYN_TOMATO_0217.json",
+        "sha256": "be813f6b03d1a2a1a48ae31f9b4765b568bfb0d30e0987a2eb11b31082721353"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/da3/SYN_TOMATO_0217.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/da3/SYN_TOMATO_0217.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 48.82291221765675,
+        "accuracy_mm": 94.42971171957646,
+        "completeness_mm": 3.2161127157370397,
+        "f_score_5mm": 0.1774345797161525
+      },
+      "stem": {
+        "chamfer_mm": 91.98192129990873,
+        "accuracy_mm": 180.7920900811598,
+        "completeness_mm": 3.171752518657657,
+        "f_score_5mm": 0.14207400688508653
+      },
+      "depth": {
+        "abs_rel": 0.14338743015670122
+      },
+      "model": "da3",
+      "plant_id": "SYN_TOMATO_0218",
+      "source": {
+        "artifact": "da3/SYN_TOMATO_0218.json",
+        "sha256": "a9645b93e16b137701f4766182c21b6871005e793ee985ebd3d3c59acb30fb1d"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/da3/SYN_TOMATO_0218.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/da3/SYN_TOMATO_0218.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 51.59765677887401,
+        "accuracy_mm": 100.43919618629657,
+        "completeness_mm": 2.756117371451462,
+        "f_score_5mm": 0.20846892236441247
+      },
+      "stem": {
+        "chamfer_mm": 121.48758847440558,
+        "accuracy_mm": 239.74412071565087,
+        "completeness_mm": 3.231056233160292,
+        "f_score_5mm": 0.11942294981100918
+      },
+      "depth": {
+        "abs_rel": 0.1460629524330369
+      },
+      "model": "da3",
+      "plant_id": "SYN_TOMATO_0219",
+      "source": {
+        "artifact": "da3/SYN_TOMATO_0219.json",
+        "sha256": "df2bc5eb3319122d1518fff76023a5019d91ba7fa8e7fb9576896f4137a03792"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/da3/SYN_TOMATO_0219.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/da3/SYN_TOMATO_0219.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 32.13920223283893,
+        "accuracy_mm": 61.529164021518,
+        "completeness_mm": 2.749240444159875,
+        "f_score_5mm": 0.21343021637321388
+      },
+      "stem": {
+        "chamfer_mm": 55.594209297912926,
+        "accuracy_mm": 108.65494802179987,
+        "completeness_mm": 2.5334705740259755,
+        "f_score_5mm": 0.2083084477279772
+      },
+      "depth": {
+        "abs_rel": 0.10723839936445276
+      },
+      "model": "da3",
+      "plant_id": "SYN_TOMATO_0220",
+      "source": {
+        "artifact": "da3/SYN_TOMATO_0220.json",
+        "sha256": "a617076dac140df71ce8a6e4b957945aea4ec170b743a62dc68f9515984c3bed"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/da3/SYN_TOMATO_0220.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/da3/SYN_TOMATO_0220.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 25.005198422675324,
+        "accuracy_mm": 46.84101327488748,
+        "completeness_mm": 3.169383570463169,
+        "f_score_5mm": 0.19382591134618884
+      },
+      "stem": {
+        "chamfer_mm": 35.52717984677869,
+        "accuracy_mm": 68.23776539049898,
+        "completeness_mm": 2.8165943030584084,
+        "f_score_5mm": 0.2522209695926273
+      },
+      "depth": {
+        "abs_rel": 0.0831099847536862
+      },
+      "model": "da3",
+      "plant_id": "SYN_TOMATO_0221",
+      "source": {
+        "artifact": "da3/SYN_TOMATO_0221.json",
+        "sha256": "8cb5a0e1b1edab5ba3ddb791ac8d4aef95ecb688f77c924dd42066d2075242c0"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/da3/SYN_TOMATO_0221.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/da3/SYN_TOMATO_0221.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 58.80498879943959,
+        "accuracy_mm": 114.5696689025997,
+        "completeness_mm": 3.040308696279483,
+        "f_score_5mm": 0.18124073559754994
+      },
+      "stem": {
+        "chamfer_mm": 140.0461440515153,
+        "accuracy_mm": 276.5538065946203,
+        "completeness_mm": 3.5384815084102876,
+        "f_score_5mm": 0.10353662042699052
+      },
+      "depth": {
+        "abs_rel": 0.16181941004538178
+      },
+      "model": "da3",
+      "plant_id": "SYN_TOMATO_0222",
+      "source": {
+        "artifact": "da3/SYN_TOMATO_0222.json",
+        "sha256": "6e92de9d12d952eedc2033ad9e392d90fc36c0f1f8ece293328977717e8da529"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/da3/SYN_TOMATO_0222.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/da3/SYN_TOMATO_0222.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 32.80467938793124,
+        "accuracy_mm": 54.21696886431156,
+        "completeness_mm": 11.392389911550918,
+        "f_score_5mm": 0.12116959792937207
+      },
+      "stem": {
+        "chamfer_mm": 52.25313449213133,
+        "accuracy_mm": 88.74572562689121,
+        "completeness_mm": 15.760543357371446,
+        "f_score_5mm": 0.05411846154798384
+      },
+      "depth": {
+        "abs_rel": 0.11205894223310936
+      },
+      "model": "fast3r",
+      "plant_id": "SYN_TOMATO_0201",
+      "source": {
+        "artifact": "fast3r/SYN_TOMATO_0201.json",
+        "sha256": "4c760f08da5c95ff34ac223460e9d18c371715ed48498ec1780d2f5ce261111e"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/fast3r/SYN_TOMATO_0201.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/fast3r/SYN_TOMATO_0201.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 46.380088442295225,
+        "accuracy_mm": 81.8251479054936,
+        "completeness_mm": 10.935028979096861,
+        "f_score_5mm": 0.0818735120036445
+      },
+      "stem": {
+        "chamfer_mm": 63.34542365970564,
+        "accuracy_mm": 115.98253837535943,
+        "completeness_mm": 10.708308944051858,
+        "f_score_5mm": 0.050426451802962735
+      },
+      "depth": {
+        "abs_rel": 0.1536391002705518
+      },
+      "model": "fast3r",
+      "plant_id": "SYN_TOMATO_0202",
+      "source": {
+        "artifact": "fast3r/SYN_TOMATO_0202.json",
+        "sha256": "7df8e2b2e27b176f7760a28e64775d6e3a7996dc92e7b0dc754610db9217f435"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/fast3r/SYN_TOMATO_0202.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/fast3r/SYN_TOMATO_0202.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 53.5090603480115,
+        "accuracy_mm": 96.28810636405038,
+        "completeness_mm": 10.730014331972606,
+        "f_score_5mm": 0.07903546691416319
+      },
+      "stem": {
+        "chamfer_mm": 67.8858217959308,
+        "accuracy_mm": 126.39375561088612,
+        "completeness_mm": 9.37788798097547,
+        "f_score_5mm": 0.056030563056965015
+      },
+      "depth": {
+        "abs_rel": 0.16413303775107246
+      },
+      "model": "fast3r",
+      "plant_id": "SYN_TOMATO_0203",
+      "source": {
+        "artifact": "fast3r/SYN_TOMATO_0203.json",
+        "sha256": "4fbd588e9b6d24368e47324af7863f6235cff184d9ba740026f5f5786064bead"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/fast3r/SYN_TOMATO_0203.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/fast3r/SYN_TOMATO_0203.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 55.741268242750934,
+        "accuracy_mm": 94.2745535875838,
+        "completeness_mm": 17.207982897918072,
+        "f_score_5mm": 0.055960412398312426
+      },
+      "stem": {
+        "chamfer_mm": 67.95511995566069,
+        "accuracy_mm": 111.05528995078052,
+        "completeness_mm": 24.85494996054087,
+        "f_score_5mm": 0.031905262706397215
+      },
+      "depth": {
+        "abs_rel": 0.15419441445058152
+      },
+      "model": "fast3r",
+      "plant_id": "SYN_TOMATO_0204",
+      "source": {
+        "artifact": "fast3r/SYN_TOMATO_0204.json",
+        "sha256": "06b709c7d278f90164bd2991cbcbf3df93f7c62831391c6e5ac4df767f06d1aa"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/fast3r/SYN_TOMATO_0204.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/fast3r/SYN_TOMATO_0204.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 40.32044613299773,
+        "accuracy_mm": 71.22959705032811,
+        "completeness_mm": 9.411295215667359,
+        "f_score_5mm": 0.07803190190078525
+      },
+      "stem": {
+        "chamfer_mm": 57.26485629198456,
+        "accuracy_mm": 102.16752727710669,
+        "completeness_mm": 12.362185306862434,
+        "f_score_5mm": 0.028177382212427
+      },
+      "depth": {
+        "abs_rel": 0.13124118262528525
+      },
+      "model": "fast3r",
+      "plant_id": "SYN_TOMATO_0205",
+      "source": {
+        "artifact": "fast3r/SYN_TOMATO_0205.json",
+        "sha256": "5b48dcc8ada5fe386222f59f89411153592413abaa8f1160e6474b9820e58f63"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/fast3r/SYN_TOMATO_0205.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/fast3r/SYN_TOMATO_0205.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 72.11693612311824,
+        "accuracy_mm": 132.31857175213173,
+        "completeness_mm": 11.915300494104732,
+        "f_score_5mm": 0.05784256037340788
+      },
+      "stem": {
+        "chamfer_mm": 90.68853914226395,
+        "accuracy_mm": 171.5934220821531,
+        "completeness_mm": 9.78365620237482,
+        "f_score_5mm": 0.06095649058691835
+      },
+      "depth": {
+        "abs_rel": 0.20674489953460948
+      },
+      "model": "fast3r",
+      "plant_id": "SYN_TOMATO_0206",
+      "source": {
+        "artifact": "fast3r/SYN_TOMATO_0206.json",
+        "sha256": "fec0504007356461f156633b94ef72deb6a1f350c65c592995d55cbedc861f25"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/fast3r/SYN_TOMATO_0206.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/fast3r/SYN_TOMATO_0206.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 87.74407798935118,
+        "accuracy_mm": 164.73994841512197,
+        "completeness_mm": 10.748207563580413,
+        "f_score_5mm": 0.10028122864360536
+      },
+      "stem": {
+        "chamfer_mm": 87.83107427511206,
+        "accuracy_mm": 165.24206267810715,
+        "completeness_mm": 10.420085872116964,
+        "f_score_5mm": 0.07484211217977703
+      },
+      "depth": {
+        "abs_rel": 0.22230103285922206
+      },
+      "model": "fast3r",
+      "plant_id": "SYN_TOMATO_0207",
+      "source": {
+        "artifact": "fast3r/SYN_TOMATO_0207.json",
+        "sha256": "0a997b14ac8dae597c62d71223325e92b15ab12e4e7b346d1505ba95c86bc65e"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/fast3r/SYN_TOMATO_0207.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/fast3r/SYN_TOMATO_0207.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 31.192163689542994,
+        "accuracy_mm": 55.907776502066014,
+        "completeness_mm": 6.476550877019973,
+        "f_score_5mm": 0.11774235732235486
+      },
+      "stem": {
+        "chamfer_mm": 41.657241506615875,
+        "accuracy_mm": 76.82111743749748,
+        "completeness_mm": 6.493365575734264,
+        "f_score_5mm": 0.08492363906948892
+      },
+      "depth": {
+        "abs_rel": 0.1139120592057147
+      },
+      "model": "fast3r",
+      "plant_id": "SYN_TOMATO_0208",
+      "source": {
+        "artifact": "fast3r/SYN_TOMATO_0208.json",
+        "sha256": "796825b648c1fd85e7cb2b84d602941d313a3600e5ba25de0a5c0e9b9022aa5b"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/fast3r/SYN_TOMATO_0208.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/fast3r/SYN_TOMATO_0208.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 54.33351943981585,
+        "accuracy_mm": 97.0685635011659,
+        "completeness_mm": 11.598475378465814,
+        "f_score_5mm": 0.05912395172693846
+      },
+      "stem": {
+        "chamfer_mm": 77.41549800555981,
+        "accuracy_mm": 138.12041013266386,
+        "completeness_mm": 16.71058587845579,
+        "f_score_5mm": 0.027896874035630563
+      },
+      "depth": {
+        "abs_rel": 0.17568179912529072
+      },
+      "model": "fast3r",
+      "plant_id": "SYN_TOMATO_0209",
+      "source": {
+        "artifact": "fast3r/SYN_TOMATO_0209.json",
+        "sha256": "bfc14eb0666343016ae929df60a81828059c8c904847d18b51eedb8e2c1bf91a"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/fast3r/SYN_TOMATO_0209.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/fast3r/SYN_TOMATO_0209.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 53.76641884562249,
+        "accuracy_mm": 96.2180369449206,
+        "completeness_mm": 11.314800746324385,
+        "f_score_5mm": 0.09268062983061903
+      },
+      "stem": {
+        "chamfer_mm": 67.84620678847736,
+        "accuracy_mm": 127.30889803736633,
+        "completeness_mm": 8.383515539588393,
+        "f_score_5mm": 0.08521633873145178
+      },
+      "depth": {
+        "abs_rel": 0.164646510706473
+      },
+      "model": "fast3r",
+      "plant_id": "SYN_TOMATO_0210",
+      "source": {
+        "artifact": "fast3r/SYN_TOMATO_0210.json",
+        "sha256": "0b92e8366fc3daa761621579460e0ae01ee945e8d40e533347543f43bd9f310e"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/fast3r/SYN_TOMATO_0210.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/fast3r/SYN_TOMATO_0210.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 86.00758340356404,
+        "accuracy_mm": 158.21977091403085,
+        "completeness_mm": 13.795395893097252,
+        "f_score_5mm": 0.03967630842788842
+      },
+      "stem": {
+        "chamfer_mm": 100.18948617652579,
+        "accuracy_mm": 177.28967803805344,
+        "completeness_mm": 23.089294314998156,
+        "f_score_5mm": 0.021447799718577826
+      },
+      "depth": {
+        "abs_rel": 0.23146064467457197
+      },
+      "model": "fast3r",
+      "plant_id": "SYN_TOMATO_0211",
+      "source": {
+        "artifact": "fast3r/SYN_TOMATO_0211.json",
+        "sha256": "ca0b9bc32f6ab1c6b4839943a54e80a10a221d36133e9a577dc8ab769d5cce2b"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/fast3r/SYN_TOMATO_0211.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/fast3r/SYN_TOMATO_0211.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 89.73564584419236,
+        "accuracy_mm": 161.14244174878274,
+        "completeness_mm": 18.328849939601966,
+        "f_score_5mm": 0.05098049248764698
+      },
+      "stem": {
+        "chamfer_mm": 90.12662945978349,
+        "accuracy_mm": 170.29721813647927,
+        "completeness_mm": 9.9560407830877,
+        "f_score_5mm": 0.09520569261618503
+      },
+      "depth": {
+        "abs_rel": 0.22255977511458086
+      },
+      "model": "fast3r",
+      "plant_id": "SYN_TOMATO_0212",
+      "source": {
+        "artifact": "fast3r/SYN_TOMATO_0212.json",
+        "sha256": "9aaec83b940bc46b90a1eb46b9325d66a6c77e0974f23612324311b688e6f6c0"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/fast3r/SYN_TOMATO_0212.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/fast3r/SYN_TOMATO_0212.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 35.812624674009484,
+        "accuracy_mm": 60.02494814373437,
+        "completeness_mm": 11.600301204284587,
+        "f_score_5mm": 0.09276532025856458
+      },
+      "stem": {
+        "chamfer_mm": 54.98427266826059,
+        "accuracy_mm": 89.30692869037142,
+        "completeness_mm": 20.661616646149753,
+        "f_score_5mm": 0.04641075097854555
+      },
+      "depth": {
+        "abs_rel": 0.11761798258705654
+      },
+      "model": "fast3r",
+      "plant_id": "SYN_TOMATO_0213",
+      "source": {
+        "artifact": "fast3r/SYN_TOMATO_0213.json",
+        "sha256": "21cad5fa2ea34118f30d380a88733852490f6bc8de8799bc8b13903d4252b653"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/fast3r/SYN_TOMATO_0213.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/fast3r/SYN_TOMATO_0213.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 71.71546059193066,
+        "accuracy_mm": 124.19109888378465,
+        "completeness_mm": 19.23982230007669,
+        "f_score_5mm": 0.05770878044979533
+      },
+      "stem": {
+        "chamfer_mm": 90.39434566691538,
+        "accuracy_mm": 150.4358189073631,
+        "completeness_mm": 30.35287242646765,
+        "f_score_5mm": 0.030347137730290408
+      },
+      "depth": {
+        "abs_rel": 0.18397665975894895
+      },
+      "model": "fast3r",
+      "plant_id": "SYN_TOMATO_0214",
+      "source": {
+        "artifact": "fast3r/SYN_TOMATO_0214.json",
+        "sha256": "813eec9b5952f7e5abb40e69ca5e0f6f8ad8b525b71378cbbac31ce7de2eaa9a"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/fast3r/SYN_TOMATO_0214.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/fast3r/SYN_TOMATO_0214.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 58.29909443680211,
+        "accuracy_mm": 103.40416277612904,
+        "completeness_mm": 13.194026097475183,
+        "f_score_5mm": 0.06952246381323653
+      },
+      "stem": {
+        "chamfer_mm": 75.461762507257,
+        "accuracy_mm": 135.49924398926743,
+        "completeness_mm": 15.424281025246575,
+        "f_score_5mm": 0.048315774087284505
+      },
+      "depth": {
+        "abs_rel": 0.17052732744246343
+      },
+      "model": "fast3r",
+      "plant_id": "SYN_TOMATO_0215",
+      "source": {
+        "artifact": "fast3r/SYN_TOMATO_0215.json",
+        "sha256": "bb8db5870dc2ff3d82b9c4eafba0bcc8e9e9cd843e036bf0dd8cab1e68ea9f1c"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/fast3r/SYN_TOMATO_0215.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/fast3r/SYN_TOMATO_0215.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 52.79370277491393,
+        "accuracy_mm": 91.3505280091374,
+        "completeness_mm": 14.236877540690465,
+        "f_score_5mm": 0.05705167989610369
+      },
+      "stem": {
+        "chamfer_mm": 72.72983276021588,
+        "accuracy_mm": 123.95290942269773,
+        "completeness_mm": 21.50675609773406,
+        "f_score_5mm": 0.025937401499285438
+      },
+      "depth": {
+        "abs_rel": 0.14732774805024915
+      },
+      "model": "fast3r",
+      "plant_id": "SYN_TOMATO_0216",
+      "source": {
+        "artifact": "fast3r/SYN_TOMATO_0216.json",
+        "sha256": "f273cc12bbdc71a1c59eaf7aa7182386d5d014b6e36c17b9643a71db8b991845"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/fast3r/SYN_TOMATO_0216.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/fast3r/SYN_TOMATO_0216.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 46.297727644281096,
+        "accuracy_mm": 77.83038709768802,
+        "completeness_mm": 14.76506819087419,
+        "f_score_5mm": 0.08005094432766277
+      },
+      "stem": {
+        "chamfer_mm": 65.1291563319098,
+        "accuracy_mm": 115.09383242712843,
+        "completeness_mm": 15.164480236691151,
+        "f_score_5mm": 0.05020047476320583
+      },
+      "depth": {
+        "abs_rel": 0.1550394512821952
+      },
+      "model": "fast3r",
+      "plant_id": "SYN_TOMATO_0217",
+      "source": {
+        "artifact": "fast3r/SYN_TOMATO_0217.json",
+        "sha256": "a5c0acdab2ea48cb73e5b8a6715623e3e24564f4f60d4b5193bbddf4ddd9fb1a"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/fast3r/SYN_TOMATO_0217.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/fast3r/SYN_TOMATO_0217.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 38.72571385146906,
+        "accuracy_mm": 62.73565454377318,
+        "completeness_mm": 14.715773159164938,
+        "f_score_5mm": 0.07289144148376095
+      },
+      "stem": {
+        "chamfer_mm": 57.89996020784318,
+        "accuracy_mm": 88.32639111229524,
+        "completeness_mm": 27.47352930339111,
+        "f_score_5mm": 0.042307372089519665
+      },
+      "depth": {
+        "abs_rel": 0.12919909026350765
+      },
+      "model": "fast3r",
+      "plant_id": "SYN_TOMATO_0218",
+      "source": {
+        "artifact": "fast3r/SYN_TOMATO_0218.json",
+        "sha256": "4b8ce4a88539a43f1a13e15334fbe6f9e7b297b00866b632386b63f0ca7d0f0e"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/fast3r/SYN_TOMATO_0218.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/fast3r/SYN_TOMATO_0218.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 43.114019504369615,
+        "accuracy_mm": 73.76079143148,
+        "completeness_mm": 12.467247577259226,
+        "f_score_5mm": 0.09619499180470341
+      },
+      "stem": {
+        "chamfer_mm": 57.88943355256317,
+        "accuracy_mm": 98.86972087955739,
+        "completeness_mm": 16.90914622556894,
+        "f_score_5mm": 0.0494701294522774
+      },
+      "depth": {
+        "abs_rel": 0.13211353075544305
+      },
+      "model": "fast3r",
+      "plant_id": "SYN_TOMATO_0219",
+      "source": {
+        "artifact": "fast3r/SYN_TOMATO_0219.json",
+        "sha256": "decb1c1d5a4697bf1bf3c4802db8195dac3e2936dc940162bff245590c873b3f"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/fast3r/SYN_TOMATO_0219.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/fast3r/SYN_TOMATO_0219.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 50.224365531591154,
+        "accuracy_mm": 84.79840166508174,
+        "completeness_mm": 15.650329398100574,
+        "f_score_5mm": 0.09376364112728003
+      },
+      "stem": {
+        "chamfer_mm": 65.52678493620276,
+        "accuracy_mm": 104.60582791931496,
+        "completeness_mm": 26.447741953090574,
+        "f_score_5mm": 0.0542717321691592
+      },
+      "depth": {
+        "abs_rel": 0.1480166453182831
+      },
+      "model": "fast3r",
+      "plant_id": "SYN_TOMATO_0220",
+      "source": {
+        "artifact": "fast3r/SYN_TOMATO_0220.json",
+        "sha256": "fe3ff9fe5aa91e48e6ead5fa0034361ed17115d81be0d98b50699277d483d2e9"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/fast3r/SYN_TOMATO_0220.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/fast3r/SYN_TOMATO_0220.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 37.134743826890755,
+        "accuracy_mm": 57.54910498631897,
+        "completeness_mm": 16.720382667462534,
+        "f_score_5mm": 0.07201999572701075
+      },
+      "stem": {
+        "chamfer_mm": 51.381974258592784,
+        "accuracy_mm": 78.1909327642829,
+        "completeness_mm": 24.573015752902652,
+        "f_score_5mm": 0.05345516486854139
+      },
+      "depth": {
+        "abs_rel": 0.11415151500817432
+      },
+      "model": "fast3r",
+      "plant_id": "SYN_TOMATO_0221",
+      "source": {
+        "artifact": "fast3r/SYN_TOMATO_0221.json",
+        "sha256": "3e3bf0ac18ec03f05830e6fb386235b79c9d0eb2c73d5bee2ec40e3e280dcc26"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/fast3r/SYN_TOMATO_0221.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/fast3r/SYN_TOMATO_0221.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 30.341045897299118,
+        "accuracy_mm": 52.347377257324226,
+        "completeness_mm": 8.334714537274012,
+        "f_score_5mm": 0.13359220237001587
+      },
+      "stem": {
+        "chamfer_mm": 39.68720019147972,
+        "accuracy_mm": 70.35408653312864,
+        "completeness_mm": 9.0203138498308,
+        "f_score_5mm": 0.07562719177548538
+      },
+      "depth": {
+        "abs_rel": 0.10595764936157927
+      },
+      "model": "fast3r",
+      "plant_id": "SYN_TOMATO_0222",
+      "source": {
+        "artifact": "fast3r/SYN_TOMATO_0222.json",
+        "sha256": "a537f88a995f2bca4a9c34bc3a8a3f242278bc22ce537683abf58fec8049265e"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/fast3r/SYN_TOMATO_0222.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/fast3r/SYN_TOMATO_0222.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 23.143248709562933,
+        "accuracy_mm": 42.3934840424118,
+        "completeness_mm": 3.893013376714062,
+        "f_score_5mm": 0.2077133350599911
+      },
+      "stem": {
+        "chamfer_mm": 36.50925716561709,
+        "accuracy_mm": 70.03368691108074,
+        "completeness_mm": 2.984827420153444,
+        "f_score_5mm": 0.23478180394761028
+      },
+      "depth": {
+        "abs_rel": 0.0849343106237609
+      },
+      "model": "pi3x",
+      "plant_id": "SYN_TOMATO_0201",
+      "source": {
+        "artifact": "pi3x/SYN_TOMATO_0201.json",
+        "sha256": "c86fa595e6ae92a47b392472c843ecec20cd2cc8e78f2cb408465a9fff24583d"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/pi3x/SYN_TOMATO_0201.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/pi3x/SYN_TOMATO_0201.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 25.170815959701805,
+        "accuracy_mm": 46.762065480917094,
+        "completeness_mm": 3.5795664384865193,
+        "f_score_5mm": 0.19386509526957732
+      },
+      "stem": {
+        "chamfer_mm": 34.75511023870845,
+        "accuracy_mm": 66.67393254699633,
+        "completeness_mm": 2.8362879304205646,
+        "f_score_5mm": 0.23020104151979584
+      },
+      "depth": {
+        "abs_rel": 0.08519436826605654
+      },
+      "model": "pi3x",
+      "plant_id": "SYN_TOMATO_0202",
+      "source": {
+        "artifact": "pi3x/SYN_TOMATO_0202.json",
+        "sha256": "e7ff74974a564a73639f3553fd149df7fd44525c328a2cb164fc0655d8cbc719"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/pi3x/SYN_TOMATO_0202.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/pi3x/SYN_TOMATO_0202.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 24.063561547908282,
+        "accuracy_mm": 44.746216824829474,
+        "completeness_mm": 3.3809062709870883,
+        "f_score_5mm": 0.227881075822652
+      },
+      "stem": {
+        "chamfer_mm": 34.6353182754829,
+        "accuracy_mm": 66.04767944176005,
+        "completeness_mm": 3.2229571092057463,
+        "f_score_5mm": 0.20364022299558687
+      },
+      "depth": {
+        "abs_rel": 0.0855950175331834
+      },
+      "model": "pi3x",
+      "plant_id": "SYN_TOMATO_0203",
+      "source": {
+        "artifact": "pi3x/SYN_TOMATO_0203.json",
+        "sha256": "d36be17908e1334f548d323218dfa814df4f5ca04ad43329d7ed07525c3b51af"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/pi3x/SYN_TOMATO_0203.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/pi3x/SYN_TOMATO_0203.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 23.371393849559126,
+        "accuracy_mm": 43.296217186969265,
+        "completeness_mm": 3.446570512148986,
+        "f_score_5mm": 0.23323770523674414
+      },
+      "stem": {
+        "chamfer_mm": 34.49422671088847,
+        "accuracy_mm": 66.2879137864467,
+        "completeness_mm": 2.700539635330244,
+        "f_score_5mm": 0.2951166749829472
+      },
+      "depth": {
+        "abs_rel": 0.07903363851711681
+      },
+      "model": "pi3x",
+      "plant_id": "SYN_TOMATO_0204",
+      "source": {
+        "artifact": "pi3x/SYN_TOMATO_0204.json",
+        "sha256": "2f55e2c1dd4ee304c32b9ed83c3e19fd169f4c3649deef97adef43b883c191a1"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/pi3x/SYN_TOMATO_0204.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/pi3x/SYN_TOMATO_0204.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 26.846967733845386,
+        "accuracy_mm": 50.44508667753661,
+        "completeness_mm": 3.2488487901541623,
+        "f_score_5mm": 0.24337732446487173
+      },
+      "stem": {
+        "chamfer_mm": 38.30928654926009,
+        "accuracy_mm": 74.11783348082452,
+        "completeness_mm": 2.500739617695662,
+        "f_score_5mm": 0.2963658708273465
+      },
+      "depth": {
+        "abs_rel": 0.08571654430083266
+      },
+      "model": "pi3x",
+      "plant_id": "SYN_TOMATO_0205",
+      "source": {
+        "artifact": "pi3x/SYN_TOMATO_0205.json",
+        "sha256": "ed16f434a25bc0f8696cd4e47a31bb34bc6d3cc7d797ec623f93115675a075c2"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/pi3x/SYN_TOMATO_0205.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/pi3x/SYN_TOMATO_0205.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 22.237465380286668,
+        "accuracy_mm": 41.31093661343424,
+        "completeness_mm": 3.163994147139106,
+        "f_score_5mm": 0.21799598770512937
+      },
+      "stem": {
+        "chamfer_mm": 33.950099618321694,
+        "accuracy_mm": 65.07734438293444,
+        "completeness_mm": 2.822854853708955,
+        "f_score_5mm": 0.24582123719433394
+      },
+      "depth": {
+        "abs_rel": 0.08504974480507947
+      },
+      "model": "pi3x",
+      "plant_id": "SYN_TOMATO_0206",
+      "source": {
+        "artifact": "pi3x/SYN_TOMATO_0206.json",
+        "sha256": "5151024e03c18d898ec573656af919695bed432c5555da81e6d02d3b7d01b9a8"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/pi3x/SYN_TOMATO_0206.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/pi3x/SYN_TOMATO_0206.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 23.51632226584509,
+        "accuracy_mm": 43.22166667661608,
+        "completeness_mm": 3.8109778550741007,
+        "f_score_5mm": 0.20321438040015463
+      },
+      "stem": {
+        "chamfer_mm": 31.685152821883097,
+        "accuracy_mm": 60.373212500811256,
+        "completeness_mm": 2.997093142954933,
+        "f_score_5mm": 0.22332929741924828
+      },
+      "depth": {
+        "abs_rel": 0.0877471066625157
+      },
+      "model": "pi3x",
+      "plant_id": "SYN_TOMATO_0207",
+      "source": {
+        "artifact": "pi3x/SYN_TOMATO_0207.json",
+        "sha256": "c99f822dc873c60518881a416f4362cffc6b028b85f11cec8583352b5e2cd448"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/pi3x/SYN_TOMATO_0207.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/pi3x/SYN_TOMATO_0207.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 22.594587663436613,
+        "accuracy_mm": 41.89902546273087,
+        "completeness_mm": 3.290149864142364,
+        "f_score_5mm": 0.21051326873977058
+      },
+      "stem": {
+        "chamfer_mm": 33.773833194541574,
+        "accuracy_mm": 63.795244652393194,
+        "completeness_mm": 3.752421736689946,
+        "f_score_5mm": 0.15805882181112307
+      },
+      "depth": {
+        "abs_rel": 0.08371421316000875
+      },
+      "model": "pi3x",
+      "plant_id": "SYN_TOMATO_0208",
+      "source": {
+        "artifact": "pi3x/SYN_TOMATO_0208.json",
+        "sha256": "91b4dc97d57f497bf4e5c7db49b58a0bb1fddd2bc4c79e3f554f1095663c97a1"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/pi3x/SYN_TOMATO_0208.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/pi3x/SYN_TOMATO_0208.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 22.328386776285043,
+        "accuracy_mm": 40.894779001996035,
+        "completeness_mm": 3.76199455057405,
+        "f_score_5mm": 0.19352336334916165
+      },
+      "stem": {
+        "chamfer_mm": 33.58241135802722,
+        "accuracy_mm": 63.21000897850694,
+        "completeness_mm": 3.9548137375475134,
+        "f_score_5mm": 0.13857280608143954
+      },
+      "depth": {
+        "abs_rel": 0.08550649018474711
+      },
+      "model": "pi3x",
+      "plant_id": "SYN_TOMATO_0209",
+      "source": {
+        "artifact": "pi3x/SYN_TOMATO_0209.json",
+        "sha256": "0ed9d068ea428af8398c1a78fe6c6fd1baf3d50a28a3c7133598f7b2982bf2df"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/pi3x/SYN_TOMATO_0209.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/pi3x/SYN_TOMATO_0209.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 22.76613446225311,
+        "accuracy_mm": 41.871802121334994,
+        "completeness_mm": 3.6604668031712273,
+        "f_score_5mm": 0.20492836113703883
+      },
+      "stem": {
+        "chamfer_mm": 33.643148154590754,
+        "accuracy_mm": 64.08538557432851,
+        "completeness_mm": 3.2009107348529957,
+        "f_score_5mm": 0.21079138847059575
+      },
+      "depth": {
+        "abs_rel": 0.08684625453236923
+      },
+      "model": "pi3x",
+      "plant_id": "SYN_TOMATO_0210",
+      "source": {
+        "artifact": "pi3x/SYN_TOMATO_0210.json",
+        "sha256": "4916dc8c920a432b65a98a79d333471b101decbbbaec9a03a31a366c5b2ba43e"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/pi3x/SYN_TOMATO_0210.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/pi3x/SYN_TOMATO_0210.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 23.478438302586245,
+        "accuracy_mm": 43.23458996491954,
+        "completeness_mm": 3.7222866402529498,
+        "f_score_5mm": 0.20644683127819566
+      },
+      "stem": {
+        "chamfer_mm": 33.46141408519469,
+        "accuracy_mm": 63.5682558888729,
+        "completeness_mm": 3.3545722815164765,
+        "f_score_5mm": 0.23655783689308837
+      },
+      "depth": {
+        "abs_rel": 0.08633926619932229
+      },
+      "model": "pi3x",
+      "plant_id": "SYN_TOMATO_0211",
+      "source": {
+        "artifact": "pi3x/SYN_TOMATO_0211.json",
+        "sha256": "63e8dcaf5cdd5a2a0f2b70335721e21d649da79a87187a2a1f70e4930022ccfc"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/pi3x/SYN_TOMATO_0211.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/pi3x/SYN_TOMATO_0211.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 24.055377348864372,
+        "accuracy_mm": 45.17886142508954,
+        "completeness_mm": 2.931893272639203,
+        "f_score_5mm": 0.2546416546742149
+      },
+      "stem": {
+        "chamfer_mm": 36.367099782570236,
+        "accuracy_mm": 70.50815824001388,
+        "completeness_mm": 2.2260413251265905,
+        "f_score_5mm": 0.2853419362288518
+      },
+      "depth": {
+        "abs_rel": 0.08100969756465036
+      },
+      "model": "pi3x",
+      "plant_id": "SYN_TOMATO_0212",
+      "source": {
+        "artifact": "pi3x/SYN_TOMATO_0212.json",
+        "sha256": "70a74ac2c64826042365c41760c2772a4fd73454bd395a238ed0cc1bc6cf0983"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/pi3x/SYN_TOMATO_0212.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/pi3x/SYN_TOMATO_0212.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 27.70844319504392,
+        "accuracy_mm": 52.12429601649977,
+        "completeness_mm": 3.292590373588076,
+        "f_score_5mm": 0.22241900136449175
+      },
+      "stem": {
+        "chamfer_mm": 38.18560425038916,
+        "accuracy_mm": 74.3346489139518,
+        "completeness_mm": 2.0365595868265203,
+        "f_score_5mm": 0.3219281458306887
+      },
+      "depth": {
+        "abs_rel": 0.08588360592797774
+      },
+      "model": "pi3x",
+      "plant_id": "SYN_TOMATO_0213",
+      "source": {
+        "artifact": "pi3x/SYN_TOMATO_0213.json",
+        "sha256": "df8a4b7444fab34bfae10ef0ba747b24dacf3e67de1e3521b4190fcbf6d8377f"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/pi3x/SYN_TOMATO_0213.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/pi3x/SYN_TOMATO_0213.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 25.02515567995882,
+        "accuracy_mm": 46.51344917005878,
+        "completeness_mm": 3.536862189858865,
+        "f_score_5mm": 0.21054355126347815
+      },
+      "stem": {
+        "chamfer_mm": 35.769656879186186,
+        "accuracy_mm": 68.69226137820222,
+        "completeness_mm": 2.847052380170148,
+        "f_score_5mm": 0.21898705666138749
+      },
+      "depth": {
+        "abs_rel": 0.0818283234621624
+      },
+      "model": "pi3x",
+      "plant_id": "SYN_TOMATO_0214",
+      "source": {
+        "artifact": "pi3x/SYN_TOMATO_0214.json",
+        "sha256": "40c769d3cf1f9a9cd7553e3adeffaf62fe73f9d6c68ea64c23dbb93edb28f193"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/pi3x/SYN_TOMATO_0214.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/pi3x/SYN_TOMATO_0214.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 23.894332815616384,
+        "accuracy_mm": 44.57786990269501,
+        "completeness_mm": 3.210795728537757,
+        "f_score_5mm": 0.23594370705431342
+      },
+      "stem": {
+        "chamfer_mm": 33.896636799193615,
+        "accuracy_mm": 65.36787119784067,
+        "completeness_mm": 2.425402400546562,
+        "f_score_5mm": 0.31325606872424927
+      },
+      "depth": {
+        "abs_rel": 0.08536393421734868
+      },
+      "model": "pi3x",
+      "plant_id": "SYN_TOMATO_0215",
+      "source": {
+        "artifact": "pi3x/SYN_TOMATO_0215.json",
+        "sha256": "61503ec4d3b3ecc8deee82f86f0b30fe5514266cae8c00f555cfd8c1a58470cc"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/pi3x/SYN_TOMATO_0215.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/pi3x/SYN_TOMATO_0215.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 27.371822919419184,
+        "accuracy_mm": 51.755401398096716,
+        "completeness_mm": 2.9882444407416555,
+        "f_score_5mm": 0.2748667055233471
+      },
+      "stem": {
+        "chamfer_mm": 38.186158608642195,
+        "accuracy_mm": 74.48024818496712,
+        "completeness_mm": 1.8920690323172762,
+        "f_score_5mm": 0.3776718541803568
+      },
+      "depth": {
+        "abs_rel": 0.08369467096218638
+      },
+      "model": "pi3x",
+      "plant_id": "SYN_TOMATO_0216",
+      "source": {
+        "artifact": "pi3x/SYN_TOMATO_0216.json",
+        "sha256": "29ceb7c816878cb562bb9fda0e4842428bae3b44ef0a0f976997f329ad620bd1"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/pi3x/SYN_TOMATO_0216.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/pi3x/SYN_TOMATO_0216.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 23.200976235860505,
+        "accuracy_mm": 42.57136968738119,
+        "completeness_mm": 3.8305827843398186,
+        "f_score_5mm": 0.185138000250846
+      },
+      "stem": {
+        "chamfer_mm": 34.95130002826226,
+        "accuracy_mm": 66.30557802271073,
+        "completeness_mm": 3.5970220338137726,
+        "f_score_5mm": 0.1923366269496739
+      },
+      "depth": {
+        "abs_rel": 0.08444384365566719
+      },
+      "model": "pi3x",
+      "plant_id": "SYN_TOMATO_0217",
+      "source": {
+        "artifact": "pi3x/SYN_TOMATO_0217.json",
+        "sha256": "3d3057c3fc635e0ca2e1088e2996dd7c482782464643512742f8c5e60ade9b48"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/pi3x/SYN_TOMATO_0217.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/pi3x/SYN_TOMATO_0217.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 24.51273692029103,
+        "accuracy_mm": 45.136708641096945,
+        "completeness_mm": 3.888765199485121,
+        "f_score_5mm": 0.2020157213229433
+      },
+      "stem": {
+        "chamfer_mm": 34.57943836770852,
+        "accuracy_mm": 66.34014148837878,
+        "completeness_mm": 2.818735247038261,
+        "f_score_5mm": 0.24840258687602032
+      },
+      "depth": {
+        "abs_rel": 0.085842471712387
+      },
+      "model": "pi3x",
+      "plant_id": "SYN_TOMATO_0218",
+      "source": {
+        "artifact": "pi3x/SYN_TOMATO_0218.json",
+        "sha256": "ae238e6f1c219044505e0232a1214873f8c72b82d1adaeb8fe5dd2e9f80fb024"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/pi3x/SYN_TOMATO_0218.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/pi3x/SYN_TOMATO_0218.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 23.890992928530153,
+        "accuracy_mm": 44.36152819421447,
+        "completeness_mm": 3.420457662845826,
+        "f_score_5mm": 0.22086331393451267
+      },
+      "stem": {
+        "chamfer_mm": 36.09638227810505,
+        "accuracy_mm": 68.99792790316205,
+        "completeness_mm": 3.194836653048049,
+        "f_score_5mm": 0.20342657919450297
+      },
+      "depth": {
+        "abs_rel": 0.08531702878969964
+      },
+      "model": "pi3x",
+      "plant_id": "SYN_TOMATO_0219",
+      "source": {
+        "artifact": "pi3x/SYN_TOMATO_0219.json",
+        "sha256": "a5f85bbbf95dcd55d3c1513c3062ca4506fc8313a71a30c2473bef84a22e5b9c"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/pi3x/SYN_TOMATO_0219.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/pi3x/SYN_TOMATO_0219.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 24.952476925060015,
+        "accuracy_mm": 46.20865877444374,
+        "completeness_mm": 3.6962950756762956,
+        "f_score_5mm": 0.19994312064717362
+      },
+      "stem": {
+        "chamfer_mm": 34.44188283045658,
+        "accuracy_mm": 66.1436243153433,
+        "completeness_mm": 2.7401413455698513,
+        "f_score_5mm": 0.23825029837387646
+      },
+      "depth": {
+        "abs_rel": 0.0875305566827929
+      },
+      "model": "pi3x",
+      "plant_id": "SYN_TOMATO_0220",
+      "source": {
+        "artifact": "pi3x/SYN_TOMATO_0220.json",
+        "sha256": "df0f376fa83140ad67595ac1b67b9d540c2d629852cf8bc517b04745daa3742f"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/pi3x/SYN_TOMATO_0220.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/pi3x/SYN_TOMATO_0220.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 27.20306260547111,
+        "accuracy_mm": 51.077325370289216,
+        "completeness_mm": 3.3287998406530024,
+        "f_score_5mm": 0.2263759549435969
+      },
+      "stem": {
+        "chamfer_mm": 35.020327355303095,
+        "accuracy_mm": 67.83458401104687,
+        "completeness_mm": 2.206070699559312,
+        "f_score_5mm": 0.328474517583202
+      },
+      "depth": {
+        "abs_rel": 0.08598972066352234
+      },
+      "model": "pi3x",
+      "plant_id": "SYN_TOMATO_0221",
+      "source": {
+        "artifact": "pi3x/SYN_TOMATO_0221.json",
+        "sha256": "2d454b569451b4eea0f0fac0d1b7729179a006633f1d59bd34b6ee3eb96e812b"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/pi3x/SYN_TOMATO_0221.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/pi3x/SYN_TOMATO_0221.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 23.410037634984235,
+        "accuracy_mm": 43.49012640260996,
+        "completeness_mm": 3.329948867358504,
+        "f_score_5mm": 0.22284649093206155
+      },
+      "stem": {
+        "chamfer_mm": 35.714968148424504,
+        "accuracy_mm": 67.84114012387899,
+        "completeness_mm": 3.5887961729700226,
+        "f_score_5mm": 0.1663834877342182
+      },
+      "depth": {
+        "abs_rel": 0.0828733231466903
+      },
+      "model": "pi3x",
+      "plant_id": "SYN_TOMATO_0222",
+      "source": {
+        "artifact": "pi3x/SYN_TOMATO_0222.json",
+        "sha256": "e91aaba539bcef998cfeca4dedf8993e187961681c4391a645e454b73dd629d9"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/pi3x/SYN_TOMATO_0222.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/pi3x/SYN_TOMATO_0222.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 24.30767144816029,
+        "accuracy_mm": 45.33043327445665,
+        "completeness_mm": 3.284909621863927,
+        "f_score_5mm": 0.17411928030553186
+      },
+      "stem": {
+        "chamfer_mm": 40.19761648600542,
+        "accuracy_mm": 76.58015124218815,
+        "completeness_mm": 3.8150817298226807,
+        "f_score_5mm": 0.16650804762468505
+      },
+      "depth": {
+        "abs_rel": 0.083983317075726
+      },
+      "model": "vggt",
+      "plant_id": "SYN_TOMATO_0201",
+      "source": {
+        "artifact": "vggt/SYN_TOMATO_0201.json",
+        "sha256": "eeb59bd4c44d7d7d979a53293cc54f66fbc466cdce20c28c43f1b7f76eda9576"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/vggt/SYN_TOMATO_0201.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/vggt/SYN_TOMATO_0201.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 31.526202683439475,
+        "accuracy_mm": 59.238522516619554,
+        "completeness_mm": 3.813882850259391,
+        "f_score_5mm": 0.15329301404983486
+      },
+      "stem": {
+        "chamfer_mm": 37.6935038404019,
+        "accuracy_mm": 71.79334048525686,
+        "completeness_mm": 3.593667195546943,
+        "f_score_5mm": 0.16477207444047934
+      },
+      "depth": {
+        "abs_rel": 0.09308221236609084
+      },
+      "model": "vggt",
+      "plant_id": "SYN_TOMATO_0202",
+      "source": {
+        "artifact": "vggt/SYN_TOMATO_0202.json",
+        "sha256": "3e0c8f32dea3fc534ff3c14d94ff66a23310fbca239965362c640405cd205121"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/vggt/SYN_TOMATO_0202.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/vggt/SYN_TOMATO_0202.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 23.598074174830884,
+        "accuracy_mm": 44.18708904632372,
+        "completeness_mm": 3.00905930333805,
+        "f_score_5mm": 0.2176431978062157
+      },
+      "stem": {
+        "chamfer_mm": 37.97319950216801,
+        "accuracy_mm": 72.62250545546237,
+        "completeness_mm": 3.3238935488736367,
+        "f_score_5mm": 0.1630968524302564
+      },
+      "depth": {
+        "abs_rel": 0.08204292239928589
+      },
+      "model": "vggt",
+      "plant_id": "SYN_TOMATO_0203",
+      "source": {
+        "artifact": "vggt/SYN_TOMATO_0203.json",
+        "sha256": "09a835fc5ab2b06bda72fab216f90ecead11834c97d2f163c4240a6db33104da"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/vggt/SYN_TOMATO_0203.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/vggt/SYN_TOMATO_0203.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 24.857202834701162,
+        "accuracy_mm": 46.66613699073427,
+        "completeness_mm": 3.048268678668052,
+        "f_score_5mm": 0.20812942755393662
+      },
+      "stem": {
+        "chamfer_mm": 38.57379036983455,
+        "accuracy_mm": 73.50520590728735,
+        "completeness_mm": 3.6423748323817575,
+        "f_score_5mm": 0.19360722490549992
+      },
+      "depth": {
+        "abs_rel": 0.08045187857678442
+      },
+      "model": "vggt",
+      "plant_id": "SYN_TOMATO_0204",
+      "source": {
+        "artifact": "vggt/SYN_TOMATO_0204.json",
+        "sha256": "feb527b945ab00dafe5671f37b598eff48be15e6b7e5dffae888fb085ae2ba95"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/vggt/SYN_TOMATO_0204.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/vggt/SYN_TOMATO_0204.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 28.255100640674538,
+        "accuracy_mm": 52.6928371152187,
+        "completeness_mm": 3.817364166130375,
+        "f_score_5mm": 0.16615998399903448
+      },
+      "stem": {
+        "chamfer_mm": 41.399161191750004,
+        "accuracy_mm": 78.96666059862737,
+        "completeness_mm": 3.831661784872627,
+        "f_score_5mm": 0.1469281897281683
+      },
+      "depth": {
+        "abs_rel": 0.0866708379867804
+      },
+      "model": "vggt",
+      "plant_id": "SYN_TOMATO_0205",
+      "source": {
+        "artifact": "vggt/SYN_TOMATO_0205.json",
+        "sha256": "0baa6b748e7a7cb2ae473a523e6031aeee4f4d3e284523bfccf746af16caca01"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/vggt/SYN_TOMATO_0205.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/vggt/SYN_TOMATO_0205.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 22.573717750718743,
+        "accuracy_mm": 42.563808241515225,
+        "completeness_mm": 2.5836272599222614,
+        "f_score_5mm": 0.22078922421782335
+      },
+      "stem": {
+        "chamfer_mm": 37.02642360255572,
+        "accuracy_mm": 71.02000207855366,
+        "completeness_mm": 3.0328451265577683,
+        "f_score_5mm": 0.20050296797877726
+      },
+      "depth": {
+        "abs_rel": 0.08347371066787455
+      },
+      "model": "vggt",
+      "plant_id": "SYN_TOMATO_0206",
+      "source": {
+        "artifact": "vggt/SYN_TOMATO_0206.json",
+        "sha256": "69b77b61f7ee04a393384df6cccb1160e43d72a0443b4afd75151e452d57166a"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/vggt/SYN_TOMATO_0206.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/vggt/SYN_TOMATO_0206.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 23.927832393870325,
+        "accuracy_mm": 44.146753748950495,
+        "completeness_mm": 3.7089110387901556,
+        "f_score_5mm": 0.170371286550233
+      },
+      "stem": {
+        "chamfer_mm": 34.106520403468146,
+        "accuracy_mm": 64.38268079240271,
+        "completeness_mm": 3.83036001453359,
+        "f_score_5mm": 0.1668934359176407
+      },
+      "depth": {
+        "abs_rel": 0.08421088100349862
+      },
+      "model": "vggt",
+      "plant_id": "SYN_TOMATO_0207",
+      "source": {
+        "artifact": "vggt/SYN_TOMATO_0207.json",
+        "sha256": "403851bb0df470cce1cfca9fd821c7a0a649794f8d8c51b3246db71e471bfc59"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/vggt/SYN_TOMATO_0207.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/vggt/SYN_TOMATO_0207.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 22.47985622028685,
+        "accuracy_mm": 41.943313034666836,
+        "completeness_mm": 3.01639940590687,
+        "f_score_5mm": 0.219770221878397
+      },
+      "stem": {
+        "chamfer_mm": 36.305285155469804,
+        "accuracy_mm": 69.52350296320758,
+        "completeness_mm": 3.0870673477320407,
+        "f_score_5mm": 0.17583748338662678
+      },
+      "depth": {
+        "abs_rel": 0.08099946578370688
+      },
+      "model": "vggt",
+      "plant_id": "SYN_TOMATO_0208",
+      "source": {
+        "artifact": "vggt/SYN_TOMATO_0208.json",
+        "sha256": "116e9148ef3eac9ea1974834b5155ed674ef3d1b9360453c1e4e43ea38bf14e1"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/vggt/SYN_TOMATO_0208.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/vggt/SYN_TOMATO_0208.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 21.8181988172017,
+        "accuracy_mm": 40.384303166140995,
+        "completeness_mm": 3.252094468262406,
+        "f_score_5mm": 0.20045824872878362
+      },
+      "stem": {
+        "chamfer_mm": 35.61360868653416,
+        "accuracy_mm": 67.35972991122557,
+        "completeness_mm": 3.867487461842732,
+        "f_score_5mm": 0.1383465378374617
+      },
+      "depth": {
+        "abs_rel": 0.08299291710610693
+      },
+      "model": "vggt",
+      "plant_id": "SYN_TOMATO_0209",
+      "source": {
+        "artifact": "vggt/SYN_TOMATO_0209.json",
+        "sha256": "a899906a029097aa71f114bba3f6eb15990fbe6cfa408847b61e82c83bc2d8cd"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/vggt/SYN_TOMATO_0209.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/vggt/SYN_TOMATO_0209.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 23.12136982885489,
+        "accuracy_mm": 43.45472387810549,
+        "completeness_mm": 2.7880157796042795,
+        "f_score_5mm": 0.2101988504627801
+      },
+      "stem": {
+        "chamfer_mm": 37.202396363890834,
+        "accuracy_mm": 70.72422926714916,
+        "completeness_mm": 3.68056346063252,
+        "f_score_5mm": 0.15401335801736812
+      },
+      "depth": {
+        "abs_rel": 0.08478832827741803
+      },
+      "model": "vggt",
+      "plant_id": "SYN_TOMATO_0210",
+      "source": {
+        "artifact": "vggt/SYN_TOMATO_0210.json",
+        "sha256": "9b5453834cdb910879751eed1f132d1d9a1c10cb292e5faa4aaee46ebeaba603"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/vggt/SYN_TOMATO_0210.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/vggt/SYN_TOMATO_0210.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 23.85833187628014,
+        "accuracy_mm": 44.38231997451894,
+        "completeness_mm": 3.3343437780413385,
+        "f_score_5mm": 0.18739845971969027
+      },
+      "stem": {
+        "chamfer_mm": 36.28281344366079,
+        "accuracy_mm": 68.68419853792463,
+        "completeness_mm": 3.8814283493969595,
+        "f_score_5mm": 0.1585618992673378
+      },
+      "depth": {
+        "abs_rel": 0.08293303775906233
+      },
+      "model": "vggt",
+      "plant_id": "SYN_TOMATO_0211",
+      "source": {
+        "artifact": "vggt/SYN_TOMATO_0211.json",
+        "sha256": "3d42c189a0d213ecaadc540807f0a7b7572eacadd52cdb33b8247248310e9bad"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/vggt/SYN_TOMATO_0211.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/vggt/SYN_TOMATO_0211.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 26.783157542161817,
+        "accuracy_mm": 49.326891898553804,
+        "completeness_mm": 4.2394231857698275,
+        "f_score_5mm": 0.1855257723153394
+      },
+      "stem": {
+        "chamfer_mm": 41.03742391637781,
+        "accuracy_mm": 77.19106715557095,
+        "completeness_mm": 4.8837806771846735,
+        "f_score_5mm": 0.19937870554898576
+      },
+      "depth": {
+        "abs_rel": 0.08268708951475758
+      },
+      "model": "vggt",
+      "plant_id": "SYN_TOMATO_0212",
+      "source": {
+        "artifact": "vggt/SYN_TOMATO_0212.json",
+        "sha256": "52f94c1c0f3b5f5dbb344467fe01189fd903221215c22363a2e8b151c627f70d"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/vggt/SYN_TOMATO_0212.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/vggt/SYN_TOMATO_0212.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 30.77020432755742,
+        "accuracy_mm": 57.71628554425624,
+        "completeness_mm": 3.8241231108585976,
+        "f_score_5mm": 0.1490216735360829
+      },
+      "stem": {
+        "chamfer_mm": 44.307586851666386,
+        "accuracy_mm": 83.77858499965971,
+        "completeness_mm": 4.836588703673058,
+        "f_score_5mm": 0.14764402951592717
+      },
+      "depth": {
+        "abs_rel": 0.08940217082410498
+      },
+      "model": "vggt",
+      "plant_id": "SYN_TOMATO_0213",
+      "source": {
+        "artifact": "vggt/SYN_TOMATO_0213.json",
+        "sha256": "c84e5b993f82d23be0726d7b50e71f6b2fa3832c5ce8cd1ad5b0f900235d504b"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/vggt/SYN_TOMATO_0213.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/vggt/SYN_TOMATO_0213.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 25.113876603068253,
+        "accuracy_mm": 46.195868139504206,
+        "completeness_mm": 4.031885066632298,
+        "f_score_5mm": 0.1964540723422937
+      },
+      "stem": {
+        "chamfer_mm": 38.98614808320048,
+        "accuracy_mm": 73.48039554390635,
+        "completeness_mm": 4.491900622494608,
+        "f_score_5mm": 0.17599269932565248
+      },
+      "depth": {
+        "abs_rel": 0.07829161573469816
+      },
+      "model": "vggt",
+      "plant_id": "SYN_TOMATO_0214",
+      "source": {
+        "artifact": "vggt/SYN_TOMATO_0214.json",
+        "sha256": "80c8338b788a199765ca083849562c710fbc3375f04edade55808974268941e2"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/vggt/SYN_TOMATO_0214.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/vggt/SYN_TOMATO_0214.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 25.199888701078393,
+        "accuracy_mm": 47.23945443717649,
+        "completeness_mm": 3.160322964980298,
+        "f_score_5mm": 0.18402109554432028
+      },
+      "stem": {
+        "chamfer_mm": 37.44322374192831,
+        "accuracy_mm": 71.3292082029942,
+        "completeness_mm": 3.5572392808624245,
+        "f_score_5mm": 0.1839949635944452
+      },
+      "depth": {
+        "abs_rel": 0.08317248631072979
+      },
+      "model": "vggt",
+      "plant_id": "SYN_TOMATO_0215",
+      "source": {
+        "artifact": "vggt/SYN_TOMATO_0215.json",
+        "sha256": "d6663268f5721c7ccf52b0b28512da76203c5d66f727fb16e6394f433ca620e2"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/vggt/SYN_TOMATO_0215.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/vggt/SYN_TOMATO_0215.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 29.726861774721044,
+        "accuracy_mm": 55.35607551211703,
+        "completeness_mm": 4.097648037325064,
+        "f_score_5mm": 0.17997947083907614
+      },
+      "stem": {
+        "chamfer_mm": 44.56067483154091,
+        "accuracy_mm": 83.8273890399028,
+        "completeness_mm": 5.293960623179023,
+        "f_score_5mm": 0.1630117041398766
+      },
+      "depth": {
+        "abs_rel": 0.08835272038185427
+      },
+      "model": "vggt",
+      "plant_id": "SYN_TOMATO_0216",
+      "source": {
+        "artifact": "vggt/SYN_TOMATO_0216.json",
+        "sha256": "f2cabdc91be4163d94818e487e37ff27746eb8171b0676857458211428d99050"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/vggt/SYN_TOMATO_0216.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/vggt/SYN_TOMATO_0216.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 23.671076951734552,
+        "accuracy_mm": 43.89639063684079,
+        "completeness_mm": 3.445763266628312,
+        "f_score_5mm": 0.1759001694878724
+      },
+      "stem": {
+        "chamfer_mm": 38.32385108672756,
+        "accuracy_mm": 72.87523265996963,
+        "completeness_mm": 3.772469513485478,
+        "f_score_5mm": 0.14378761857902522
+      },
+      "depth": {
+        "abs_rel": 0.08274095064671329
+      },
+      "model": "vggt",
+      "plant_id": "SYN_TOMATO_0217",
+      "source": {
+        "artifact": "vggt/SYN_TOMATO_0217.json",
+        "sha256": "97e3c0dd4ea3bbe28d7ad2dbe43ed4b99d439670e030592cf352cf30ba97f7cc"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/vggt/SYN_TOMATO_0217.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/vggt/SYN_TOMATO_0217.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 25.140138517886477,
+        "accuracy_mm": 46.75093585382937,
+        "completeness_mm": 3.5293411819435807,
+        "f_score_5mm": 0.19944711637285248
+      },
+      "stem": {
+        "chamfer_mm": 37.176561866634714,
+        "accuracy_mm": 70.7205808761746,
+        "completeness_mm": 3.6325428570948333,
+        "f_score_5mm": 0.2045695930923548
+      },
+      "depth": {
+        "abs_rel": 0.08438749554929295
+      },
+      "model": "vggt",
+      "plant_id": "SYN_TOMATO_0218",
+      "source": {
+        "artifact": "vggt/SYN_TOMATO_0218.json",
+        "sha256": "73f30c1c0cb80081c58fed600becfb7242b4f878378c08a371ccdce48732ea1e"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/vggt/SYN_TOMATO_0218.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/vggt/SYN_TOMATO_0218.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 25.94165542314,
+        "accuracy_mm": 48.3368216863044,
+        "completeness_mm": 3.546489159975601,
+        "f_score_5mm": 0.17768974218189043
+      },
+      "stem": {
+        "chamfer_mm": 39.85253190835807,
+        "accuracy_mm": 75.64925502677511,
+        "completeness_mm": 4.055808789941024,
+        "f_score_5mm": 0.14174158342649554
+      },
+      "depth": {
+        "abs_rel": 0.0868726218011792
+      },
+      "model": "vggt",
+      "plant_id": "SYN_TOMATO_0219",
+      "source": {
+        "artifact": "vggt/SYN_TOMATO_0219.json",
+        "sha256": "835431b5fed6c2a2e118268a906bc9e5aac11bf18eb62407e321cc1dd2ffbbcb"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/vggt/SYN_TOMATO_0219.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/vggt/SYN_TOMATO_0219.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 25.994450108312254,
+        "accuracy_mm": 48.471053354676364,
+        "completeness_mm": 3.5178468619481413,
+        "f_score_5mm": 0.18026846349183134
+      },
+      "stem": {
+        "chamfer_mm": 36.65282786364228,
+        "accuracy_mm": 69.18297400221753,
+        "completeness_mm": 4.122681725067016,
+        "f_score_5mm": 0.1829285567182856
+      },
+      "depth": {
+        "abs_rel": 0.08625134336671328
+      },
+      "model": "vggt",
+      "plant_id": "SYN_TOMATO_0220",
+      "source": {
+        "artifact": "vggt/SYN_TOMATO_0220.json",
+        "sha256": "db4ec1a4d12dcb2adbafd2ab2dd435385f7f98cda1420596b1eaa70a0cc0d99c"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/vggt/SYN_TOMATO_0220.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/vggt/SYN_TOMATO_0220.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 29.88006823290747,
+        "accuracy_mm": 56.268963462602514,
+        "completeness_mm": 3.4911730032124266,
+        "f_score_5mm": 0.1680818306228148
+      },
+      "stem": {
+        "chamfer_mm": 38.64613455513336,
+        "accuracy_mm": 73.35739298540581,
+        "completeness_mm": 3.9348761248609057,
+        "f_score_5mm": 0.1853163377910513
+      },
+      "depth": {
+        "abs_rel": 0.08978481979495741
+      },
+      "model": "vggt",
+      "plant_id": "SYN_TOMATO_0221",
+      "source": {
+        "artifact": "vggt/SYN_TOMATO_0221.json",
+        "sha256": "da40bcd01731c45bd88d0139c84de0ea3b3f7c71c61a350e80572aebb46f4a2a"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/vggt/SYN_TOMATO_0221.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/vggt/SYN_TOMATO_0221.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 24.981118101693273,
+        "accuracy_mm": 46.42502907522679,
+        "completeness_mm": 3.5372071281597557,
+        "f_score_5mm": 0.180602533011607
+      },
+      "stem": {
+        "chamfer_mm": 39.93959259098379,
+        "accuracy_mm": 75.74430054336666,
+        "completeness_mm": 4.134884638600921,
+        "f_score_5mm": 0.15049014444078085
+      },
+      "depth": {
+        "abs_rel": 0.08306942049276894
+      },
+      "model": "vggt",
+      "plant_id": "SYN_TOMATO_0222",
+      "source": {
+        "artifact": "vggt/SYN_TOMATO_0222.json",
+        "sha256": "d137facfaa73301ba0affa2b6b3259a7981b7cfa19a5fd53aa6c52b334273b6d"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/vggt/SYN_TOMATO_0222.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/vggt/SYN_TOMATO_0222.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 66.98164838940706,
+        "accuracy_mm": 128.2913479811217,
+        "completeness_mm": 5.671948797692388,
+        "f_score_5mm": 0.07773575208296424
+      },
+      "stem": {
+        "chamfer_mm": 82.78311293209904,
+        "accuracy_mm": 158.5946007955412,
+        "completeness_mm": 6.971625068656907,
+        "f_score_5mm": 0.04774850858431499
+      },
+      "depth": {
+        "abs_rel": 0.1968993921453963
+      },
+      "model": "mast3r",
+      "plant_id": "SYN_TOMATO_0201",
+      "source": {
+        "artifact": "mast3r/SYN_TOMATO_0201.json",
+        "sha256": "a94ec591ed44c8e941c5647c539be9d88187439a4b7e0237855169011166db6e"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/mast3r/SYN_TOMATO_0201.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/mast3r/SYN_TOMATO_0201.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 112.61311931685806,
+        "accuracy_mm": 218.30306891652504,
+        "completeness_mm": 6.923169717191098,
+        "f_score_5mm": 0.04588882222008324
+      },
+      "stem": {
+        "chamfer_mm": 108.80326669954835,
+        "accuracy_mm": 208.6670984527988,
+        "completeness_mm": 8.93943494629791,
+        "f_score_5mm": 0.03249053121505198
+      },
+      "depth": {
+        "abs_rel": 0.28155723866296617
+      },
+      "model": "mast3r",
+      "plant_id": "SYN_TOMATO_0202",
+      "source": {
+        "artifact": "mast3r/SYN_TOMATO_0202.json",
+        "sha256": "063024beefc6dc1d8545d190b6dae0354e1d78a805cef559aa17bb3a791c392c"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/mast3r/SYN_TOMATO_0202.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/mast3r/SYN_TOMATO_0202.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 124.16862983380241,
+        "accuracy_mm": 240.9619985903029,
+        "completeness_mm": 7.375261077301936,
+        "f_score_5mm": 0.04505496589374484
+      },
+      "stem": {
+        "chamfer_mm": 139.86264381449826,
+        "accuracy_mm": 270.1991580357954,
+        "completeness_mm": 9.526129593201105,
+        "f_score_5mm": 0.027078813099616
+      },
+      "depth": {
+        "abs_rel": 0.3143227628587754
+      },
+      "model": "mast3r",
+      "plant_id": "SYN_TOMATO_0203",
+      "source": {
+        "artifact": "mast3r/SYN_TOMATO_0203.json",
+        "sha256": "17e429de2a9322de1b7f84c614d57f0c78f744ee9eedfba45105b08139cc8719"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/mast3r/SYN_TOMATO_0203.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/mast3r/SYN_TOMATO_0203.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 94.96562916837802,
+        "accuracy_mm": 183.97714489271232,
+        "completeness_mm": 5.954113444043695,
+        "f_score_5mm": 0.06518216063002462
+      },
+      "stem": {
+        "chamfer_mm": 90.77151207797156,
+        "accuracy_mm": 175.41411019732794,
+        "completeness_mm": 6.128913958615182,
+        "f_score_5mm": 0.06174534121347546
+      },
+      "depth": {
+        "abs_rel": 0.23358531887216127
+      },
+      "model": "mast3r",
+      "plant_id": "SYN_TOMATO_0204",
+      "source": {
+        "artifact": "mast3r/SYN_TOMATO_0204.json",
+        "sha256": "521d35bdf5dc8fdf7a2019d43b8eb59e217fd1d2172266dec5ad263d63dce5bd"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/mast3r/SYN_TOMATO_0204.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/mast3r/SYN_TOMATO_0204.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 130.79186097618035,
+        "accuracy_mm": 252.77816662949493,
+        "completeness_mm": 8.805555322865757,
+        "f_score_5mm": 0.03914652889698237
+      },
+      "stem": {
+        "chamfer_mm": 132.59982578432113,
+        "accuracy_mm": 249.0827131006567,
+        "completeness_mm": 16.11693846798557,
+        "f_score_5mm": 0.008566999297439502
+      },
+      "depth": {
+        "abs_rel": 0.3047025201189209
+      },
+      "model": "mast3r",
+      "plant_id": "SYN_TOMATO_0205",
+      "source": {
+        "artifact": "mast3r/SYN_TOMATO_0205.json",
+        "sha256": "b517cd699c643185b9209011bdc46e8f10bed0d8683580c96bea8e890c56b32b"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/mast3r/SYN_TOMATO_0205.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/mast3r/SYN_TOMATO_0205.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 106.29232406757382,
+        "accuracy_mm": 206.55128976694377,
+        "completeness_mm": 6.033358368203862,
+        "f_score_5mm": 0.05447324797508448
+      },
+      "stem": {
+        "chamfer_mm": 91.43028367373003,
+        "accuracy_mm": 175.70365220477984,
+        "completeness_mm": 7.156915142680224,
+        "f_score_5mm": 0.05604071943346773
+      },
+      "depth": {
+        "abs_rel": 0.26702707876319143
+      },
+      "model": "mast3r",
+      "plant_id": "SYN_TOMATO_0206",
+      "source": {
+        "artifact": "mast3r/SYN_TOMATO_0206.json",
+        "sha256": "d47c31135b39e67d9f5715f4c3a2f50b4e1fceb791089e8398a700837de653e5"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/mast3r/SYN_TOMATO_0206.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/mast3r/SYN_TOMATO_0206.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 62.62062900345959,
+        "accuracy_mm": 120.29124092254126,
+        "completeness_mm": 4.950017084377923,
+        "f_score_5mm": 0.0874976190119878
+      },
+      "stem": {
+        "chamfer_mm": 68.78504079326576,
+        "accuracy_mm": 131.58557028299927,
+        "completeness_mm": 5.984511303532244,
+        "f_score_5mm": 0.07643151781954703
+      },
+      "depth": {
+        "abs_rel": 0.18394854496762872
+      },
+      "model": "mast3r",
+      "plant_id": "SYN_TOMATO_0207",
+      "source": {
+        "artifact": "mast3r/SYN_TOMATO_0207.json",
+        "sha256": "5f810f69debca3423eac5871b11d838c3b504932fd894c162a5b8b7b6b7e6c08"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/mast3r/SYN_TOMATO_0207.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/mast3r/SYN_TOMATO_0207.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 92.49685319767492,
+        "accuracy_mm": 178.423984828725,
+        "completeness_mm": 6.56972156662485,
+        "f_score_5mm": 0.055060424737212225
+      },
+      "stem": {
+        "chamfer_mm": 93.02150149209322,
+        "accuracy_mm": 178.09832782322408,
+        "completeness_mm": 7.944675160962365,
+        "f_score_5mm": 0.03778409960568971
+      },
+      "depth": {
+        "abs_rel": 0.2461323934658433
+      },
+      "model": "mast3r",
+      "plant_id": "SYN_TOMATO_0208",
+      "source": {
+        "artifact": "mast3r/SYN_TOMATO_0208.json",
+        "sha256": "775d62c057f5921f4c0e912c1e42a4edc6dd793aff5d53b6273e57fe9071d05f"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/mast3r/SYN_TOMATO_0208.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/mast3r/SYN_TOMATO_0208.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 101.16423833344037,
+        "accuracy_mm": 197.63261299951958,
+        "completeness_mm": 4.6958636673611345,
+        "f_score_5mm": 0.08031847256688263
+      },
+      "stem": {
+        "chamfer_mm": 84.92150483156001,
+        "accuracy_mm": 163.8298097922011,
+        "completeness_mm": 6.013199870918914,
+        "f_score_5mm": 0.06540464778892653
+      },
+      "depth": {
+        "abs_rel": 0.25169196759436513
+      },
+      "model": "mast3r",
+      "plant_id": "SYN_TOMATO_0209",
+      "source": {
+        "artifact": "mast3r/SYN_TOMATO_0209.json",
+        "sha256": "3de17ee8aaa3db84d3a0ca426cf53bcf4ef8e5fbcd2b33af47ff988034666a14"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/mast3r/SYN_TOMATO_0209.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/mast3r/SYN_TOMATO_0209.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 87.82306041245577,
+        "accuracy_mm": 169.72034106320126,
+        "completeness_mm": 5.925779761710263,
+        "f_score_5mm": 0.06773440611520862
+      },
+      "stem": {
+        "chamfer_mm": 82.20925224965733,
+        "accuracy_mm": 156.5672077154276,
+        "completeness_mm": 7.851296783887039,
+        "f_score_5mm": 0.046166983888256255
+      },
+      "depth": {
+        "abs_rel": 0.2391931128644305
+      },
+      "model": "mast3r",
+      "plant_id": "SYN_TOMATO_0210",
+      "source": {
+        "artifact": "mast3r/SYN_TOMATO_0210.json",
+        "sha256": "618529eb27c33032f8f7c0b621a065310f7d81d932591b9269b656f5f6df5d52"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/mast3r/SYN_TOMATO_0210.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/mast3r/SYN_TOMATO_0210.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 55.16721130581981,
+        "accuracy_mm": 105.84485558403196,
+        "completeness_mm": 4.48956702760766,
+        "f_score_5mm": 0.09466127712809949
+      },
+      "stem": {
+        "chamfer_mm": 47.045514244683694,
+        "accuracy_mm": 89.35562072129636,
+        "completeness_mm": 4.735407768071018,
+        "f_score_5mm": 0.08742780279665507
+      },
+      "depth": {
+        "abs_rel": 0.16727476480587694
+      },
+      "model": "mast3r",
+      "plant_id": "SYN_TOMATO_0211",
+      "source": {
+        "artifact": "mast3r/SYN_TOMATO_0211.json",
+        "sha256": "adce21e65a2ebb5afc6d91e2252963ab506392d56c4f9c87ed092b7d69984d2b"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/mast3r/SYN_TOMATO_0211.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/mast3r/SYN_TOMATO_0211.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 63.37438440959224,
+        "accuracy_mm": 121.64677318394715,
+        "completeness_mm": 5.101995635237323,
+        "f_score_5mm": 0.08225492381688922
+      },
+      "stem": {
+        "chamfer_mm": 70.66125796857179,
+        "accuracy_mm": 135.38185192021567,
+        "completeness_mm": 5.940664016927899,
+        "f_score_5mm": 0.06113742027415071
+      },
+      "depth": {
+        "abs_rel": 0.1855627621344824
+      },
+      "model": "mast3r",
+      "plant_id": "SYN_TOMATO_0212",
+      "source": {
+        "artifact": "mast3r/SYN_TOMATO_0212.json",
+        "sha256": "bce35020d9cf9c8f94a9bbfff492c12ce9ef1923918f4f25a40efe98fb6937f7"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/mast3r/SYN_TOMATO_0212.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/mast3r/SYN_TOMATO_0212.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 111.06165482170691,
+        "accuracy_mm": 214.68058854959202,
+        "completeness_mm": 7.442721093821797,
+        "f_score_5mm": 0.04182030743954892
+      },
+      "stem": {
+        "chamfer_mm": 124.32448423977841,
+        "accuracy_mm": 239.72365241716952,
+        "completeness_mm": 8.925316062387294,
+        "f_score_5mm": 0.03262773464643644
+      },
+      "depth": {
+        "abs_rel": 0.2848091469727565
+      },
+      "model": "mast3r",
+      "plant_id": "SYN_TOMATO_0213",
+      "source": {
+        "artifact": "mast3r/SYN_TOMATO_0213.json",
+        "sha256": "565cd9ab59a296713d53aa57cde88932ba6518be6dd44d52f4dbb28ea32fc518"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/mast3r/SYN_TOMATO_0213.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/mast3r/SYN_TOMATO_0213.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 120.38782576783608,
+        "accuracy_mm": 231.8897797293655,
+        "completeness_mm": 8.885871806306639,
+        "f_score_5mm": 0.04537832471632775
+      },
+      "stem": {
+        "chamfer_mm": 129.60311814284577,
+        "accuracy_mm": 251.95771612272878,
+        "completeness_mm": 7.248520162962806,
+        "f_score_5mm": 0.059180019003670044
+      },
+      "depth": {
+        "abs_rel": 0.3002752646124191
+      },
+      "model": "mast3r",
+      "plant_id": "SYN_TOMATO_0214",
+      "source": {
+        "artifact": "mast3r/SYN_TOMATO_0214.json",
+        "sha256": "a153e6e6273b0963f638625a034c6d1d59d0e8ee890b7f5ce9007bff2157195f"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/mast3r/SYN_TOMATO_0214.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/mast3r/SYN_TOMATO_0214.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 140.74238345113727,
+        "accuracy_mm": 275.72888398714133,
+        "completeness_mm": 5.7558829151331725,
+        "f_score_5mm": 0.0641668826502007
+      },
+      "stem": {
+        "chamfer_mm": 136.9769939248146,
+        "accuracy_mm": 268.08684554452714,
+        "completeness_mm": 5.8671423051020835,
+        "f_score_5mm": 0.07730009670037497
+      },
+      "depth": {
+        "abs_rel": 0.32397267095655685
+      },
+      "model": "mast3r",
+      "plant_id": "SYN_TOMATO_0215",
+      "source": {
+        "artifact": "mast3r/SYN_TOMATO_0215.json",
+        "sha256": "3b82222d8f2f043d5e6f94dbae2e43e46db807211ebc8d4b4a6300de50ca3936"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/mast3r/SYN_TOMATO_0215.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/mast3r/SYN_TOMATO_0215.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 114.976563267994,
+        "accuracy_mm": 224.49520835943014,
+        "completeness_mm": 5.457918176557848,
+        "f_score_5mm": 0.08732793274051028
+      },
+      "stem": {
+        "chamfer_mm": 139.72971885776192,
+        "accuracy_mm": 271.54952431843293,
+        "completeness_mm": 7.909913397090881,
+        "f_score_5mm": 0.04288657162326158
+      },
+      "depth": {
+        "abs_rel": 0.28497727144203505
+      },
+      "model": "mast3r",
+      "plant_id": "SYN_TOMATO_0216",
+      "source": {
+        "artifact": "mast3r/SYN_TOMATO_0216.json",
+        "sha256": "f39928ef9dde75a5bd155e8159494d70a10a6e551cfa66799f8bcfa89faf0f0c"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/mast3r/SYN_TOMATO_0216.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/mast3r/SYN_TOMATO_0216.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 84.42094423523204,
+        "accuracy_mm": 162.34037817250797,
+        "completeness_mm": 6.501510297956127,
+        "f_score_5mm": 0.05930969058257142
+      },
+      "stem": {
+        "chamfer_mm": 97.09493863009314,
+        "accuracy_mm": 186.712489148155,
+        "completeness_mm": 7.477388112031289,
+        "f_score_5mm": 0.044817931627270935
+      },
+      "depth": {
+        "abs_rel": 0.23217485818761532
+      },
+      "model": "mast3r",
+      "plant_id": "SYN_TOMATO_0217",
+      "source": {
+        "artifact": "mast3r/SYN_TOMATO_0217.json",
+        "sha256": "8ae1ff935226ee6f4ec3a1623c0f218ec3056b775269471051cdc6fa2d287600"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/mast3r/SYN_TOMATO_0217.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/mast3r/SYN_TOMATO_0217.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 92.71115484229037,
+        "accuracy_mm": 177.93233975077374,
+        "completeness_mm": 7.489969933806986,
+        "f_score_5mm": 0.04773283347748882
+      },
+      "stem": {
+        "chamfer_mm": 96.96487518065572,
+        "accuracy_mm": 185.22400863302778,
+        "completeness_mm": 8.705741728283646,
+        "f_score_5mm": 0.043677991782628475
+      },
+      "depth": {
+        "abs_rel": 0.2583105323303168
+      },
+      "model": "mast3r",
+      "plant_id": "SYN_TOMATO_0218",
+      "source": {
+        "artifact": "mast3r/SYN_TOMATO_0218.json",
+        "sha256": "7a71c94fa8bda5000aee8b5d8b2492e0deac3abc21810af4ccddd595858d1353"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/mast3r/SYN_TOMATO_0218.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/mast3r/SYN_TOMATO_0218.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 98.81300339648914,
+        "accuracy_mm": 192.24636276454976,
+        "completeness_mm": 5.379644028428502,
+        "f_score_5mm": 0.06425664097808968
+      },
+      "stem": {
+        "chamfer_mm": 119.86108153105275,
+        "accuracy_mm": 232.35644868153793,
+        "completeness_mm": 7.365714380567566,
+        "f_score_5mm": 0.040784403150677835
+      },
+      "depth": {
+        "abs_rel": 0.2582012733144076
+      },
+      "model": "mast3r",
+      "plant_id": "SYN_TOMATO_0219",
+      "source": {
+        "artifact": "mast3r/SYN_TOMATO_0219.json",
+        "sha256": "3bb9097354d321db0378e9a9fecc71a62e907bbee228e4f388119f5c7c1eef12"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/mast3r/SYN_TOMATO_0219.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/mast3r/SYN_TOMATO_0219.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 134.1378691716842,
+        "accuracy_mm": 261.20977630028165,
+        "completeness_mm": 7.065962043086804,
+        "f_score_5mm": 0.04819763531134515
+      },
+      "stem": {
+        "chamfer_mm": 144.3080057787659,
+        "accuracy_mm": 281.44081184084826,
+        "completeness_mm": 7.175199716683589,
+        "f_score_5mm": 0.05267719692215098
+      },
+      "depth": {
+        "abs_rel": 0.3223242131625577
+      },
+      "model": "mast3r",
+      "plant_id": "SYN_TOMATO_0220",
+      "source": {
+        "artifact": "mast3r/SYN_TOMATO_0220.json",
+        "sha256": "6a0c9816251930b4534b7b87d43cb733ea64438fdf7a2f04f023a826b53bc1ac"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/mast3r/SYN_TOMATO_0220.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/mast3r/SYN_TOMATO_0220.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 112.22073251151187,
+        "accuracy_mm": 217.8226143018716,
+        "completeness_mm": 6.618850721152111,
+        "f_score_5mm": 0.04932727759692775
+      },
+      "stem": {
+        "chamfer_mm": 108.73629840798581,
+        "accuracy_mm": 211.59586281995695,
+        "completeness_mm": 5.87673399601465,
+        "f_score_5mm": 0.05984774429056605
+      },
+      "depth": {
+        "abs_rel": 0.28367686954998794
+      },
+      "model": "mast3r",
+      "plant_id": "SYN_TOMATO_0221",
+      "source": {
+        "artifact": "mast3r/SYN_TOMATO_0221.json",
+        "sha256": "57e4fc0b11de84accfdf9cb93d90eb0e3f70d087cca1b378ca6e080ccfdd75bc"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/mast3r/SYN_TOMATO_0221.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/mast3r/SYN_TOMATO_0221.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 138.4096082808112,
+        "accuracy_mm": 268.50595289489706,
+        "completeness_mm": 8.313263666725378,
+        "f_score_5mm": 0.03723821541143296
+      },
+      "stem": {
+        "chamfer_mm": 171.45626405939882,
+        "accuracy_mm": 333.85534334465945,
+        "completeness_mm": 9.057184774138198,
+        "f_score_5mm": 0.025392531634626313
+      },
+      "depth": {
+        "abs_rel": 0.34654008014998355
+      },
+      "model": "mast3r",
+      "plant_id": "SYN_TOMATO_0222",
+      "source": {
+        "artifact": "mast3r/SYN_TOMATO_0222.json",
+        "sha256": "caba47f02ebde164da40bd72d4eece6532dd32af5036c239d43d3641d5a76404"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/mast3r/SYN_TOMATO_0222.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/mast3r/SYN_TOMATO_0222.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 4.735165137752996,
+        "accuracy_mm": 8.204521583919364,
+        "completeness_mm": 1.265808691586628,
+        "f_score_5mm": 0.6315502153682527
+      },
+      "stem": {
+        "chamfer_mm": 5.010477262530119,
+        "accuracy_mm": 8.769951831654675,
+        "completeness_mm": 1.2510026934055631,
+        "f_score_5mm": 0.6530112487049426
+      },
+      "depth": {
+        "abs_rel": 0.019886385988400763
+      },
+      "model": "tomatovggt",
+      "plant_id": "SYN_TOMATO_0201",
+      "source": {
+        "artifact": "tomatovggt/SYN_TOMATO_0201.json",
+        "sha256": "7ca7ad0ff3dfd524e7ae15d32f0d504160ed337f95acf3fca9c421b32e85010c"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/tomatovggt/SYN_TOMATO_0201.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/tomatovggt/SYN_TOMATO_0201.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 4.8049109768088405,
+        "accuracy_mm": 8.284096756826603,
+        "completeness_mm": 1.325725196791078,
+        "f_score_5mm": 0.6172024159667028
+      },
+      "stem": {
+        "chamfer_mm": 5.380414221693039,
+        "accuracy_mm": 9.437012817098157,
+        "completeness_mm": 1.3238156262879204,
+        "f_score_5mm": 0.5883471324574886
+      },
+      "depth": {
+        "abs_rel": 0.01768143301803483
+      },
+      "model": "tomatovggt",
+      "plant_id": "SYN_TOMATO_0202",
+      "source": {
+        "artifact": "tomatovggt/SYN_TOMATO_0202.json",
+        "sha256": "42e3ec6448cb0795add0f3aeccf1e402bdeb69ad6c4993af822f5f58bf713942"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/tomatovggt/SYN_TOMATO_0202.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/tomatovggt/SYN_TOMATO_0202.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 4.279797981398313,
+        "accuracy_mm": 7.305577340910995,
+        "completeness_mm": 1.254018621885632,
+        "f_score_5mm": 0.6518801444939318
+      },
+      "stem": {
+        "chamfer_mm": 5.448087579692634,
+        "accuracy_mm": 9.625097359895582,
+        "completeness_mm": 1.2710777994896851,
+        "f_score_5mm": 0.5886371725596865
+      },
+      "depth": {
+        "abs_rel": 0.018056371661979934
+      },
+      "model": "tomatovggt",
+      "plant_id": "SYN_TOMATO_0203",
+      "source": {
+        "artifact": "tomatovggt/SYN_TOMATO_0203.json",
+        "sha256": "c323e70756110239466234371b571b2152dcd78726ff51cab2c3ceb9ca1185ac"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/tomatovggt/SYN_TOMATO_0203.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/tomatovggt/SYN_TOMATO_0203.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 4.396922031409062,
+        "accuracy_mm": 7.536359937050504,
+        "completeness_mm": 1.2574841257676213,
+        "f_score_5mm": 0.6397200072937989
+      },
+      "stem": {
+        "chamfer_mm": 4.574389586906845,
+        "accuracy_mm": 7.917318724431195,
+        "completeness_mm": 1.2314604493824952,
+        "f_score_5mm": 0.652906499536516
+      },
+      "depth": {
+        "abs_rel": 0.016573090652071763
+      },
+      "model": "tomatovggt",
+      "plant_id": "SYN_TOMATO_0204",
+      "source": {
+        "artifact": "tomatovggt/SYN_TOMATO_0204.json",
+        "sha256": "17141f03568312bbe688f2f62710f88595cd1ee787e1972135d94d337edf15f5"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/tomatovggt/SYN_TOMATO_0204.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/tomatovggt/SYN_TOMATO_0204.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 3.867409406623135,
+        "accuracy_mm": 6.540530549116985,
+        "completeness_mm": 1.194288264129285,
+        "f_score_5mm": 0.6876649195393552
+      },
+      "stem": {
+        "chamfer_mm": 4.190696280228502,
+        "accuracy_mm": 7.309811741600992,
+        "completeness_mm": 1.0715808188560116,
+        "f_score_5mm": 0.6737359209600859
+      },
+      "depth": {
+        "abs_rel": 0.01416102343857687
+      },
+      "model": "tomatovggt",
+      "plant_id": "SYN_TOMATO_0205",
+      "source": {
+        "artifact": "tomatovggt/SYN_TOMATO_0205.json",
+        "sha256": "61a97b2d6ec35a95975a26b9d69d68e2fd931285db455318d2dac80fed1427b9"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/tomatovggt/SYN_TOMATO_0205.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/tomatovggt/SYN_TOMATO_0205.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 4.34377421429241,
+        "accuracy_mm": 7.505069827612192,
+        "completeness_mm": 1.1824786009726285,
+        "f_score_5mm": 0.6548174137837729
+      },
+      "stem": {
+        "chamfer_mm": 5.203924629232981,
+        "accuracy_mm": 9.101481087321305,
+        "completeness_mm": 1.306368171144656,
+        "f_score_5mm": 0.628013096838992
+      },
+      "depth": {
+        "abs_rel": 0.017812884691439632
+      },
+      "model": "tomatovggt",
+      "plant_id": "SYN_TOMATO_0206",
+      "source": {
+        "artifact": "tomatovggt/SYN_TOMATO_0206.json",
+        "sha256": "e2dcb4a6d42629b9423991d3051687b2a487f4e4c0a341a071a9733f7ffbc863"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/tomatovggt/SYN_TOMATO_0206.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/tomatovggt/SYN_TOMATO_0206.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 4.599625179000355,
+        "accuracy_mm": 7.938157083309874,
+        "completeness_mm": 1.261093274690835,
+        "f_score_5mm": 0.6502904841306489
+      },
+      "stem": {
+        "chamfer_mm": 5.293928873018596,
+        "accuracy_mm": 9.25116516100111,
+        "completeness_mm": 1.336692585036082,
+        "f_score_5mm": 0.6185200736406029
+      },
+      "depth": {
+        "abs_rel": 0.020607781120738678
+      },
+      "model": "tomatovggt",
+      "plant_id": "SYN_TOMATO_0207",
+      "source": {
+        "artifact": "tomatovggt/SYN_TOMATO_0207.json",
+        "sha256": "b501b2ddd4ce6672f62d9b72431262a478af8960d73bd437dbebdaec55704f13"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/tomatovggt/SYN_TOMATO_0207.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/tomatovggt/SYN_TOMATO_0207.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 4.847518661857897,
+        "accuracy_mm": 8.296127681182359,
+        "completeness_mm": 1.3989096425334353,
+        "f_score_5mm": 0.5886070917368372
+      },
+      "stem": {
+        "chamfer_mm": 6.040604073365826,
+        "accuracy_mm": 10.610256858024046,
+        "completeness_mm": 1.4709512887076062,
+        "f_score_5mm": 0.5312648284507225
+      },
+      "depth": {
+        "abs_rel": 0.01999260637846489
+      },
+      "model": "tomatovggt",
+      "plant_id": "SYN_TOMATO_0208",
+      "source": {
+        "artifact": "tomatovggt/SYN_TOMATO_0208.json",
+        "sha256": "4a12fcf5829bfe73a830cb0db58b8dad0c9caaf922b9971ad2f609d3b1e36618"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/tomatovggt/SYN_TOMATO_0208.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/tomatovggt/SYN_TOMATO_0208.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 5.24655594545339,
+        "accuracy_mm": 9.136095123134035,
+        "completeness_mm": 1.3570167677727443,
+        "f_score_5mm": 0.5719643022318475
+      },
+      "stem": {
+        "chamfer_mm": 6.475313739121721,
+        "accuracy_mm": 11.363629005589715,
+        "completeness_mm": 1.5869984726537285,
+        "f_score_5mm": 0.48740646667317694
+      },
+      "depth": {
+        "abs_rel": 0.02309028831788037
+      },
+      "model": "tomatovggt",
+      "plant_id": "SYN_TOMATO_0209",
+      "source": {
+        "artifact": "tomatovggt/SYN_TOMATO_0209.json",
+        "sha256": "493aa2f8639bffbc53daf9f1b5425219957cf89d4eafd9cd96481721b10a6645"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/tomatovggt/SYN_TOMATO_0209.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/tomatovggt/SYN_TOMATO_0209.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 5.006801471587146,
+        "accuracy_mm": 8.606473629606318,
+        "completeness_mm": 1.4071293135679743,
+        "f_score_5mm": 0.6008700615908305
+      },
+      "stem": {
+        "chamfer_mm": 5.645972434258108,
+        "accuracy_mm": 10.027372872388801,
+        "completeness_mm": 1.264571996127414,
+        "f_score_5mm": 0.6027316097603407
+      },
+      "depth": {
+        "abs_rel": 0.021580530622773906
+      },
+      "model": "tomatovggt",
+      "plant_id": "SYN_TOMATO_0210",
+      "source": {
+        "artifact": "tomatovggt/SYN_TOMATO_0210.json",
+        "sha256": "e7825ff06ff16e6efa6b730192e1bf92aac70c474ebf3a5628330ba0a9009539"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/tomatovggt/SYN_TOMATO_0210.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/tomatovggt/SYN_TOMATO_0210.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 4.99163192535587,
+        "accuracy_mm": 8.615192737213746,
+        "completeness_mm": 1.3680711134979933,
+        "f_score_5mm": 0.5840654605917014
+      },
+      "stem": {
+        "chamfer_mm": 4.978687150405676,
+        "accuracy_mm": 8.595772449494028,
+        "completeness_mm": 1.3616018513173247,
+        "f_score_5mm": 0.637468188172133
+      },
+      "depth": {
+        "abs_rel": 0.019580769086016636
+      },
+      "model": "tomatovggt",
+      "plant_id": "SYN_TOMATO_0211",
+      "source": {
+        "artifact": "tomatovggt/SYN_TOMATO_0211.json",
+        "sha256": "dcfd3ee54b87ca8dfb38589b67fcfab6bf11880ab4f15429aad17f8bf5b1096e"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/tomatovggt/SYN_TOMATO_0211.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/tomatovggt/SYN_TOMATO_0211.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 4.4764807538326075,
+        "accuracy_mm": 7.678850721618177,
+        "completeness_mm": 1.2741107860470362,
+        "f_score_5mm": 0.6258068018251118
+      },
+      "stem": {
+        "chamfer_mm": 4.782182901780981,
+        "accuracy_mm": 8.267453703662781,
+        "completeness_mm": 1.2969120998991808,
+        "f_score_5mm": 0.6347932174574521
+      },
+      "depth": {
+        "abs_rel": 0.016382675458755422
+      },
+      "model": "tomatovggt",
+      "plant_id": "SYN_TOMATO_0212",
+      "source": {
+        "artifact": "tomatovggt/SYN_TOMATO_0212.json",
+        "sha256": "60e6669770fdd7975078053d2aba8dfab7402f34196a93d892bd480884d7f122"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/tomatovggt/SYN_TOMATO_0212.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/tomatovggt/SYN_TOMATO_0212.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 3.8253290383688694,
+        "accuracy_mm": 6.560037504086182,
+        "completeness_mm": 1.0906205726515563,
+        "f_score_5mm": 0.6968917436298294
+      },
+      "stem": {
+        "chamfer_mm": 3.9815011337843007,
+        "accuracy_mm": 6.84787739230256,
+        "completeness_mm": 1.115124875266042,
+        "f_score_5mm": 0.6847724040181539
+      },
+      "depth": {
+        "abs_rel": 0.012741510152657958
+      },
+      "model": "tomatovggt",
+      "plant_id": "SYN_TOMATO_0213",
+      "source": {
+        "artifact": "tomatovggt/SYN_TOMATO_0213.json",
+        "sha256": "789a6c0b8846e8777cc2b9206e7f4720b2a4eeed907a84700a17d9c380f8c051"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/tomatovggt/SYN_TOMATO_0213.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/tomatovggt/SYN_TOMATO_0213.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 4.78556818128496,
+        "accuracy_mm": 8.316696387065305,
+        "completeness_mm": 1.2544399755046143,
+        "f_score_5mm": 0.6104622397100242
+      },
+      "stem": {
+        "chamfer_mm": 4.477132145222872,
+        "accuracy_mm": 7.814702002397231,
+        "completeness_mm": 1.1395622880485128,
+        "f_score_5mm": 0.6592730149063443
+      },
+      "depth": {
+        "abs_rel": 0.017080717704529062
+      },
+      "model": "tomatovggt",
+      "plant_id": "SYN_TOMATO_0214",
+      "source": {
+        "artifact": "tomatovggt/SYN_TOMATO_0214.json",
+        "sha256": "6443b4cf77b609b0e794c7af18cfee95b2b267a6d2ded65e124e9d5b301f2d64"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/tomatovggt/SYN_TOMATO_0214.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/tomatovggt/SYN_TOMATO_0214.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 4.571187069192517,
+        "accuracy_mm": 7.921898265058761,
+        "completeness_mm": 1.2204758733262737,
+        "f_score_5mm": 0.628704078848855
+      },
+      "stem": {
+        "chamfer_mm": 4.5086307483586054,
+        "accuracy_mm": 7.825750903502217,
+        "completeness_mm": 1.191510593214994,
+        "f_score_5mm": 0.6607658092019452
+      },
+      "depth": {
+        "abs_rel": 0.017136494844283045
+      },
+      "model": "tomatovggt",
+      "plant_id": "SYN_TOMATO_0215",
+      "source": {
+        "artifact": "tomatovggt/SYN_TOMATO_0215.json",
+        "sha256": "9681f11b96066fd8379fee6e99ad1e65aab23b7195db7e554d2f4f3634beeed4"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/tomatovggt/SYN_TOMATO_0215.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/tomatovggt/SYN_TOMATO_0215.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 4.018043775574631,
+        "accuracy_mm": 6.918951669194534,
+        "completeness_mm": 1.1171358819547281,
+        "f_score_5mm": 0.6852057890815795
+      },
+      "stem": {
+        "chamfer_mm": 3.846238023583311,
+        "accuracy_mm": 6.636484204179557,
+        "completeness_mm": 1.0559918429870643,
+        "f_score_5mm": 0.733659731494573
+      },
+      "depth": {
+        "abs_rel": 0.014541340814563857
+      },
+      "model": "tomatovggt",
+      "plant_id": "SYN_TOMATO_0216",
+      "source": {
+        "artifact": "tomatovggt/SYN_TOMATO_0216.json",
+        "sha256": "5e2fa633b128b4a58dfc85ede60ec2c65a400eac97120c83977ffd9bb37c1a7f"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/tomatovggt/SYN_TOMATO_0216.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/tomatovggt/SYN_TOMATO_0216.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 4.907919093182172,
+        "accuracy_mm": 8.457248866819564,
+        "completeness_mm": 1.3585893195447811,
+        "f_score_5mm": 0.6242454828504554
+      },
+      "stem": {
+        "chamfer_mm": 5.633068605872773,
+        "accuracy_mm": 9.859908973651809,
+        "completeness_mm": 1.4062282380937363,
+        "f_score_5mm": 0.5967079890518742
+      },
+      "depth": {
+        "abs_rel": 0.020503902773070567
+      },
+      "model": "tomatovggt",
+      "plant_id": "SYN_TOMATO_0217",
+      "source": {
+        "artifact": "tomatovggt/SYN_TOMATO_0217.json",
+        "sha256": "49f0603de891c43d521a654b7dab506d9c376ed0f255a0eead8935708dc47314"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/tomatovggt/SYN_TOMATO_0217.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/tomatovggt/SYN_TOMATO_0217.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 4.649121618193297,
+        "accuracy_mm": 7.973568617204488,
+        "completeness_mm": 1.324674619182106,
+        "f_score_5mm": 0.638843151123044
+      },
+      "stem": {
+        "chamfer_mm": 4.451998530504149,
+        "accuracy_mm": 7.702481306484207,
+        "completeness_mm": 1.201515754524091,
+        "f_score_5mm": 0.6743012875492235
+      },
+      "depth": {
+        "abs_rel": 0.018288982584281965
+      },
+      "model": "tomatovggt",
+      "plant_id": "SYN_TOMATO_0218",
+      "source": {
+        "artifact": "tomatovggt/SYN_TOMATO_0218.json",
+        "sha256": "7a72b84ccf08e76cea60b01833797e58d3339a2aeccd5d8dc20f255f63816637"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/tomatovggt/SYN_TOMATO_0218.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/tomatovggt/SYN_TOMATO_0218.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 4.555434112854577,
+        "accuracy_mm": 7.855416420703415,
+        "completeness_mm": 1.2554518050057382,
+        "f_score_5mm": 0.6320800304243622
+      },
+      "stem": {
+        "chamfer_mm": 5.423733872697603,
+        "accuracy_mm": 9.540781332374799,
+        "completeness_mm": 1.3066864130204066,
+        "f_score_5mm": 0.5907450805515598
+      },
+      "depth": {
+        "abs_rel": 0.019188940794727063
+      },
+      "model": "tomatovggt",
+      "plant_id": "SYN_TOMATO_0219",
+      "source": {
+        "artifact": "tomatovggt/SYN_TOMATO_0219.json",
+        "sha256": "379299c1aa9ebd866cfada0421957649dd6035a31b27b3ae44904210aadc4b8a"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/tomatovggt/SYN_TOMATO_0219.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/tomatovggt/SYN_TOMATO_0219.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 4.823305265543603,
+        "accuracy_mm": 8.30035556421768,
+        "completeness_mm": 1.3462549668695258,
+        "f_score_5mm": 0.6152999719888778
+      },
+      "stem": {
+        "chamfer_mm": 4.52826871366728,
+        "accuracy_mm": 7.812790281095205,
+        "completeness_mm": 1.2437471462393563,
+        "f_score_5mm": 0.6668844989776154
+      },
+      "depth": {
+        "abs_rel": 0.017809762255155147
+      },
+      "model": "tomatovggt",
+      "plant_id": "SYN_TOMATO_0220",
+      "source": {
+        "artifact": "tomatovggt/SYN_TOMATO_0220.json",
+        "sha256": "01582a6fb0da3efe0bf8cc4c81e2e6230e13f2284008d0651bd21a8d2b8a2de8"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/tomatovggt/SYN_TOMATO_0220.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/tomatovggt/SYN_TOMATO_0220.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 4.968627023585102,
+        "accuracy_mm": 8.690079003372635,
+        "completeness_mm": 1.2471750437975697,
+        "f_score_5mm": 0.6101324579209733
+      },
+      "stem": {
+        "chamfer_mm": 4.523155570507315,
+        "accuracy_mm": 7.909566781045369,
+        "completeness_mm": 1.1367443599692613,
+        "f_score_5mm": 0.6541362135395405
+      },
+      "depth": {
+        "abs_rel": 0.01742157554306136
+      },
+      "model": "tomatovggt",
+      "plant_id": "SYN_TOMATO_0221",
+      "source": {
+        "artifact": "tomatovggt/SYN_TOMATO_0221.json",
+        "sha256": "b6c4b301c80e1edff5880cfe233bf46d91d9560cb99531b353f704df22e82685"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/tomatovggt/SYN_TOMATO_0221.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/tomatovggt/SYN_TOMATO_0221.npz"
+    },
+    {
+      "whole_plant": {
+        "chamfer_mm": 4.725849402177245,
+        "accuracy_mm": 8.21578014836906,
+        "completeness_mm": 1.2359186559854294,
+        "f_score_5mm": 0.6176609564199547
+      },
+      "stem": {
+        "chamfer_mm": 5.510392299553841,
+        "accuracy_mm": 9.721984479745513,
+        "completeness_mm": 1.2988001193621697,
+        "f_score_5mm": 0.5764493029062531
+      },
+      "depth": {
+        "abs_rel": 0.018471492237129253
+      },
+      "model": "tomatovggt",
+      "plant_id": "SYN_TOMATO_0222",
+      "source": {
+        "artifact": "tomatovggt/SYN_TOMATO_0222.json",
+        "sha256": "2e42f6f487b25832ed4f3c4ce06b7be120c4f60f40a997143d5ad5d0c647cc65"
+      },
+      "prediction": "results/predictions/tomato_synth_validation/tomatovggt/SYN_TOMATO_0222.npz",
+      "point_cloud": "results/point_clouds/tomato_synth_validation/tomatovggt/SYN_TOMATO_0222.npz"
+    }
+  ]
+}

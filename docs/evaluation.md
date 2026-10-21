@@ -28,6 +28,12 @@ The TomatoVGGT checkpoint was selected by the lowest whole-plant CD on the 6 val
 
 ## Result files
 
-[per_plant.json](../results/metrics/per_plant.json) contains the nine main metrics for each of the 60 method–plant pairs. Original numeric precision is retained. Historical baseline fields are mapped to the shared field names, including the historical method key `pi3` to `pi3x`.
+[per_plant.json](../results/metrics/tomatowur/per_plant.json) contains the nine main metrics for each of the 60 method–plant pairs. Original numeric precision is retained. Historical baseline fields are mapped to the shared field names, including the historical method key `pi3` to `pi3x`.
 
 [summarize_results.py](../scripts/summarize_results.py) regenerates the table from these records. It summarizes stored metrics; it does not rerun model inference or recompute geometry from predictions.
+
+## Synthetic evaluation
+
+The additional 22 plants were evaluated with frozen model weights and were not used for training or model selection. All six methods cover the same plants and all 15 views. Synthetic geometry is ground truth. Scoring uses the recorded known-camera, global plant median depth-scale protocol and jointly visible surfaces, without ICP, Sim(3) or confidence clipping. The nine metric definitions and units match those above, but each dataset is aggregated separately.
+
+[132 synthetic records](../results/metrics/tomato_synth_validation/per_plant.json) preserve all metric values and source hashes. Run `python scripts/summarize_results.py --dataset tomato_synth_validation` to reproduce their table.

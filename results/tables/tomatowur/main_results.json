@@ -33,7 +33,7 @@
   },
   "inputs": {
     "per_plant_sha256": "921bd94bd64552cedd02b38e6665b20187b7305686125a66f0cd24ac16d61fa5",
-    "split_sha256": "a13c1cec3a65f7e4b9a808687e9fa24a864b418a87972cdf2fe59d6f20475a29"
+    "split_sha256": "d5ae98181c70e0c9a84da89d724cec053fb22c3c0a1e3e063f4a8fa7cb2ef5a1"
   },
   "models": {
     "vggt": {

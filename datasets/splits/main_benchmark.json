@@ -259,7 +259,40 @@
       "SYN_TOMATO_0200"
     ],
     "val": [],
-    "test": []
+    "test": [],
+    "eval": [
+      "SYN_TOMATO_0201",
+      "SYN_TOMATO_0202",
+      "SYN_TOMATO_0203",
+      "SYN_TOMATO_0204",
+      "SYN_TOMATO_0205",
+      "SYN_TOMATO_0206",
+      "SYN_TOMATO_0207",
+      "SYN_TOMATO_0208",
+      "SYN_TOMATO_0209",
+      "SYN_TOMATO_0210",
+      "SYN_TOMATO_0211",
+      "SYN_TOMATO_0212",
+      "SYN_TOMATO_0213",
+      "SYN_TOMATO_0214",
+      "SYN_TOMATO_0215",
+      "SYN_TOMATO_0216",
+      "SYN_TOMATO_0217",
+      "SYN_TOMATO_0218",
+      "SYN_TOMATO_0219",
+      "SYN_TOMATO_0220",
+      "SYN_TOMATO_0221",
+      "SYN_TOMATO_0222"
+    ]
   },
-  "release_split_unchanged": true
+  "release_split_unchanged": true,
+  "synthetic_eval_purpose": "frozen_model_evaluation; not used for training or model selection",
+  "dataset_roots": {
+    "real": "datasets/tomato3d_real",
+    "synthetic": "datasets/tomato3d_synthetic"
+  },
+  "source_manifests": {
+    "original_split_sha256": "a13c1cec3a65f7e4b9a808687e9fa24a864b418a87972cdf2fe59d6f20475a29",
+    "synthetic_eval_split_sha256": "74018dbf8a4edbcc6ad99ec2aeacccf98781434bae1848858558fec39c478ddf"
+  }
 }

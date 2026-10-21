@@ -8,12 +8,12 @@ TomatoVGGT adapts VGGT for fine-structure reconstruction of tomato plants, combi
 
 ## Tomato3D
 
-Tomato3D combines real observations from TomatoWUR with synthetic tomato plants: **244 plants and 3,660 images** in total.
+Tomato3D combines real observations from TomatoWUR with synthetic tomato plants: **266 plants and 3,990 images** in total.
 
 | Component | Plants | Images | Use |
 |---|---:|---:|---|
 | TomatoWUR | 44 | 660 | 28 training, 6 validation, 10 retrospective test |
-| TomatoSynth-200 | 200 | 3,000 | Training |
+| Tomato3D synthetic | 222 | 3,330 | 200 training, 22 frozen-model evaluation |
 
 All views of a plant belong to the same split. Real geometry is a reconstruction reference; synthetic geometry is ground truth.
 
@@ -21,10 +21,12 @@ All views of a plant belong to the same split. Real geometry is a reconstruction
 
 | Resource | File | Download |
 |---|---|---|
-| Synthetic data | `tomato_synth_200.zip` | In preparation |
-| TomatoWUR data | `tomatowur.zip` | In preparation |
-| Model weights | `weights.zip` | In preparation |
-| Predictions and point clouds | `results.zip` | In preparation |
+| Real data | `tomato3d_real.zip` | In preparation |
+| Synthetic data | `tomato3d_synthetic.zip` | Upload pending |
+| Model weights | `tomatovggt_weights.zip` | Upload pending |
+| Main experiment predictions and point clouds | `tomatovggt_results.zip` | Upload pending |
+
+The 200 training and 22 evaluation synthetic plants share one archive. Their roles are recorded in the data split. Download archives are currently being prepared for restricted Google Drive access. [Archive checksums](checksums.sha256) are available; a checksum entry alone does not indicate upload completion.
 
 ## Installation and Usage
 
@@ -33,13 +35,15 @@ The main-table summary requires **Python 3.10+** and the standard library.
 ```bash
 git clone https://github.com/Ethan666yyds/TomatoVGGT.git
 cd TomatoVGGT
-python scripts/summarize_results.py
+python scripts/summarize_results.py --dataset tomatowur
+python scripts/summarize_results.py --dataset tomato_synth_validation
 ```
 
 To save the full-precision means and Markdown table:
 
 ```bash
-python scripts/summarize_results.py --output-dir results/tables
+python scripts/summarize_results.py --dataset tomatowur --output-dir results/tables/tomatowur
+python scripts/summarize_results.py --dataset tomato_synth_validation --output-dir results/tables/tomato_synth_validation
 ```
 
 Model inference, training, and evaluation from predictions are being prepared for release. The TomatoVGGT checkpoint requires the matching VGGT base weights.
