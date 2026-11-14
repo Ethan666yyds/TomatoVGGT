@@ -15,6 +15,18 @@ The 200 synthetic training plants and 22 frozen-model evaluation plants share on
 
 See the [dataset guide](../datasets/README.md) for asset descriptions, provenance, and licensing.
 
+### Numbered archive parts
+
+Large archives are stored as numbered 128 MiB parts, allowing parallel transfers and recovery after interruption. Each part is an ordinary Zenodo file. A part cannot be extracted by itself. The [download manifest](../download_manifest.json) records every part's size and SHA256, and the original combined ZIP SHA256.
+
+After the Zenodo record is published, download and reconstruct the three data/model/result archives with Python 3.10+ (standard library only):
+
+```bash
+python restore_archives.py --download --directory downloads
+```
+
+Reruns skip valid downloaded parts. To combine parts already downloaded manually, omit `--download`. Before publication, the draft owner can add `--token-file /path/to/private-token.txt`; public users will not need a token after publication. Extract the restored ZIP archives at the repository root.
+
 ## Model weights
 
 | Archive | Contents | Status |

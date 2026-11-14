@@ -1,0 +1,559 @@
+{
+  "schema": "tomatovggt-download-v1",
+  "record_url": "https://zenodo.org/records/24221170",
+  "draft_url": "https://zenodo.org/uploads/24221170",
+  "reserved_doi": "10.5281/zenodo.24221170",
+  "publication_status": "draft_not_public",
+  "chunk_bytes": 134217728,
+  "packages": [
+    {
+      "file": "tomato3d_synthetic.zip",
+      "bytes": 9123644863,
+      "sha256": "3a39bf7520075566b9faae5e09316e992d9444bb2142f7ebec54592439cb0839",
+      "parts": [
+        {
+          "file": "tomato3d_synthetic.zip.part-000",
+          "bytes": 134217728,
+          "sha256": "ed3f1eb479f98bb7c6d9fc6db7b9e9f5fd4e7478c51eb201540d1c4ded08d2da",
+          "md5": "5518a1b7d3a1f101ae585bc9d3902c3e"
+        },
+        {
+          "file": "tomato3d_synthetic.zip.part-001",
+          "bytes": 134217728,
+          "sha256": "c935e9fde0102cd6b3309c1a22d0696c800d1e688beb5aa68992207a7bc643b1",
+          "md5": "de30a13c733dd8d07a5c2ae069db56bc"
+        },
+        {
+          "file": "tomato3d_synthetic.zip.part-002",
+          "bytes": 134217728,
+          "sha256": "867dc7e926dcd5d86507fb4b444727472120e9498b1d46fa79815645df624f4f",
+          "md5": "778f9657702ed9c319772a1b5c95d0df"
+        },
+        {
+          "file": "tomato3d_synthetic.zip.part-003",
+          "bytes": 134217728,
+          "sha256": "fdae281a8213855b43fa3de68a9ab2ffeac8388e138c14bdf559f928b3f833a3",
+          "md5": "a8745de7ee1a5a52bd266534bfd1b3dc"
+        },
+        {
+          "file": "tomato3d_synthetic.zip.part-004",
+          "bytes": 134217728,
+          "sha256": "b5f643ba4e8c94a69ced5a29aef0e66b77795340caaf2586aa66489309e03c73",
+          "md5": "fb16cdac9798ce8b610335a1dad2512f"
+        },
+        {
+          "file": "tomato3d_synthetic.zip.part-005",
+          "bytes": 134217728,
+          "sha256": "6b0ca093d0ae4fa17f51bcbc062199e791dd7a5f6160e8c5ed1565583ea627fb",
+          "md5": "89c5de9f27c0a6faab489f5d4d4b88db"
+        },
+        {
+          "file": "tomato3d_synthetic.zip.part-006",
+          "bytes": 134217728,
+          "sha256": "e71b83965358cfaaed7ed7c7517ae3bae8238d6b70e27b6d0544d169c0e52543",
+          "md5": "6e631622cc3c51a8054a5f835cbc80e9"
+        },
+        {
+          "file": "tomato3d_synthetic.zip.part-007",
+          "bytes": 134217728,
+          "sha256": "bf8941ca241975d32722c61127e23cf6d8fab0c3cb311d09e1aaec5c7f8c772a",
+          "md5": "798cd87be080ae7801cb7795d9a930fc"
+        },
+        {
+          "file": "tomato3d_synthetic.zip.part-008",
+          "bytes": 134217728,
+          "sha256": "c3f9ff2c26362c1ac6f4ce3b0b7c120751807e5b5e1bd0dfc4dbbe063c6f062f",
+          "md5": "913aed7fbc89c4bbc9a4fef540d2bd12"
+        },
+        {
+          "file": "tomato3d_synthetic.zip.part-009",
+          "bytes": 134217728,
+          "sha256": "90c78043017f9c689c969fb2a0534b9e929d3ae7b1ba1a5193ad246cfe357726",
+          "md5": "5ba28b4a45be94d9737623c22da41867"
+        },
+        {
+          "file": "tomato3d_synthetic.zip.part-010",
+          "bytes": 134217728,
+          "sha256": "5a56ced8b06216bd6761b6d24d14b5a9a268c576a5475099fb878fc9d0e88e3e",
+          "md5": "56447813f33038f941bfad15e5cc763d"
+        },
+        {
+          "file": "tomato3d_synthetic.zip.part-011",
+          "bytes": 134217728,
+          "sha256": "eae33b8cf20c041a9606b129885172364047d65914962a7e2c7ce0fb96da497d",
+          "md5": "fe867d36ac5d65ba09e53407fee34f26"
+        },
+        {
+          "file": "tomato3d_synthetic.zip.part-012",
+          "bytes": 134217728,
+          "sha256": "c42b2f2fb44e6d5fba7edd4207a3cea27811d78b8d7907e3fdd80d9eb231d1e8",
+          "md5": "e1cb58638f8bc379c3e0d271e2c2e28d"
+        },
+        {
+          "file": "tomato3d_synthetic.zip.part-013",
+          "bytes": 134217728,
+          "sha256": "eb4d4290ef612d325300c2ddb2dbeaab49f4bf92fc4379067759f597ed2bae67",
+          "md5": "c9f2708b76b27c6fc67961f2ce32e94d"
+        },
+        {
+          "file": "tomato3d_synthetic.zip.part-014",
+          "bytes": 134217728,
+          "sha256": "7751beeb7ff44fdaac8d137d5534eec3af52ce838eaa07a53c86633c30465b00",
+          "md5": "917f30d7a2d123e2d2e908baf5db355f"
+        },
+        {
+          "file": "tomato3d_synthetic.zip.part-015",
+          "bytes": 134217728,
+          "sha256": "b7d7a5d7597a79e31014cdabb80ae7bd5464677786b933ac4052d64b31ef7286",
+          "md5": "c44fe876351bbe599932d7a322274146"
+        },
+        {
+          "file": "tomato3d_synthetic.zip.part-016",
+          "bytes": 134217728,
+          "sha256": "4eb80ef2b3d261f410513c0ff936106fab78d19fea06f945d4c6afca5c7f5cf2",
+          "md5": "b15474be7076fe107a4b24f8ae183d82"
+        },
+        {
+          "file": "tomato3d_synthetic.zip.part-017",
+          "bytes": 134217728,
+          "sha256": "3cff161704a064a5074708bbc427dc476279448cf2b624851a34967372b496d3",
+          "md5": "31b7754f09acbe1461a803e40ada2453"
+        },
+        {
+          "file": "tomato3d_synthetic.zip.part-018",
+          "bytes": 134217728,
+          "sha256": "fbbd439bdb1afa556d248b42692aa55f3ed1ec6b130b1c66d5c65e5c64d51100",
+          "md5": "323ad2c9f15ee57f35a385e3833118ba"
+        },
+        {
+          "file": "tomato3d_synthetic.zip.part-019",
+          "bytes": 134217728,
+          "sha256": "3f1b045fe278cc29642a49a6154be62d7aa117b40cc67c6a654b088e528bf645",
+          "md5": "a23f972dbf27694d66c796d58c7f44e0"
+        },
+        {
+          "file": "tomato3d_synthetic.zip.part-020",
+          "bytes": 134217728,
+          "sha256": "3d0b431bccff0f754213374263845a747401f98c38dc5f160683ef71e42251e3",
+          "md5": "c5ca6c1d8cca5fe1d80f900374442715"
+        },
+        {
+          "file": "tomato3d_synthetic.zip.part-021",
+          "bytes": 134217728,
+          "sha256": "6b593a9faef2b9f106d779406ee12c1fea345b3df99883f94bd206178e847c84",
+          "md5": "3330c8179dc6d8f10b2743a836cb0872"
+        },
+        {
+          "file": "tomato3d_synthetic.zip.part-022",
+          "bytes": 134217728,
+          "sha256": "8c14800f0e82a91c97d51e12c07ececc57f3f1321378ea15e3dc196b692ee42e",
+          "md5": "2dee4d52cfac3bc757290113ae1d8629"
+        },
+        {
+          "file": "tomato3d_synthetic.zip.part-023",
+          "bytes": 134217728,
+          "sha256": "e390c5346101a75410e15db40a69f20a371fa108b6471160d584c41a9c25aea8",
+          "md5": "3f0918afae01d920bbed052a7247f5fb"
+        },
+        {
+          "file": "tomato3d_synthetic.zip.part-024",
+          "bytes": 134217728,
+          "sha256": "5373ea527650cbc173fec9d054a6230d7f2432d196ebd90d8eca2643f6e75565",
+          "md5": "7bdac7b604f6ebdd0dd8cf2563616fbe"
+        },
+        {
+          "file": "tomato3d_synthetic.zip.part-025",
+          "bytes": 134217728,
+          "sha256": "6ff0f10885e27c8115883b7d9e7de7bdd31696ea979d152b8a5827dc311fd3f0",
+          "md5": "81550f1ebeb96f39f4cab3c684df7daf"
+        },
+        {
+          "file": "tomato3d_synthetic.zip.part-026",
+          "bytes": 134217728,
+          "sha256": "7518180daf67a1261f4de2ef8c5d5eb0cd8359322af0373ef226436456b1c3c9",
+          "md5": "e930fd5cde00fefbd257f4f3f0e83766"
+        },
+        {
+          "file": "tomato3d_synthetic.zip.part-027",
+          "bytes": 134217728,
+          "sha256": "fb4d60e87ef2b3ff656637561ca3b92193cd7d6ea0ca2b216c26bedee1a393cf",
+          "md5": "536ccc086469dac231b7908612e231a8"
+        },
+        {
+          "file": "tomato3d_synthetic.zip.part-028",
+          "bytes": 134217728,
+          "sha256": "f2de68a5dc75020072d62d8fa4c5bcd57a2a63b82fa1c13f7eeef48e7901699b",
+          "md5": "391cca2a1be9415c4cda716c5acb8442"
+        },
+        {
+          "file": "tomato3d_synthetic.zip.part-029",
+          "bytes": 134217728,
+          "sha256": "391325362ba21eb0e188ce5341ea7eae3781e6fd76fe46033ac5fb02e1129440",
+          "md5": "801de72d65b995aecd83f4b8731a3171"
+        },
+        {
+          "file": "tomato3d_synthetic.zip.part-030",
+          "bytes": 134217728,
+          "sha256": "57afe8ebc20e1a31e5c3c6e7db64c4bbeb62615305100b4e8222cc308d563a24",
+          "md5": "c637e574777a2decff0e31911d6b738b"
+        },
+        {
+          "file": "tomato3d_synthetic.zip.part-031",
+          "bytes": 134217728,
+          "sha256": "21da1489c10f3d592f20a80221a61460648d5bf28e5ec83746ec19f22e599682",
+          "md5": "3d1108a1ee2479ae3151c9c47c5d12cc"
+        },
+        {
+          "file": "tomato3d_synthetic.zip.part-032",
+          "bytes": 134217728,
+          "sha256": "6191616791f000fd19594ac257776fce9a13cfa3577eab111e8febc371626a7c",
+          "md5": "0a23c039d587ba08edfbf67dc7886bfb"
+        },
+        {
+          "file": "tomato3d_synthetic.zip.part-033",
+          "bytes": 134217728,
+          "sha256": "22183c3aeac9073e8ba93fba6e9fd2ef243539a93df9e2ea43c2e720401cfb7d",
+          "md5": "3d2f2615a3faf4651ae247968fcad0ac"
+        },
+        {
+          "file": "tomato3d_synthetic.zip.part-034",
+          "bytes": 134217728,
+          "sha256": "9f5a1a5e2ea84465925ea2c27c1d9d2602f810d2c6e85dc8fcf8a6fb11a00312",
+          "md5": "baa77d92ef59bf7925afc3860563581e"
+        },
+        {
+          "file": "tomato3d_synthetic.zip.part-035",
+          "bytes": 134217728,
+          "sha256": "1e2de28b5f8f2f398b93ed1b3b8880a45f403ef205179f549c3e8a8696294012",
+          "md5": "93614ed907f80d2153d244f8b60f8925"
+        },
+        {
+          "file": "tomato3d_synthetic.zip.part-036",
+          "bytes": 134217728,
+          "sha256": "3013eb195fcce575aaaf1fb4864dfc38a52ddbdcea8e6807e6def3bd86c38db2",
+          "md5": "ca1b70ccef71a441c8832604e637ea5a"
+        },
+        {
+          "file": "tomato3d_synthetic.zip.part-037",
+          "bytes": 134217728,
+          "sha256": "23e4e4566faa711043be6c194d52b3add2b07e7a6cdf4a05dfa532f625056ad0",
+          "md5": "a3ce5e72910b0fcb304225627646d214"
+        },
+        {
+          "file": "tomato3d_synthetic.zip.part-038",
+          "bytes": 134217728,
+          "sha256": "eb75671867f75d3263c7209d664f0ad2d2317b9a146184b3715004ac06740dae",
+          "md5": "4afbe5e6d714f058a74b97c0209f54d4"
+        },
+        {
+          "file": "tomato3d_synthetic.zip.part-039",
+          "bytes": 134217728,
+          "sha256": "37dbb8ca019944c88b48868621ca493b21be3b447d79e0e4c9e46b4330740490",
+          "md5": "290a9811c4fd04e23c1822446d2c8732"
+        },
+        {
+          "file": "tomato3d_synthetic.zip.part-040",
+          "bytes": 134217728,
+          "sha256": "c778a0315fb8670db01626bee9e86d460dcea71a8fbaf822f3e8d536028feb97",
+          "md5": "9f34dccaaceb56ea697db6c12fe08ff3"
+        },
+        {
+          "file": "tomato3d_synthetic.zip.part-041",
+          "bytes": 134217728,
+          "sha256": "360182611fcd97cf6e79875b9fdb28263b6e92a404ad8e199fb1d46653974b8e",
+          "md5": "0b6b848a57183af9df090d660c27c7ae"
+        },
+        {
+          "file": "tomato3d_synthetic.zip.part-042",
+          "bytes": 134217728,
+          "sha256": "ac8e478229779dce384f6b75776365086762a4e6274102dfa832e5207cd0add4",
+          "md5": "335c72d9e78d88853697498223331f04"
+        },
+        {
+          "file": "tomato3d_synthetic.zip.part-043",
+          "bytes": 134217728,
+          "sha256": "b9b2bb37f3605e24ea0f8024fa1676df2f1ef922c8dfb4b37a6d21a2053ca4b2",
+          "md5": "34024e18e8ed52a7fe751b1ea7e49f1c"
+        },
+        {
+          "file": "tomato3d_synthetic.zip.part-044",
+          "bytes": 134217728,
+          "sha256": "49757d3f136c30991756d29e14e56accab546cb4e968bd6647425c47ad7464f1",
+          "md5": "984c9b00d3d03b4a9e2b4d6d4e37801e"
+        },
+        {
+          "file": "tomato3d_synthetic.zip.part-045",
+          "bytes": 134217728,
+          "sha256": "c3948b4c9f238c3ec83a59caee259165cf7f7a4e12a321144245137baf2b843f",
+          "md5": "028a3b82dd469ed8a4d0a34aa5f7aa23"
+        },
+        {
+          "file": "tomato3d_synthetic.zip.part-046",
+          "bytes": 134217728,
+          "sha256": "2b49be1f9a517b0673d3d0220379170416d6b73a2d26b405d1c6194ace880656",
+          "md5": "01ded9fe8de6df95db16881dc13dd5bd"
+        },
+        {
+          "file": "tomato3d_synthetic.zip.part-047",
+          "bytes": 134217728,
+          "sha256": "e08956bc7ab4c7fe4fed93b4d3ca701ad6295b35fc6e3a8f936cf3229fd5d36d",
+          "md5": "da6f517161e2975b84853360963006fe"
+        },
+        {
+          "file": "tomato3d_synthetic.zip.part-048",
+          "bytes": 134217728,
+          "sha256": "19abc9600a42ec4e3ccc3c9f82522c1303ef86deeadb6444e1f66fe410141624",
+          "md5": "c3278f91ab525e5566bc03d4b37c9f22"
+        },
+        {
+          "file": "tomato3d_synthetic.zip.part-049",
+          "bytes": 134217728,
+          "sha256": "e552dc6ede9d27e8c8a61286d7386a332fba07a6e92fa06e51aeffed9965d1d0",
+          "md5": "2ffa3a847773a5688b1f5a55dccdc881"
+        },
+        {
+          "file": "tomato3d_synthetic.zip.part-050",
+          "bytes": 134217728,
+          "sha256": "7ec6f83aaea6596eb820821bc49da187aa63088fd8ba59c11a2a720805895248",
+          "md5": "45eff64f8c37d7e186b1968b7c5ce50c"
+        },
+        {
+          "file": "tomato3d_synthetic.zip.part-051",
+          "bytes": 134217728,
+          "sha256": "14dcd6ccea5d815ec69416fb3ec5d567ed1182730d5f2cd66df3cce9c5a4e995",
+          "md5": "1bed65f34278f7c7529faa3da4fee27c"
+        },
+        {
+          "file": "tomato3d_synthetic.zip.part-052",
+          "bytes": 134217728,
+          "sha256": "7bc81c7504bb05d9178bc47699d4447c2e315d438b50cfbf0c3372eb4ad54d0e",
+          "md5": "9da5c98025b2eede1c72bfdaafb8355d"
+        },
+        {
+          "file": "tomato3d_synthetic.zip.part-053",
+          "bytes": 134217728,
+          "sha256": "20ef41ca6ce0baae4365afb9cae5d24ba1b73012f47388d8b31d1a29e7256c16",
+          "md5": "48b211a2df4d084ee17202832de322d6"
+        },
+        {
+          "file": "tomato3d_synthetic.zip.part-054",
+          "bytes": 134217728,
+          "sha256": "6d2eac11367e33b02204abb9cfe219de462e73c375b00e9d78394fe7e3934529",
+          "md5": "94399585d116bb51b20bd6243c2021b7"
+        },
+        {
+          "file": "tomato3d_synthetic.zip.part-055",
+          "bytes": 134217728,
+          "sha256": "6c7f9df31a42197b6d158d516ce03af6beb324ba09570ff2719c81de22887782",
+          "md5": "bb769535bff7d942ddd45fcc04cd8db5"
+        },
+        {
+          "file": "tomato3d_synthetic.zip.part-056",
+          "bytes": 134217728,
+          "sha256": "2c2e3cf91e21214dd1e624a524e83f22776a9b8fcd17cee9eb3efcb4eecb2c21",
+          "md5": "aa596502340faf41f182689e6cb415d7"
+        },
+        {
+          "file": "tomato3d_synthetic.zip.part-057",
+          "bytes": 134217728,
+          "sha256": "fe8abb86f2d5b59b64fb2d5124cfb96547b89891f6d50e9954585fad1135598e",
+          "md5": "1a09dd145191abc884ef63fb4814a933"
+        },
+        {
+          "file": "tomato3d_synthetic.zip.part-058",
+          "bytes": 134217728,
+          "sha256": "70ffa554574e0affe4185ab0f343ae90a9f8ca727e3761759d0f901a74fb4a39",
+          "md5": "60d5a23852373957bb155cc3fa0440d7"
+        },
+        {
+          "file": "tomato3d_synthetic.zip.part-059",
+          "bytes": 134217728,
+          "sha256": "bab0d6d977e9b21910303a08c57e051ad1f3b3024946b4fd6b3dc8106b2ef773",
+          "md5": "cbf850cec5030d91c547218c1e7a4e9d"
+        },
+        {
+          "file": "tomato3d_synthetic.zip.part-060",
+          "bytes": 134217728,
+          "sha256": "b6ecd38f30ff5293d39d2c9c14cff92313cf32200469e006beb06ca0cb120661",
+          "md5": "2952be1fd818d567d927c7ab227ef16b"
+        },
+        {
+          "file": "tomato3d_synthetic.zip.part-061",
+          "bytes": 134217728,
+          "sha256": "55e0f6b1cbfba49c7a22945422ee7ab98056d080f590b15896a0e0b8eaa54ad2",
+          "md5": "b8223d393bb95a51e2d073aaa53729d3"
+        },
+        {
+          "file": "tomato3d_synthetic.zip.part-062",
+          "bytes": 134217728,
+          "sha256": "c22f4549a4c97c0b9f6d94570509372260a5e8bb55fd3fba559e2b5f7e30c82e",
+          "md5": "e7ec5e33aedc81aa394e406188221f09"
+        },
+        {
+          "file": "tomato3d_synthetic.zip.part-063",
+          "bytes": 134217728,
+          "sha256": "f5289bfbb58320b24c0ac7dd85ec8d3e8e6d1b7ddbddadeb4a5ba416e369a733",
+          "md5": "be806affd496b3358a54a2dfef7964ac"
+        },
+        {
+          "file": "tomato3d_synthetic.zip.part-064",
+          "bytes": 134217728,
+          "sha256": "e6f9c9bb4aa735e79b1f5566ad2dea4e6c878085a3ea7111b9211d3f7779a752",
+          "md5": "a7e30752608f7cf4bd6912d6624165fa"
+        },
+        {
+          "file": "tomato3d_synthetic.zip.part-065",
+          "bytes": 134217728,
+          "sha256": "049cfceebb10e4f33037f65462a9c6cbb662abb2935d9669ef536eb8558ce9be",
+          "md5": "f55e8ddbe0700cc742a2b48303472a2f"
+        },
+        {
+          "file": "tomato3d_synthetic.zip.part-066",
+          "bytes": 134217728,
+          "sha256": "01948c1a62fbca28c39b74dcd2d1ffd33342b294371764ab3fcf2b9c7fa65512",
+          "md5": "c0f6a2f355cf94ae2d48fbada592c07d"
+        },
+        {
+          "file": "tomato3d_synthetic.zip.part-067",
+          "bytes": 131057087,
+          "sha256": "d319adc6a81da88174f573c23a2517bd385165358fbabcc2092b04c91d727a94",
+          "md5": "f0ec3970d82cb58872843b35584196d4"
+        }
+      ]
+    },
+    {
+      "file": "tomatovggt_weights.zip",
+      "bytes": 138513531,
+      "sha256": "b2216940a846383a0a78dee715c91361d0a1806725cd5b68fe5998ccfb7d56bc",
+      "parts": [
+        {
+          "file": "tomatovggt_weights.zip",
+          "bytes": 138513531,
+          "sha256": "b2216940a846383a0a78dee715c91361d0a1806725cd5b68fe5998ccfb7d56bc",
+          "md5": "ad60da11a9339f92277f5f62b4513ffc"
+        }
+      ]
+    },
+    {
+      "file": "tomatovggt_results.zip",
+      "bytes": 2468139515,
+      "sha256": "0e5854e51fdf4f678bfa179b80945971c57f474411348152e29a48a4f3ff0153",
+      "parts": [
+        {
+          "file": "tomatovggt_results.zip.part-000",
+          "bytes": 134217728,
+          "sha256": "536e7b390d85743499619909011d3e283ba7299306ab6978fc48a58a00a96c6b",
+          "md5": "6b230d6f1752f1817ea35e0e1998ad33"
+        },
+        {
+          "file": "tomatovggt_results.zip.part-001",
+          "bytes": 134217728,
+          "sha256": "fa52a268c7c2e8c0ab88961e12a679457193db80555cfff076a3b8381f6fdf7c",
+          "md5": "1a11fcc97883043d1f09cd909d61251d"
+        },
+        {
+          "file": "tomatovggt_results.zip.part-002",
+          "bytes": 134217728,
+          "sha256": "a727616f76ac4670f3e54142cdfb29e0e90e02a21a93192b693e63fcbf99f4e4",
+          "md5": "49d5a8fccb63e35f69fcd0da5a15b877"
+        },
+        {
+          "file": "tomatovggt_results.zip.part-003",
+          "bytes": 134217728,
+          "sha256": "526744c366f3474a621667297a31ad6bf7f72f0de92ddef9c12017fda928f105",
+          "md5": "ed8bf2912bf6f7a5b94a1f54bf4b98b3"
+        },
+        {
+          "file": "tomatovggt_results.zip.part-004",
+          "bytes": 134217728,
+          "sha256": "6594f26ea22a1dd41eac321e24895b7035c642b0e70740775db100881beaa560",
+          "md5": "41a16302eb44d69d4ec55d5a70f2e869"
+        },
+        {
+          "file": "tomatovggt_results.zip.part-005",
+          "bytes": 134217728,
+          "sha256": "df248636a2fd277b7d8710c9659b42c78569d4ce6fc8fcd519e729c28988ac54",
+          "md5": "d87d465ed39a4cd505aab28fd4aa12eb"
+        },
+        {
+          "file": "tomatovggt_results.zip.part-006",
+          "bytes": 134217728,
+          "sha256": "5c966e18137334ac2c1046517f2969ae420bc721bc4cda45507a1a8b9033c7e3",
+          "md5": "af542ea4cdb3bf6ea053ce757279245a"
+        },
+        {
+          "file": "tomatovggt_results.zip.part-007",
+          "bytes": 134217728,
+          "sha256": "0ccd451b090802bcbc38aeb2d3d25dcb63da30bceb1dbeba30ad9f83cb560c19",
+          "md5": "ca61f1c60828ba51c2c565fcfabc5601"
+        },
+        {
+          "file": "tomatovggt_results.zip.part-008",
+          "bytes": 134217728,
+          "sha256": "e42deb8db7bf7016a5031fe60582c2c9633e36d62ba728ec0ca4d4463e948ece",
+          "md5": "8aa0720e305c35b1138bda01e7356f9e"
+        },
+        {
+          "file": "tomatovggt_results.zip.part-009",
+          "bytes": 134217728,
+          "sha256": "aa2de059a3c489ce3814a0876dc95475976ae0c7ca818052a95fd2080138ca0f",
+          "md5": "2ca2454fc262c46b158db9315374f591"
+        },
+        {
+          "file": "tomatovggt_results.zip.part-010",
+          "bytes": 134217728,
+          "sha256": "ef37315ca60ffcc597a93b344b52eb24570ae645d983a976e991fc6ea29cd043",
+          "md5": "3bea421f71eb53f134dd143b0befd505"
+        },
+        {
+          "file": "tomatovggt_results.zip.part-011",
+          "bytes": 134217728,
+          "sha256": "8dd9e7a824b95ffd7f7c653936f4f529bfe887423ec2ffa54a7c3cd3d02e4832",
+          "md5": "79b0fa2f7605b0ba13a7e7c357d140af"
+        },
+        {
+          "file": "tomatovggt_results.zip.part-012",
+          "bytes": 134217728,
+          "sha256": "4c2752f146e983fbfb130249805883c19fc1ea25282d17cb4f014f413310d30b",
+          "md5": "5685aa263272c0e59f16099d5cb120d4"
+        },
+        {
+          "file": "tomatovggt_results.zip.part-013",
+          "bytes": 134217728,
+          "sha256": "8d53709f0ab6ce7d4b994ffe4b607c09121a08c914a8fd7ad6770396d7d9cb4a",
+          "md5": "77a7b8946f3e56b1264f326d16515275"
+        },
+        {
+          "file": "tomatovggt_results.zip.part-014",
+          "bytes": 134217728,
+          "sha256": "d5797925588bf504bf77a0d0947e79b4ab4e238beb3934bd3485fcfa0e2034f2",
+          "md5": "0d7a12bb3f8c21d0c8f43f5575f554ca"
+        },
+        {
+          "file": "tomatovggt_results.zip.part-015",
+          "bytes": 134217728,
+          "sha256": "ab8ed1cd55aa8520e24bb0374f80a03e6f75e0182d99dab2a6f9cefccf7576a7",
+          "md5": "35c6801d43cf5db2a3530c08ad0cef1f"
+        },
+        {
+          "file": "tomatovggt_results.zip.part-016",
+          "bytes": 134217728,
+          "sha256": "893332f65f594da88af63ad020bf512ef2abb62767b2fb016bdd1a8471203d7d",
+          "md5": "de5ff733ff22f4bfccc9926b07ec131b"
+        },
+        {
+          "file": "tomatovggt_results.zip.part-017",
+          "bytes": 134217728,
+          "sha256": "71ff20147055b426d8ffd1281f3af3be9272b0902eeb7523a85e9350ee5a86a0",
+          "md5": "8944c52a029b4b0917e1a0e4c0b8ecd5"
+        },
+        {
+          "file": "tomatovggt_results.zip.part-018",
+          "bytes": 52220411,
+          "sha256": "eaf57f260e16b089f15b92dd92ad9069fa7f99f504d976a596d4878964023a6e",
+          "md5": "2b92bfc33c068531efe4381931d30cc0"
+        }
+      ]
+    }
+  ]
+}
