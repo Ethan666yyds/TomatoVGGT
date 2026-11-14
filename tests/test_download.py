@@ -34,4 +34,12 @@ class DownloadBehaviorTests(unittest.TestCase):
             with self.assertRaises(FileNotFoundError):restore.restore(manifest,root)
             self.assertFalse((root/'archive.zip').exists())
 
+    def test_owner_token_cannot_be_sent_to_another_host(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root=Path(directory);manifest,_=self.fixture(root)
+            manifest['record_url']='https://example.invalid/records/123'
+            token=root/'token.txt';token.write_text('test-only-token')
+            with self.assertRaisesRegex(ValueError,'official HTTPS Zenodo'):
+                restore.restore(manifest,root,token_file=token)
+
 if __name__=='__main__':unittest.main()

@@ -6,7 +6,8 @@ import json
 from pathlib import Path
 import shutil
 import time
-from urllib.parse import quote
+import re
+from urllib.parse import quote, urlsplit
 from urllib.request import Request, urlopen
 
 def sha(path):
@@ -18,7 +19,14 @@ def sha(path):
 def restore(manifest,directory,download=False,workers=4,token_file=None):
     directory.mkdir(parents=True,exist_ok=True)
     headers={'User-Agent':'TomatoVGGT-download/1.0'}
-    if token_file:headers['Authorization']='Bearer '+token_file.read_text().strip()
+    private_base=None
+    if token_file:
+        record=urlsplit(manifest['record_url'])
+        if (record.scheme!='https' or record.hostname not in ('zenodo.org','sandbox.zenodo.org')
+                or record.username or record.password or not re.fullmatch(r'/records/\d+',record.path)):
+            raise ValueError('Owner tokens may only be sent to an official HTTPS Zenodo record')
+        private_base=f'https://{record.hostname}/api{record.path}/draft/files/'
+        headers['Authorization']='Bearer '+token_file.read_text().strip()
     files={f['file']:f for package in manifest['packages'] for f in package['parts']}
     def verify_or_download(item):
         name,record=item
@@ -26,7 +34,7 @@ def restore(manifest,directory,download=False,workers=4,token_file=None):
         path=directory/name
         if path.exists() and path.stat().st_size==record['bytes'] and sha(path)==record['sha256']:return
         if not download:raise FileNotFoundError(f'Missing or invalid file: {name}; use --download or download all parts')
-        url=manifest['record_url']+'/files/'+quote(name)+'?download=1'
+        url=(private_base+quote(name)+'/content' if private_base else manifest['record_url']+'/files/'+quote(name)+'?download=1')
         for attempt in range(4):
             temporary=path.with_suffix(path.suffix+'.partial')
             try:
