@@ -11,13 +11,13 @@ All views of a plant share its role in the [project split](splits/main_benchmark
 
 ## Relation to the paper
 
-The paper and pipeline call the 38 non-training plants (16 real + 22 synthetic) the **test set**. Of these, six real plants are used for checkpoint selection. The reported geometric evaluation uses the remaining **32 plants: 10 real + 22 synthetic**. Training covers 228 plants (28 real + 200 synthetic).
+Six real validation plants are used for checkpoint selection. The reported geometric evaluation uses **32 plants: 10 real retrospective test plants + 22 synthetic frozen-model evaluation plants**. Training covers 228 plants (28 real + 200 synthetic).
 
-The fixed split records actual roles: `real.val` contains the six selection plants, `real.test` contains the ten retrospective evaluation plants, and `synthetic.eval` contains the 22 frozen-model evaluation plants. The paper's 38-plant cohort is their union; its 32-plant evaluation subset excludes `real.val`. No plant IDs or selection roles are reassigned.
+The fixed split records actual roles: `real.val` contains the six selection plants, `real.test` contains the ten retrospective evaluation plants, and `synthetic.eval` contains the 22 frozen-model evaluation plants. The evaluation subset excludes `real.val`. No plant IDs or selection roles are reassigned.
 
 ## Downloads and layout
 
-Data downloads are coming soon. Links will be added to the [download guide](../docs/downloads.md#data) once ready. The planned real archive is `tomato3d_real.zip`; the single synthetic archive is `tomato3d_synthetic.zip`. Extract each at the repository root:
+The synthetic archive is being uploaded to a Zenodo draft. Public links will be added to the [download guide](../docs/downloads.md#data) after publication. The single synthetic archive is `tomato3d_synthetic.zip`. Extract it at the repository root:
 
 ```text
 datasets/
@@ -29,6 +29,8 @@ datasets/
 └── splits/main_benchmark.json
 ```
 
-The real package is being prepared from the original experiment inputs. The planned contents are RGB, cameras, semantic annotations, reference clouds and point labels. Synthetic assets include RGB, cameras, depth and semantic supervision, Blender scenes, meshes, visible and full surfaces, skeletons and traits. Package manifests verify distributed files; historical source manifests in provenance may describe larger source deliveries.
+Real data should be obtained from the original TomatoWUR provider; they are not redistributed in this upload. Synthetic assets include RGB, cameras, depth and semantic supervision, Blender scenes, meshes, visible and full surfaces, skeletons and traits. Package manifests verify distributed files; historical source manifests in provenance may describe larger source deliveries.
+
+The synthetic release removes PNG text/EXIF metadata, Blender file-browser directory buffers and local absolute paths in runtime metadata. All 3,330 images retain identical decoded pixels; all 222 scenes retain identical geometry and camera parameters and were opened in Blender for verification. Numeric geometry/supervision and generation seeds are unchanged. Cache lineage RGB hashes are updated to the sanitized image hashes. `manifest.sha256` describes the distributed copy; `sanitization.json` inventories edits.
 
 TomatoWUR retains original sample identities, attribution and its [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) data license. See the [source repository](https://github.com/WUR-ABE/TomatoWUR) and [dataset DOI](https://doi.org/10.4121/e2c59841-4653-45de-a75e-4994b2766a2f). Calibration in the synthetic data also retains its upstream source. Original synthetic-data licensing will be finalized before the data download is released.

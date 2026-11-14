@@ -3,6 +3,11 @@ __pycache__/
 .DS_Store
 .env
 .venv/
+*.egg-info/
+vendor/
+outputs/
+build/
+dist/
 weights/
 datasets/tomato_synth_200/
 datasets/tomatowur/

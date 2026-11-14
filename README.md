@@ -42,7 +42,7 @@ Tomato3D brings together real observations from TomatoWUR and synthetic tomato p
 | **TomatoWUR** · real | 44 | 660 | 28 train / 6 validation / 10 retrospective test |
 | **Synthetic** | 222 | 3,330 | 200 train / 22 frozen-model evaluation |
 
-The paper calls the **38 non-training plants** (16 real + 22 synthetic) its test set. Six real plants are used for checkpoint selection; the reported evaluation covers the remaining **32 plants** (10 real + 22 synthetic).
+Six real validation plants are used for checkpoint selection. The reported evaluation covers **32 plants** (10 real retrospective test plants + 22 synthetic frozen-model evaluation plants).
 
 All views of a plant share one split. Real geometry is a **reconstruction reference**; synthetic geometry is **ground truth**.
 
@@ -92,7 +92,11 @@ python scripts/summarize_results.py --dataset tomato_synth_validation --output-d
 
 </details>
 
-Model inference, training, and evaluation from predictions are being prepared for release. The TomatoVGGT checkpoint requires the matching VGGT base weights.
+### Model inference
+
+Portable inference code and Safetensors adapter loading are included. Install the package, obtain the matching VGGT base weights, and supply the 15 RGB views and calibrated rig cameras. See the [inference guide](docs/inference.md) for installation, exact weight/source revisions, a runnable example and verification.
+
+The inference command writes depth maps, a colored PLY cloud and input/model provenance. The adapter requires the matching VGGT base weights. Inference uses the model's native depth scale; published reference-assisted scale alignment is a separate evaluation step. Training and full metric reproduction are outside this inference release.
 
 See the [result records](results/README.md) and [evaluation protocol](docs/evaluation.md) for metric definitions, known-camera and scale-assisted conditions, and source records.
 
