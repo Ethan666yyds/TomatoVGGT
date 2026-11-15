@@ -50,16 +50,23 @@ All views of a plant share one split. Real geometry is a **reconstruction refere
 
 ## Downloads
 
-The initial release includes the fixed data split, plant-level metrics, result tables, and the summary script. Data, model weights, and prediction downloads are coming soon; links will be added here once ready.
+Release materials are hosted on [Zenodo](https://doi.org/10.5281/zenodo.24221170). This repository includes the fixed data split, plant-level metrics, result tables, summary script and portable inference code. Large archives use verified numbered parts and an automatic download/reconstruction tool.
 
 | Resource | Availability |
 | :--- | :--- |
-| [Real and synthetic data](docs/downloads.md#data) | Coming soon |
-| [Model weights](docs/downloads.md#model-weights) | Coming soon |
-| [Predictions and point clouds](docs/downloads.md#predictions-and-point-clouds) | Coming soon |
+| [Synthetic data](docs/downloads.md#data) | [Zenodo release](https://zenodo.org/records/24221170) |
+| [Real data](docs/real_data.md) | Original TomatoWUR provider |
+| [Model weights](docs/downloads.md#model-weights) | [Zenodo release](https://zenodo.org/records/24221170) |
+| [Predictions and point clouds](docs/downloads.md#predictions-and-point-clouds) | [Zenodo release](https://zenodo.org/records/24221170) |
 | [Metrics and result tables](results/README.md) | Included in this repository |
 
 [Package guide](docs/downloads.md) &nbsp;·&nbsp; [SHA256 checksums](checksums.sha256)
+
+```bash
+python restore_archives.py --download --directory downloads
+```
+
+The tool verifies every part and reconstructed archive. See the package guide for extraction and the [real-data guide](docs/real_data.md) for official source data and preprocessing.
 
 ## Quick start
 
@@ -103,3 +110,5 @@ See the [result records](results/README.md) and [evaluation protocol](docs/evalu
 ## Acknowledgements and license
 
 TomatoVGGT builds on [VGGT](https://github.com/facebookresearch/vggt). The real component of Tomato3D comes from [TomatoWUR](https://github.com/WUR-ABE/TomatoWUR) and retains its [CC BY-SA 4.0 data license](https://creativecommons.org/licenses/by-sa/4.0/). See the [dataset guide](datasets/README.md) for attribution and component licensing.
+
+Licenses apply by component: independently authored software uses MIT; VGGT-derived code retains the VGGT License; the adapted model weights retain CC BY-NC 4.0; original synthetic data uses CC BY-NC 4.0; released results and documentation use CC BY-SA 4.0, and upstream calibration retains CC BY-SA 4.0. These are component-specific terms. See [LICENSE.md](LICENSE.md), [NOTICE.md](NOTICE.md) and [CITATION.cff](CITATION.cff) for the exact scope, attribution and citation.

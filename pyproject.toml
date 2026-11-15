@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=69"]
+requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -8,6 +8,8 @@ version = "0.1.0"
 description = "Portable calibrated-rig inference for TomatoVGGT"
 readme = "README.md"
 requires-python = ">=3.10"
+license = "MIT AND LicenseRef-VGGT"
+license-files = ["LICENSE.md", "NOTICE.md", "LICENSES/*.txt"]
 dependencies = ["torch>=2.5,<3", "numpy>=1.26,<3", "Pillow>=10,<13", "safetensors>=0.4,<1", "huggingface_hub>=0.34,<1", "einops>=0.8,<1"]
 
 [project.scripts]

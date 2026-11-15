@@ -17,7 +17,7 @@ The fixed split records actual roles: `real.val` contains the six selection plan
 
 ## Downloads and layout
 
-The synthetic archive is being uploaded to a Zenodo draft. Public links will be added to the [download guide](../docs/downloads.md#data) after publication. The single synthetic archive is `tomato3d_synthetic.zip`. Extract it at the repository root:
+The synthetic archive is hosted in the [Zenodo release](https://zenodo.org/records/24221170), with download and reconstruction instructions in the [download guide](../docs/downloads.md#data). The single synthetic archive is `tomato3d_synthetic.zip`. Extract it at the repository root:
 
 ```text
 datasets/
@@ -33,4 +33,4 @@ Real data should be obtained from the original TomatoWUR provider; they are not 
 
 The synthetic release removes PNG text/EXIF metadata, Blender file-browser directory buffers and local absolute paths in runtime metadata. All 3,330 images retain identical decoded pixels; all 222 scenes retain identical geometry and camera parameters and were opened in Blender for verification. Numeric geometry/supervision and generation seeds are unchanged. Cache lineage RGB hashes are updated to the sanitized image hashes. `manifest.sha256` describes the distributed copy; `sanitization.json` inventories edits.
 
-TomatoWUR retains original sample identities, attribution and its [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) data license. See the [source repository](https://github.com/WUR-ABE/TomatoWUR) and [dataset DOI](https://doi.org/10.4121/e2c59841-4653-45de-a75e-4994b2766a2f). Calibration in the synthetic data also retains its upstream source. Original synthetic-data licensing will be finalized before the data download is released.
+Original synthetic images, geometry and generated supervision use [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) for noncommercial reuse. Released result assets and documentation use CC BY-SA 4.0. The component-specific rights and attribution are identified in [LICENSE.md](../LICENSE.md) and [NOTICE.md](../NOTICE.md). TomatoWUR retains original sample identities, attribution and its CC BY-SA 4.0 data license. See the [source repository](https://github.com/WUR-ABE/TomatoWUR) and [dataset DOI](https://doi.org/10.4121/e2c59841-4653-45de-a75e-4994b2766a2f). Calibration in the synthetic data retains its upstream source and applicable terms. The [real-data guide](../docs/real_data.md) documents download, fixed roles and RGB preprocessing.

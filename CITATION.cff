@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "Please cite this release and the upstream VGGT and TomatoWUR works when using these materials."
+type: dataset
+title: "Tomato3D and TomatoVGGT: synthetic tomato data, model weights and reconstruction results"
+authors:
+  - family-names: "Sun"
+    given-names: "Junge"
+  - family-names: "Cheng"
+    given-names: "Qi"
+  - family-names: "Li"
+    given-names: "Yuan"
+  - family-names: "Li"
+    given-names: "Zhenghan"
+  - family-names: "Wu"
+    given-names: "Jiaheng"
+  - family-names: "Li"
+    given-names: "Jie"
+doi: 10.5281/zenodo.24221170
+date-released: "2026-11-15"
+url: https://github.com/Ethan666yyds/TomatoVGGT
+license-url: https://github.com/Ethan666yyds/TomatoVGGT/blob/main/LICENSE.md

@@ -1,15 +1,12 @@
 {
   "schema": "tomatovggt-download-v1",
   "record_url": "https://zenodo.org/records/24221170",
-  "draft_url": "https://zenodo.org/uploads/24221170",
-  "reserved_doi": "10.5281/zenodo.24221170",
-  "publication_status": "draft_not_public",
   "chunk_bytes": 134217728,
   "packages": [
     {
       "file": "tomato3d_synthetic.zip",
-      "bytes": 9123644863,
-      "sha256": "3a39bf7520075566b9faae5e09316e992d9444bb2142f7ebec54592439cb0839",
+      "bytes": 9123667355,
+      "sha256": "834716fd8c4b1c21043f57d7d5246ddc1617c755caf7866290e41a3b70985b57",
       "parts": [
         {
           "file": "tomato3d_synthetic.zip.part-000",
@@ -415,29 +412,29 @@
         },
         {
           "file": "tomato3d_synthetic.zip.part-067",
-          "bytes": 131057087,
-          "sha256": "d319adc6a81da88174f573c23a2517bd385165358fbabcc2092b04c91d727a94",
-          "md5": "f0ec3970d82cb58872843b35584196d4"
+          "bytes": 131079579,
+          "sha256": "ae20c4b3728e0304ac27c946cac9d66c7cd52783775ff7c802612b72e6665bdc",
+          "md5": "4e9d89c8aadaa885e679a07e59b9211d"
         }
       ]
     },
     {
       "file": "tomatovggt_weights.zip",
-      "bytes": 138513531,
-      "sha256": "b2216940a846383a0a78dee715c91361d0a1806725cd5b68fe5998ccfb7d56bc",
+      "bytes": 138535927,
+      "sha256": "4aa5fc8d59070b0cbd4aec7ac348895a67d0412add892051a1c5aa1960467203",
       "parts": [
         {
           "file": "tomatovggt_weights.zip",
-          "bytes": 138513531,
-          "sha256": "b2216940a846383a0a78dee715c91361d0a1806725cd5b68fe5998ccfb7d56bc",
-          "md5": "ad60da11a9339f92277f5f62b4513ffc"
+          "bytes": 138535927,
+          "sha256": "4aa5fc8d59070b0cbd4aec7ac348895a67d0412add892051a1c5aa1960467203",
+          "md5": "91d18cd3a8b200841eaf1b14b1fb508f"
         }
       ]
     },
     {
       "file": "tomatovggt_results.zip",
-      "bytes": 2468139515,
-      "sha256": "0e5854e51fdf4f678bfa179b80945971c57f474411348152e29a48a4f3ff0153",
+      "bytes": 2468162007,
+      "sha256": "cb15776dcb6d39bd376688408fc6adb7b60028d1279b4c1930ab925394e38001",
       "parts": [
         {
           "file": "tomatovggt_results.zip.part-000",
@@ -549,11 +546,25 @@
         },
         {
           "file": "tomatovggt_results.zip.part-018",
-          "bytes": 52220411,
-          "sha256": "eaf57f260e16b089f15b92dd92ad9069fa7f99f504d976a596d4878964023a6e",
-          "md5": "2b92bfc33c068531efe4381931d30cc0"
+          "bytes": 52242903,
+          "sha256": "453c49f96c78b756c79af86b71eeff184ed54147a0ecab20266dd54da55247ea",
+          "md5": "08232b5d9a51323bb7e7e80b99d2ae42"
+        }
+      ]
+    },
+    {
+      "file": "tomatovggt_licenses.zip",
+      "bytes": 22418,
+      "sha256": "6967a4505c40946ddaf53e618e1bd2a7a05c1b2481e64c0c667dd966ec3d923c",
+      "parts": [
+        {
+          "file": "tomatovggt_licenses.zip",
+          "bytes": 22418,
+          "sha256": "6967a4505c40946ddaf53e618e1bd2a7a05c1b2481e64c0c667dd966ec3d923c",
+          "md5": "8ec9fd561236bc3e65a4bdb17b5dbb82"
         }
       ]
     }
-  ]
+  ],
+  "doi": "10.5281/zenodo.24221170"
 }
