@@ -1,8 +1,10 @@
 import hashlib
 import importlib.util
+from io import BytesIO
 from pathlib import Path
 import tempfile
 import unittest
+from unittest.mock import patch
 
 spec=importlib.util.spec_from_file_location('release_restore',Path(__file__).resolve().parents[1]/'restore_archives.py')
 restore=importlib.util.module_from_spec(spec)
@@ -34,12 +36,24 @@ class DownloadBehaviorTests(unittest.TestCase):
             with self.assertRaises(FileNotFoundError):restore.restore(manifest,root)
             self.assertFalse((root/'archive.zip').exists())
 
-    def test_owner_token_cannot_be_sent_to_another_host(self):
+    def test_public_download_uses_no_authorization_and_restores_exact_bytes(self):
         with tempfile.TemporaryDirectory() as directory:
-            root=Path(directory);manifest,_=self.fixture(root)
-            manifest['record_url']='https://example.invalid/records/123'
-            token=root/'token.txt';token.write_text('test-only-token')
-            with self.assertRaisesRegex(ValueError,'official HTTPS Zenodo'):
-                restore.restore(manifest,root,token_file=token)
+            root=Path(directory);manifest,combined=self.fixture(root)
+            manifest['record_url']='https://zenodo.org/records/123'
+            payloads={part['file']:(root/part['file']).read_bytes()
+                      for part in manifest['packages'][0]['parts']}
+            for name in payloads:(root/name).unlink()
+            requests=[]
+            def public_response(request,timeout):
+                requests.append(request)
+                name=request.full_url.rsplit('/',1)[1].split('?')[0]
+                self.assertEqual(request.full_url,
+                                 f'https://zenodo.org/records/123/files/{name}?download=1')
+                self.assertFalse(request.has_header('Authorization'))
+                return BytesIO(payloads[name])
+            with patch.object(restore,'urlopen',side_effect=public_response):
+                restore.restore(manifest,root,download=True,workers=1)
+            self.assertEqual(len(requests),len(payloads))
+            self.assertEqual((root/'archive.zip').read_bytes(),combined)
 
 if __name__=='__main__':unittest.main()

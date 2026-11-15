@@ -6,8 +6,7 @@ import json
 from pathlib import Path
 import shutil
 import time
-import re
-from urllib.parse import quote, urlsplit
+from urllib.parse import quote
 from urllib.request import Request, urlopen
 
 def sha(path):
@@ -16,17 +15,9 @@ def sha(path):
         for chunk in iter(lambda:f.read(8*1024*1024),b''):h.update(chunk)
     return h.hexdigest()
 
-def restore(manifest,directory,download=False,workers=4,token_file=None):
+def restore(manifest,directory,download=False,workers=4):
     directory.mkdir(parents=True,exist_ok=True)
     headers={'User-Agent':'TomatoVGGT-download/1.0'}
-    private_base=None
-    if token_file:
-        record=urlsplit(manifest['record_url'])
-        if (record.scheme!='https' or record.hostname not in ('zenodo.org','sandbox.zenodo.org')
-                or record.username or record.password or not re.fullmatch(r'/records/\d+',record.path)):
-            raise ValueError('Owner tokens may only be sent to an official HTTPS Zenodo record')
-        private_base=f'https://{record.hostname}/api{record.path}/draft/files/'
-        headers['Authorization']='Bearer '+token_file.read_text().strip()
     files={f['file']:f for package in manifest['packages'] for f in package['parts']}
     def verify_or_download(item):
         name,record=item
@@ -34,7 +25,7 @@ def restore(manifest,directory,download=False,workers=4,token_file=None):
         path=directory/name
         if path.exists() and path.stat().st_size==record['bytes'] and sha(path)==record['sha256']:return
         if not download:raise FileNotFoundError(f'Missing or invalid file: {name}; use --download or download all parts')
-        url=(private_base+quote(name)+'/content' if private_base else manifest['record_url']+'/files/'+quote(name)+'?download=1')
+        url=manifest['record_url']+'/files/'+quote(name)+'?download=1'
         for attempt in range(4):
             temporary=path.with_suffix(path.suffix+'.partial')
             try:
@@ -69,9 +60,8 @@ def main():
     p.add_argument('--directory',type=Path,default=Path('.'))
     p.add_argument('--download',action='store_true')
     p.add_argument('--workers',type=int,default=4)
-    p.add_argument('--token-file',type=Path,help='Optional private-draft owner token; never required after publication')
     a=p.parse_args()
     if not 1<=a.workers<=16:raise ValueError('--workers must be between 1 and 16')
-    restore(json.loads(a.manifest.read_text()),a.directory,a.download,a.workers,a.token_file)
+    restore(json.loads(a.manifest.read_text()),a.directory,a.download,a.workers)
 
 if __name__=='__main__':main()

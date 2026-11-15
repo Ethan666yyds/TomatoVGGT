@@ -30,7 +30,7 @@ TomatoWUR's public imaging system has 15 calibrated, synchronized RGB cameras at
 | Precision and seed | BF16 aggregator, FP32 depth head; random seed 0 |
 | Research environment | Python 3.11, PyTorch 2.5.1, CUDA 12.1; one RTX 4090 (24 GiB) |
 
-There are 32 images contributing gradients to each optimizer update, but cross-view attention receives only four views of one plant in each training forward pass. Evaluation uses all 15 views. Adaptation takes about 2 hours and peaks at about 11.6 GB GPU memory; a 15-view reconstruction takes about 1 second on an RTX 4090. These are the manuscript's research measurements, separate from the released CPU functional smoke check. The portable release supports inference; it does not include the complete training pipeline.
+There are 32 images contributing gradients to each optimizer update, but cross-view attention receives only four views of one plant in each training forward pass. Evaluation uses all 15 views. Adaptation takes about 2 hours and peaks at about 11.6 GB GPU memory; a 15-view reconstruction takes about 1 second on an RTX 4090. The portable release supports inference; it does not include the complete training pipeline.
 
 ## Main geometric comparison (Table 2)
 
