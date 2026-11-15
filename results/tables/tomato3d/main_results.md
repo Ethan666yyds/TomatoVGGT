@@ -11,10 +11,12 @@
 | MASt3R | 93.350 | 180.680 | 6.020 | 8.23 | 98.857 | 190.403 | 7.310 | 5.75 | 0.25013 |
 | TomatoVGGT | **5.204** | **8.842** | **1.566** | **61.62** | **5.915** | **10.306** | **1.525** | **59.17** | **0.02185** |
 
-Paper Table 2: 10 real + 22 synthetic plants, with each plant weighted 1/32. The six real plants used for checkpoint selection are excluded. The 38-plant non-training cohort shown as the test set in the paper includes those six plants. Separate domain summaries and source hashes are retained in the JSON.
+Paper Table 2: 10 real + 22 synthetic plants, with each plant weighted 1/32. The six real plants used for checkpoint selection are excluded. The paper uses these distinct validation and test roles. Separate domain summaries and source hashes are retained in the JSON.
 
 Distances are measured against real reconstruction references and synthetic ground truth, using known cameras and one plant-wide median depth scale across all views. No ICP or Sim(3) is applied.
 
 CD = (Accuracy + Completeness) / 2. F-score uses a 5 mm threshold. AbsRel is measured over valid overlapping plant pixels after scale alignment. JSON retains full precision; F-scores are fractions in JSON and percentages in this table.
+
+MASt3R uses pairwise inference followed by global alignment optimization; the other models use a single forward pass.
 
 TomatoVGGT uses update 1000 selected by validation CD on six real validation plants. All 44 have historical reported metrics; 14 holdout plants have been used for development evaluation. This is a retrospective test split, not an unseen final test.

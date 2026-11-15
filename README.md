@@ -1,8 +1,8 @@
 <h1 align="center">TomatoVGGT</h1>
 
 <p align="center">
-  <strong>Feed-forward 3D reconstruction of tomato plants</strong><br>
-  Parameter-efficient adaptation of VGGT for fine plant structures.
+  <strong>Fast 3D plant reconstruction on calibrated multi-camera phenotyping platforms</strong><br>
+  Parameter-efficient adaptation of VGGT, validated on tomato.
 </p>
 
 <p align="center">
@@ -17,15 +17,19 @@
 
 ## Overview
 
-TomatoVGGT jointly updates attention Q/V LoRA parameters and the full depth head while keeping the original backbone weights frozen, training approximately 2.98% of the parameters in the enabled model components. It combines three components for fine-structure reconstruction:
+TomatoVGGT is a tomato-adapted VGGT model for a fixed, calibrated multi-camera phenotyping platform. Adaptation learns metric depth that is consistent across views, enabling feed-forward reconstruction from the platform's 15 RGB images. Experiments use the public TomatoWUR platform and its calibration.
 
-- **RGFU · RGB-Guided Feature Upsampling** — uses RGB guidance during feature upsampling.
-- **TSGL · Thin-Structure Geometric Loss** — combines thin-structure depth weighting with local normal consistency.
-- **SRJT · Synthetic–Real Joint Training** — learns jointly from synthetic and real plant observations.
+- **Parameter-efficient adaptation** — jointly updates attention Q/V LoRA parameters and the full depth head while keeping the original backbone weights frozen; approximately 2.98% of parameters in the enabled components are trainable.
+- **Thin-structure enhancement** — RGB-Guided Feature Upsampling (RGFU) and Thin-Structure Geometric Loss (TSGL) target slender organs and organ boundaries.
+- **Synthetic–Real Joint Training (SRJT)** — combines real observations and synthetic plants rendered with the platform's camera calibration in Tomato3D.
+
+Adaptation takes about 2 hours on one RTX 4090; reconstruction takes about 1 second per plant. The reconstructions support 3DGS initialization and measurements of internode length and phyllotactic angle with reference-skeleton assistance. The released checkpoint is tied to this imaging platform; another platform or crop requires re-adaptation.
+
+[Paper overview and reported experiments](docs/paper.md) &nbsp;·&nbsp; [Evaluation protocol](docs/evaluation.md)
 
 <p align="center">
   <a href="docs/images/pipeline.png">
-    <img src="docs/images/pipeline.png" alt="TomatoVGGT pipeline: dataset construction, joint training, and downstream reconstruction workflow." width="680">
+    <img src="docs/images/pipeline.png" alt="Tomato3D construction and train/validation/test split; parameter-efficient VGGT adaptation; 3D reconstruction and phenotypic measurement." width="680">
   </a>
   <br>
   <sub>TomatoVGGT pipeline · Click the figure to view at full resolution.</sub>
@@ -42,7 +46,7 @@ Tomato3D brings together real observations from TomatoWUR and synthetic tomato p
 | **TomatoWUR** · real | 44 | 660 | 28 train / 6 validation / 10 retrospective test |
 | **Synthetic** | 222 | 3,330 | 200 train / 22 frozen-model evaluation |
 
-Six real validation plants are used for checkpoint selection. The reported evaluation covers **32 plants** (10 real retrospective test plants + 22 synthetic frozen-model evaluation plants).
+Training uses 228 plants (28 real + 200 synthetic). Six real validation plants are used for checkpoint selection. The paper's test set contains **32 plants** (10 real retrospective test plants + 22 synthetic frozen-model evaluation plants).
 
 All views of a plant share one split. Real geometry is a **reconstruction reference**; synthetic geometry is **ground truth**.
 
@@ -103,7 +107,7 @@ python scripts/summarize_results.py --dataset tomato_synth_validation --output-d
 
 Portable inference code and Safetensors adapter loading are included. Install the package, obtain the matching VGGT base weights, and supply the 15 RGB views and calibrated rig cameras. See the [inference guide](docs/inference.md) for installation, exact weight/source revisions, a runnable example and verification.
 
-The inference command writes depth maps, a colored PLY cloud and input/model provenance. The adapter requires the matching VGGT base weights. Inference uses the model's native depth scale; published reference-assisted scale alignment is a separate evaluation step. Training and full metric reproduction are outside this inference release.
+The inference command writes depth maps, a colored PLY cloud and input/model provenance. The adapter requires the matching VGGT base weights. Inference uses the model's native depth scale. Paper Tables 2 and 4 use separate per-plant reference-assisted scale alignment; Table 3 also evaluates native scale. Training and full metric reproduction are outside this inference release.
 
 See the [result records](results/README.md) and [evaluation protocol](docs/evaluation.md) for metric definitions, known-camera and scale-assisted conditions, and source records.
 

@@ -62,7 +62,7 @@ Calibration contains ordered `view_ids` and matching `views`. Each camera row ha
 
 This model is adapted to the fixed TomatoWUR camera rig. The entry point uses provided calibrated cameras, without running the frozen predicted-camera head. It does not imply cross-platform generalization or comparable performance with predicted cameras.
 
-Depth is camera-axis Z. The default `--depth-scale 1` keeps the model's native depth scale. An explicit positive scale can be supplied and is recorded. No reference depth/point cloud, median-depth scale alignment, ICP or Sim(3) is used during inference. Published geometry metrics use separate known-camera, reference-assisted scale protocols; this inference command alone does not reproduce those metrics. Raw clouds include background pixels unless separately segmented.
+Depth is camera-axis Z. The default `--depth-scale 1` keeps the model's native depth scale. An explicit positive scale can be supplied and is recorded. No reference depth/point cloud, median-depth scale alignment, ICP or Sim(3) is used during inference. Paper Tables 2 and 4 use known cameras and per-plant reference-assisted scale alignment; Table 3 additionally compares native depths and per-view alignment. All three Table 3 settings retain the paper's plant-foreground and geometry-scoring protocol. This inference command alone does not reproduce those metrics. Raw clouds include background pixels unless separately segmented.
 
 ## Verify
 

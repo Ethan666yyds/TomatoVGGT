@@ -15,4 +15,6 @@ Distances are measured against synthetic ground truth, using known cameras and o
 
 CD = (Accuracy + Completeness) / 2. F-score uses a 5 mm threshold. AbsRel is measured over valid overlapping plant pixels after scale alignment. JSON retains full precision; F-scores are fractions in JSON and percentages in this table.
 
+MASt3R uses pairwise inference followed by global alignment optimization; the other models use a single forward pass.
+
 TomatoVGGT uses update 1000 selected by validation CD on six real validation plants. Not used for training or model selection; model frozen before evaluation.

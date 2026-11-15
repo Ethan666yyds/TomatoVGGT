@@ -13,7 +13,7 @@ All views of a plant share its role in the [project split](splits/main_benchmark
 
 Six real validation plants are used for checkpoint selection. The reported geometric evaluation uses **32 plants: 10 real retrospective test plants + 22 synthetic frozen-model evaluation plants**. Training covers 228 plants (28 real + 200 synthetic).
 
-The fixed split records actual roles: `real.val` contains the six selection plants, `real.test` contains the ten retrospective evaluation plants, and `synthetic.eval` contains the 22 frozen-model evaluation plants. The evaluation subset excludes `real.val`. No plant IDs or selection roles are reassigned.
+The fixed split records actual roles: `real.val` contains the six selection plants, `real.test` contains the ten retrospective evaluation plants, and `synthetic.eval` contains the 22 frozen-model evaluation plants. The 32-plant test set excludes `real.val`. No plant IDs or selection roles are reassigned.
 
 ## Downloads and layout
 

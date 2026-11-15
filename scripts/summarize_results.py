@@ -135,7 +135,7 @@ def summarize(records_path: Path, split_path: Path, dataset: str = "tomatowur") 
 
 
 def summarize_combined(records_root: Path, split_path: Path) -> dict:
-    """Reproduce the paper's 32-plant subset, retaining both domain protocols."""
+    """Reproduce the paper's 32-plant test set, retaining both domain protocols."""
     domains = {}
     records = []
     for dataset in ("tomatowur", "tomato_synth_validation"):
@@ -203,7 +203,7 @@ def render_markdown(summary: dict) -> str:
             "",
             "Paper Table 2: 10 real + 22 synthetic plants, with each plant weighted 1/32. "
             "The six real plants used for checkpoint selection are excluded. "
-            "The 38-plant non-training cohort shown as the test set in the paper includes those six plants. "
+            "The paper uses these distinct validation and test roles. "
             "Separate domain summaries and source hashes are retained in the JSON.",
         ]
     lines += [
@@ -214,6 +214,9 @@ def render_markdown(summary: dict) -> str:
         "CD = (Accuracy + Completeness) / 2. F-score uses a 5 mm threshold. "
         "AbsRel is measured over valid overlapping plant pixels after scale alignment. "
         "JSON retains full precision; F-scores are fractions in JSON and percentages in this table.",
+        "",
+        "MASt3R uses pairwise inference followed by global alignment optimization; "
+        "the other models use a single forward pass.",
         "",
         "TomatoVGGT uses update 1000 selected by validation CD on six real validation plants. "
         + summary["historical_exposure"],

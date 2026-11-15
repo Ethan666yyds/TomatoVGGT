@@ -18,6 +18,8 @@ python scripts/summarize_results.py --dataset tomatowur --output-dir results/tab
 python scripts/summarize_results.py --dataset tomato_synth_validation --output-dir results/tables/tomato_synth_validation
 ```
 
-The prediction and point-cloud download is coming soon; its link will be added to the [download guide](../docs/downloads.md#predictions-and-point-clouds). The prepared `tomatovggt_results.zip` contains all 192 original predictions, the 10 existing TomatoVGGT real-plant PLY files, and all 132 synthetic point clouds. Archive predictions and clouds retain original bytes. Synthetic metric record copies replace the original machine-specific prediction path with the package-relative path; numeric values stay unchanged. Results from ablations, external evaluation and 3DGS are excluded.
+Predictions and point clouds are available in the [Zenodo release](https://zenodo.org/records/24221170); see the [download guide](../docs/downloads.md#predictions-and-point-clouds). The released `tomatovggt_results.zip` contains all 192 original predictions, the 10 existing TomatoVGGT real-plant PLY files, and all 132 synthetic point clouds. Archive predictions and clouds retain original bytes. Synthetic metric record copies replace the original machine-specific prediction path with the package-relative path; numeric values stay unchanged. Results from ablations, external evaluation and 3DGS are excluded from that archive.
+
+The [paper overview](../docs/paper.md) documents the revised paper's scale-consistency experiment (Table 3), ablation table (Table 4), 3DGS input-view comparison (Table 5), and two phenotypic traits (Figure 7). These are manuscript-reported summaries; the standard-library summary script reproduces Table 2 and the domain tables from the released plant-level records.
 
 See the [evaluation protocol](../docs/evaluation.md) for the known-camera and scale-assisted conditions and the retrospective real split.
